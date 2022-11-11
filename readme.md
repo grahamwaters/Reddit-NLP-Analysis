@@ -1,10 +1,57 @@
-# Project 3 - Analysis of Autism and OCD on Reddit
-## Graham Waters
+# OCD vs Autism (A Reddit Thread NLP Analysis)
+A project by Graham Waters, 2022
 
+---
 
+# Executive Summary
+
+ The end goal for our client is likely a more clinical application of classification to assist users that are seeking help on public forums by using psychoanalysis from text data; however, this is beyond the scope of our initial study. I hope that by learning how these subreddits present linguistically, we may gain insight into the most predictive features that can serve as the first stepping stone toward such a clinical application in the future.
+
+ **Note**: This study is focused solely on linguistic features present in Reddit posts and is not a formal means of diagnosis for identifying autism-spectrum or obsessive-compulsive disorder.
+
+---
+
+# A Table of Contents
+- [OCD vs Autism (A Reddit Thread NLP Analysis)](#ocd-vs-autism-a-reddit-thread-nlp-analysis)
+- [Executive Summary](#executive-summary)
+- [A Table of Contents](#a-table-of-contents)
+- [Methods](#methods)
+- [About the API](#about-the-api)
+- [Data Collection](#data-collection)
+- [Files Provided and their Sequence](#files-provided-and-their-sequence)
+- [Model Files](#model-files)
+- [Data Cleaning](#data-cleaning)
+- [Example Austim Post](#example-austim-post)
+- [Example OCD Post](#example-ocd-post)
+  - [Example 1](#example-1)
+  - [Example 2](#example-2)
+  - [Balancing the Data](#balancing-the-data)
+  - [User Top Word Analysis](#user-top-word-analysis)
+  - [OCD and Autism Keywords](#ocd-and-autism-keywords)
+  - [Medication Leakage](#medication-leakage)
+  - [Steps for Data Cleaning in this Study](#steps-for-data-cleaning-in-this-study)
+- [Feature Engineering](#feature-engineering)
+    - [Visualizing the Data](#visualizing-the-data)
+- [Data Exploration](#data-exploration)
+  - [Model 1. Alpha Model](#model-1-alpha-model)
+  - [Model 2. Beta Models](#model-2-beta-models)
+    - [Model 2.1. Logistic Regression](#model-21-logistic-regression)
+    - [Model 2.2. Adaboost](#model-22-adaboost)
+    - [Model 2.3 Decision Tree](#model-23-decision-tree)
+  - [Models using Lemmatization](#models-using-lemmatization)
+- [What posts were misclassified?](#what-posts-were-misclassified)
+  - [Misclassified posts](#misclassified-posts)
+- [Conclusions and Recommendations](#conclusions-and-recommendations)
+- [Future Work](#future-work)
+- [Works Cited](#works-cited)
+- [Appendix A. - Hyperparameters used for Model 1. Alpha Model.](#appendix-a---hyperparameters-used-for-model-1-alpha-model)
+- [Appendix B. - Hyperparameters used for Beta Models.](#appendix-b---hyperparameters-used-for-beta-models)
+- [Appendix C. Exemplary posts](#appendix-c-exemplary-posts)
 ![](./images/3.jpg)
 
+---
 
+# Methods
 
 **Problem Statement:**
 A wealthy donor with a track record of philanthropic contributions to both Autism and OCD research organizations contacted our organization, asking for a model that they can utilize to identify post characteristics on Reddit.
@@ -16,8 +63,6 @@ The purposes of this study (towards those ends) are to:
 To accomplish these goals, we hypothesize that count vectorization, and Logistic Regression, Adaboost, or Decision Trees can be used to build a model that accurately can predict whether a post is from the Autism or OCD subreddit. Success in this study would mean that our model has a misclassification rate of less than 10% and an accuracy score of greater than 90% on the test data set.
 
 [presentation](https://www.canva.com/design/DAFOTzanP1s/gXPNiG_2EAQ7svxm0Y6dPQ/edit?utm_content=DAFOTzanP1s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-# Background on the Topic and Study Purpose:
-This study is focused solely on linguistic features present in Reddit posts and is not a formal means of diagnosis for identifying autism-spectrum or obsessive-compulsive disorder. The end goal for our client is likely a more clinical application of classification to assist users that are seeking help on public forums by using psychoanalysis from text data; however, this is beyond the scope of our initial study. I hope that by learning how these subreddits present linguistically, we may gain insight into the most predictive features that can serve as the first stepping stone toward such a clinical application in the future.
 
 # About the API
 
@@ -30,7 +75,7 @@ Before getting too deep into the project and eliminating rows/columns from the d
 
 We want the data-cleaning process to be as scalable as possible for future research, so I will use a function to clean the data. This function will clean the data for both the `Autism` and `OCD` subreddits.
 
-# File Ordering
+# Files Provided and their Sequence
 The files are ordered as follows:
 
 1. feature_engineering.ipynb # This file contains the code for the feature engineering process.
