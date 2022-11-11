@@ -785,7 +785,7 @@
         "kind": 2,
         "importPath": "report_generator_from_readme",
         "description": "report_generator_from_readme",
-        "peekOfCode": "def parse_table_of_contents(readme_text):\n    # parse the table of contents from the readme.md file\n    # returns a list of tuples (section_name, section_level)\n    # section_level is an integer\n    # section_name is a string\n    # the readme text is split with '\\n' as the delimiter not actual newlines.\n    # split the readme.md file into lines\n    lines = readme_text.split('\\n') # split on newlines\n    # find the line that starts with \"Table of Contents\"\n    table_of_contents_line = [line for line in lines if line.lower().find(\"table of contents\")>-1][0]",
+        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
         "detail": "report_generator_from_readme",
         "documentation": {}
     },
@@ -794,7 +794,7 @@
         "kind": 5,
         "importPath": "report_generator_from_readme",
         "description": "report_generator_from_readme",
-        "peekOfCode": "path = 'readme.md' # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    # parse the table of contents from the readme.md file\n    # returns a list of tuples (section_name, section_level)\n    # section_level is an integer\n    # section_name is a string\n    # the readme text is split with '\\n' as the delimiter not actual newlines.\n    # split the readme.md file into lines\n    lines = readme_text.split('\\n') # split on newlines",
+        "peekOfCode": "path = 'readme.md' # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
         "detail": "report_generator_from_readme",
         "documentation": {}
     },

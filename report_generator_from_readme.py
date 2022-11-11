@@ -8,6 +8,16 @@ path = 'readme.md' # same directory as this script
 # read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)
 
 def parse_table_of_contents(readme_text):
+    """
+    parse_table_of_contents takes a string of text and returns a list of tuples
+
+    Parameters
+
+    :param readme_text: a string of text
+    :type readme_text: str
+    :return: a list of tuples
+    :rtype: list
+    """
     # parse the table of contents from the readme.md file
     # returns a list of tuples (section_name, section_level)
     # section_level is an integer
