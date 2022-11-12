@@ -8,10 +8,12 @@ import warnings
 
 # Logging Setup
 import logging
+
 # set the logfile to be 'logs/modeling.log'
-logging.basicConfig(filename='logs/modeling.log')
+logging.basicConfig(filename="logs/modeling.log")
 
 import json
+
 # import countvectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -22,7 +24,8 @@ from sklearn.model_selection import GridSearchCV
 import pickle
 from sklearn.model_selection import train_test_split
 
-from word_lists import stop # stop words
+from word_lists import stop  # stop words
+
 # suppress future warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
@@ -47,15 +50,16 @@ from xgboost import XGBClassifier
 from word_lists import biasing_terms
 from modeling import stop
 
+
 class my_models:
     def __init__(self, df):
         # params grid for logistic regression.
         self.params_logreg = {
-            "cvec__max_features": [3000,4000,5000],
-            "cvec__min_df": [2,3,4],
-            "cvec__max_df": [0.9,1,0.1],
+            "cvec__max_features": [3000, 4000, 5000],
+            "cvec__min_df": [2, 3, 4],
+            "cvec__max_df": [0.9, 1, 0.1],
             "cvec__ngram_range": [(1, 1)],
-            "logreg__penalty": ["l1","l2"],
+            "logreg__penalty": ["l1", "l2"],
             "logreg__C": [1, 2, 3],
         }
         self.params_decisiontree = {
@@ -279,6 +283,7 @@ class my_models:
         with open(f"../model_settings/{model}.json", "w") as f:
             json.dump(self.get_best_params(), f)
 
+
 def run_modeling():
     """
     Problem Statement:
@@ -294,7 +299,6 @@ def run_modeling():
     # Control Flow:
     # We already performed the data collection and saved the data to csv files in the data folder.
     # We will now read the data from the csv files and perform data exploration and preprocessing.
-
 
     # ^ Model
     # map 1 to autism and 0 to ocd based on subreddit column, then drop the subreddit column
@@ -323,7 +327,9 @@ def run_modeling():
     master_predictions = pd.DataFrame()
 
     for model_name in tqdm(models):
-        model.run_gridsearch(model_name) # include the model binary classification as arg
+        model.run_gridsearch(
+            model_name
+        )  # include the model binary classification as arg
         # save the model as a pickled file in the models folder, also save all parameters and settings used to create the model as a json file in the models_settings folder
         model.save_model(model_name)
         # save settings for the model as a json file in the models_settings folder.
@@ -346,10 +352,11 @@ def run_modeling():
     plt.ylabel("Model Score")
     plt.savefig("images/model_scores.png")
 
-#& Run the modeling script by uncommenting the line below
+
+# & Run the modeling script by uncommenting the line below
 # run_modeling()
 
-#& Works Cited:
+# & Works Cited:
 # https://stackoverflow.com/questions/24121018/sklearn-gridsearch-how-to-print-out-progress-during-the-execution
 # preprocessing_functions and data_exploration functions were adapted from the NLP lesson in the GA Data Science course.
 # source: https://www.analyticsvidhya.com/blog/2018/02/the-different-methods-deal-text-data-predictive-python/

@@ -1,18 +1,22 @@
 import pandas as pd
+
 # This script is for preprocessing the data.
 import os
 
 # Logging Setup
 import logging
+
 # set the logfile to be 'logs/preprocessing.log'
-logging.basicConfig(filename='logs/preprocessing.log')
+logging.basicConfig(filename="logs/preprocessing.log")
 
 
 from word_lists import biasing_terms, stop, listofknown_medications
+
 # stop words from nltk
 
 
-#^ Functions
+# ^ Functions
+
 
 def process_dataframe(df):
 
@@ -77,11 +81,11 @@ def process_dataframe(df):
     )
     # source: https://www.analyticsvidhya.com/blog/2018/02/the-different-methods-deal-text-data-predictive-python/
 
-
     # Remove np.nan values from the selftext column (include any missing values in this removal)
     df = df[df["selftext"].notna()]
 
     return df
+
 
 def remove_overly_biasing_terms(df):
     # adapted from source: https://www.analyticsvidhya.com/blog/2018/02/the-different-methods-deal-text-data-predictive-python/
@@ -90,6 +94,7 @@ def remove_overly_biasing_terms(df):
         lambda x: " ".join(x for x in x.split() if x not in biasing_terms)
     )
     return df
+
 
 def merge_text(df):
     """
@@ -109,8 +114,11 @@ def merge_text(df):
     if "title" in df.columns:
         df["selftext"] = df["title"] + " " + df["selftext"]
     else:
-        raise Exception("Step 3. in preprocessing > merge_text() is not needed because the title column is not in the dataframe.")
+        raise Exception(
+            "Step 3. in preprocessing > merge_text() is not needed because the title column is not in the dataframe."
+        )
     return df
+
 
 def preprocessing_function(df):
     """
@@ -128,6 +136,7 @@ def preprocessing_function(df):
         df
     )  # remove the overly biasing terms from the selftext in the dataframe
     return df
+
 
 def data_exploration(df):
     """
@@ -166,9 +175,11 @@ def run_preprocess_data(df):
     # If the df_cleaned.csv file has been generated, then we want to read it in and use it for the model.
 
     if not os.path.isfile("data/df_cleaned.csv"):
-        logging.info("The df_cleaned.csv file has not been generated yet, so we are generating it now.")
+        logging.info(
+            "The df_cleaned.csv file has not been generated yet, so we are generating it now."
+        )
         # Create df by concatenating the dataframes from the two subreddits
-        #& Reading in both Reddit threads as csv files.
+        # & Reading in both Reddit threads as csv files.
         df1 = pd.read_csv("./data/ocd_thread.csv")  # read in the ocd threads
         df2 = pd.read_csv("./data/autism_thread.csv")  # read in the autism threads
         df = pd.concat([df1, df2], ignore_index=True)  # combine the two dataframes
@@ -177,12 +188,12 @@ def run_preprocess_data(df):
         # Read the dataframe from the df_cleaned.csv file
         df = pd.read_csv("data/df_cleaned.csv")
 
-    logging.info(f'Preprocessing the dataframe...')
-    #& Preprocessing the data in the dataframe.
+    logging.info(f"Preprocessing the dataframe...")
+    # & Preprocessing the data in the dataframe.
     df = preprocessing_function(df)  # Preprocess the Dataframe
 
     # Save the Processed Dataframe to a CSV
     logging.info(f'Saving the processed dataframe to "data/df_cleaned.csv"...')
     df.to_csv("./data/df_cleaned.csv")
 
-    return df # return the dataframe
+    return df  # return the dataframe

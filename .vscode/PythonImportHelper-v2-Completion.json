@@ -323,6 +323,15 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -335,7 +344,7 @@
         "kind": 5,
         "importPath": "scripts.data_exploration",
         "description": "scripts.data_exploration",
-        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\") # The combined data\n# # Explore the data\n# 1. Top Bigrams in the post selftext for r/Autism\n# 2. Top Bigrams in the post selftext for r/OCD\n# 3. Top Trigrams in the post selftext for r/Autism\n# 4. Top Trigrams in the post selftext for r/OCD\n# 5. Top Words in the post selftext for r/Autism\n# 6. Top Words in the post selftext for r/OCD\n# 7. Top Users posting on r/Autism in the data\n# 8. Top Users posting on r/OCD in the data",
+        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\n# # Explore the data\n# 1. Top Bigrams in the post selftext for r/Autism\n# 2. Top Bigrams in the post selftext for r/OCD\n# 3. Top Trigrams in the post selftext for r/Autism\n# 4. Top Trigrams in the post selftext for r/OCD\n# 5. Top Words in the post selftext for r/Autism\n# 6. Top Words in the post selftext for r/OCD\n# 7. Top Users posting on r/Autism in the data\n# 8. Top Users posting on r/OCD in the data",
         "detail": "scripts.data_exploration",
         "documentation": {}
     },
@@ -344,7 +353,7 @@
         "kind": 2,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "def remove_ocd_meds(text,listofknown_medications):\n    global meds\n    if len(meds)> 0:\n        log_string = f'The latest medication mentioned is: {meds[-1]}'\n        logging.info(log_string)\n    wordsintext = text.split(' ')\n    for word in wordsintext:\n        if word in listofknown_medications:\n            meds.append(word)\n            text = text.replace(word,' ')",
+        "peekOfCode": "def remove_ocd_meds(text, listofknown_medications):\n    global meds\n    if len(meds) > 0:\n        log_string = f\"The latest medication mentioned is: {meds[-1]}\"\n        logging.info(log_string)\n    wordsintext = text.split(\" \")\n    for word in wordsintext:\n        if word in listofknown_medications:\n            meds.append(word)\n            text = text.replace(word, \" \")",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -353,7 +362,7 @@
         "kind": 2,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "def feature_engineer(df,listofknown_medications):\n    \"\"\"\n    summary: This function takes in a dataframe and a list of known medications and returns a dataframe with new features.\n    List of Features that will be created:\n    1. Number of words in the post (word_count)\n    2. Number of unique words in the post (unique_words)\n    2. Length of the post (number of characters)\n    4. unique words in the post (unique_word_count)\n    5. If the selftext of the post contains a known medication (medication_mentioned) (list of the meds mentioned)\n    Args:",
+        "peekOfCode": "def feature_engineer(df, listofknown_medications):\n    \"\"\"\n    summary: This function takes in a dataframe and a list of known medications and returns a dataframe with new features.\n    List of Features that will be created:\n    1. Number of words in the post (word_count)\n    2. Number of unique words in the post (unique_words)\n    2. Length of the post (number of characters)\n    4. unique words in the post (unique_word_count)\n    5. If the selftext of the post contains a known medication (medication_mentioned) (list of the meds mentioned)\n    Args:",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -362,7 +371,7 @@
         "kind": 2,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "def binarize_target_feature(df):\n    df[\"is_autism\"] = df[\"subreddit\"].apply(lambda x: 1 if x == \"autism\" else 0)\n    #? Drop the 'subreddit' column\n    #note: not sure if the subreddit column is needed anymore but I will keep it for now.\n    return df\ndef run_feature_engineering(df):\n    #& Importing the Data and Engineering Features\n    df = pd.read_csv('./data/reddit_threads.csv')\n    logging.info(f'Beginning feature engineering...')\n    # Run the functions in this script to create new features for the model.",
+        "peekOfCode": "def binarize_target_feature(df):\n    df[\"is_autism\"] = df[\"subreddit\"].apply(lambda x: 1 if x == \"autism\" else 0)\n    # ? Drop the 'subreddit' column\n    # note: not sure if the subreddit column is needed anymore but I will keep it for now.\n    return df\ndef run_feature_engineering(df):\n    # & Importing the Data and Engineering Features\n    df = pd.read_csv(\"./data/reddit_threads.csv\")\n    logging.info(f\"Beginning feature engineering...\")\n    # Run the functions in this script to create new features for the model.",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -371,7 +380,7 @@
         "kind": 2,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "def run_feature_engineering(df):\n    #& Importing the Data and Engineering Features\n    df = pd.read_csv('./data/reddit_threads.csv')\n    logging.info(f'Beginning feature engineering...')\n    # Run the functions in this script to create new features for the model.\n    #& binarize the target feature\n    df = binarize_target_feature(df) # binarize the target feature (i.e. 'subreddit')\n    #& create new features\n    df = feature_engineer(df,listofknown_medications)\n    # save the dataframe with the new features to a csv file 'df_after_feature_engineering.csv' in the data folder.",
+        "peekOfCode": "def run_feature_engineering(df):\n    # & Importing the Data and Engineering Features\n    df = pd.read_csv(\"./data/reddit_threads.csv\")\n    logging.info(f\"Beginning feature engineering...\")\n    # Run the functions in this script to create new features for the model.\n    # & binarize the target feature\n    df = binarize_target_feature(df)  # binarize the target feature (i.e. 'subreddit')\n    # & create new features\n    df = feature_engineer(df, listofknown_medications)\n    # save the dataframe with the new features to a csv file 'df_after_feature_engineering.csv' in the data folder.",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -380,7 +389,7 @@
         "kind": 5,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "OCD_Posts_With_Meds = 0 # initialized count of posts mentioning meds from the OCD subreddit to zero.\nAutism_Posts_With_Meds = 0 # initialized count of posts mentioning meds from the Autism subreddit to zero.\nTotal_Posts_With_Meds = 0 # the total number of posts that mention medications.\nmedications_mentioned = [] # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging",
+        "peekOfCode": "OCD_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the OCD subreddit to zero.\n)\nAutism_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the Autism subreddit to zero.\n)\nTotal_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -389,7 +398,7 @@
         "kind": 5,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "Autism_Posts_With_Meds = 0 # initialized count of posts mentioning meds from the Autism subreddit to zero.\nTotal_Posts_With_Meds = 0 # the total number of posts that mention medications.\nmedications_mentioned = [] # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging\n# set the logfile to be 'logs/feature_engineering.log'",
+        "peekOfCode": "Autism_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the Autism subreddit to zero.\n)\nTotal_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -398,7 +407,7 @@
         "kind": 5,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "Total_Posts_With_Meds = 0 # the total number of posts that mention medications.\nmedications_mentioned = [] # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging\n# set the logfile to be 'logs/feature_engineering.log'\nlogging.basicConfig(filename='logs/feature_engineering.log')",
+        "peekOfCode": "Total_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -407,7 +416,7 @@
         "kind": 5,
         "importPath": "scripts.feature_engineering",
         "description": "scripts.feature_engineering",
-        "peekOfCode": "medications_mentioned = [] # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging\n# set the logfile to be 'logs/feature_engineering.log'\nlogging.basicConfig(filename='logs/feature_engineering.log')\ndef remove_ocd_meds(text,listofknown_medications):",
+        "peekOfCode": "medications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging\n# set the logfile to be 'logs/feature_engineering.log'",
         "detail": "scripts.feature_engineering",
         "documentation": {}
     },
@@ -416,7 +425,7 @@
         "kind": 5,
         "importPath": "scripts.main",
         "description": "scripts.main",
-        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\") # The combined data\nprint(f'Completed Step One. The shape of the data is {df.shape}')\n#& Step Two. Preprocess the data\ndf_preprocessed = run_preprocess_data(df)\nprint(f'Completed Step Two. The shape of the data is {df_preprocessed.shape}')\n#& Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f'Completed Step Three. The shape of the data is {df.shape}')",
+        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\nprint(f\"Completed Step One. The shape of the data is {df.shape}\")\n# & Step Two. Preprocess the data\ndf_preprocessed = run_preprocess_data(df)\nprint(f\"Completed Step Two. The shape of the data is {df_preprocessed.shape}\")\n# & Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")",
         "detail": "scripts.main",
         "documentation": {}
     },
@@ -425,7 +434,7 @@
         "kind": 5,
         "importPath": "scripts.main",
         "description": "scripts.main",
-        "peekOfCode": "df_preprocessed = run_preprocess_data(df)\nprint(f'Completed Step Two. The shape of the data is {df_preprocessed.shape}')\n#& Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f'Completed Step Three. The shape of the data is {df.shape}')\n#& Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)",
+        "peekOfCode": "df_preprocessed = run_preprocess_data(df)\nprint(f\"Completed Step Two. The shape of the data is {df_preprocessed.shape}\")\n# & Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")\n# & Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)",
         "detail": "scripts.main",
         "documentation": {}
     },
@@ -434,7 +443,7 @@
         "kind": 5,
         "importPath": "scripts.main",
         "description": "scripts.main",
-        "peekOfCode": "df = run_feature_engineering(df_preprocessed)\nprint(f'Completed Step Three. The shape of the data is {df.shape}')\n#& Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)\nprint(f'Completed Step Four. The shape of the data is {df.shape}, and we generated our model results.')",
+        "peekOfCode": "df = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")\n# & Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)\nprint(\n    f\"Completed Step Four. The shape of the data is {df.shape}, and we generated our model results.\"\n)",
         "detail": "scripts.main",
         "documentation": {}
     },
@@ -443,7 +452,7 @@
         "kind": 6,
         "importPath": "scripts.modeling",
         "description": "scripts.modeling",
-        "peekOfCode": "class my_models:\n    def __init__(self, df):\n        # params grid for logistic regression.\n        self.params_logreg = {\n            \"cvec__max_features\": [3000,4000,5000],\n            \"cvec__min_df\": [2,3,4],\n            \"cvec__max_df\": [0.9,1,0.1],\n            \"cvec__ngram_range\": [(1, 1)],\n            \"logreg__penalty\": [\"l1\",\"l2\"],\n            \"logreg__C\": [1, 2, 3],",
+        "peekOfCode": "class my_models:\n    def __init__(self, df):\n        # params grid for logistic regression.\n        self.params_logreg = {\n            \"cvec__max_features\": [3000, 4000, 5000],\n            \"cvec__min_df\": [2, 3, 4],\n            \"cvec__max_df\": [0.9, 1, 0.1],\n            \"cvec__ngram_range\": [(1, 1)],\n            \"logreg__penalty\": [\"l1\", \"l2\"],\n            \"logreg__C\": [1, 2, 3],",
         "detail": "scripts.modeling",
         "documentation": {}
     },
@@ -506,7 +515,7 @@
         "kind": 2,
         "importPath": "scripts.preprocessing",
         "description": "scripts.preprocessing",
-        "peekOfCode": "def run_preprocess_data(df):\n    # ^ File I/O\n    # If the df_cleaned.csv file has not been generated yet, then we want to generate it with the preprocessing_function.\n    # If the df_cleaned.csv file has been generated, then we want to read it in and use it for the model.\n    if not os.path.isfile(\"data/df_cleaned.csv\"):\n        logging.info(\"The df_cleaned.csv file has not been generated yet, so we are generating it now.\")\n        # Create df by concatenating the dataframes from the two subreddits\n        #& Reading in both Reddit threads as csv files.\n        df1 = pd.read_csv(\"./data/ocd_thread.csv\")  # read in the ocd threads\n        df2 = pd.read_csv(\"./data/autism_thread.csv\")  # read in the autism threads",
+        "peekOfCode": "def run_preprocess_data(df):\n    # ^ File I/O\n    # If the df_cleaned.csv file has not been generated yet, then we want to generate it with the preprocessing_function.\n    # If the df_cleaned.csv file has been generated, then we want to read it in and use it for the model.\n    if not os.path.isfile(\"data/df_cleaned.csv\"):\n        logging.info(\n            \"The df_cleaned.csv file has not been generated yet, so we are generating it now.\"\n        )\n        # Create df by concatenating the dataframes from the two subreddits\n        # & Reading in both Reddit threads as csv files.",
         "detail": "scripts.preprocessing",
         "documentation": {}
     },
@@ -524,7 +533,7 @@
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    table_of_contents, readme_text = startup() # read the readme.md file and parse the table of contents",
+        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -533,7 +542,7 @@
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    table_of_contents, readme_text = startup() # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents,readme_text)\n    return\n# What are the expected sections in a data science report notebook?\n# The answer is:\n# 1. Introduction\n# 2. Table of Contents",
+        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents, readme_text)\n    return\n# What are the expected sections in a data science report notebook?",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -547,20 +556,38 @@
         "documentation": {}
     },
     {
-        "label": "get_section_text",
+        "label": "get_text",
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def get_section_text(section_name, markdown_text):\n    \"\"\"\n    get_section_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
+        "peekOfCode": "def get_text(section_name, markdown_text):\n    \"\"\"\n    get_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
     {
-        "label": "pandify_readme",
+        "label": "programmatic_pandas",
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def pandify_readme(readme_text, table_of_contents):\n    # split the readme into sections by their headernames and put those into a pandas dataframe\n    # the dataframe has two columns: section_name, section_text\n    # section_name is a string\n    # section_text is a string\n    readme_df = pd.DataFrame(columns=[\"section_name\", \"section_text\"])\n    # take the table of contents and make a list of section names\n    section_names = [section[0] for section in table_of_contents]\n    # populate the dataframe with the section names\n    readme_df[\"section_name\"] = section_names",
+        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.\n    # if there are level 3 sections, then I want a markdown cell for the level 3 section preceeded with a level 3 header in a markdown cell. etc.",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "create_notebook",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def create_notebook(markdown_cells):\n    # create a notebook with the markdown cells\n    # create a notebook object\n    nb = nbf.v4.new_notebook()\n    # loop through the markdown cells\n    for markdown_cell in markdown_cells:\n        # create a markdown cell\n        markdown_cell = nbf.v4.new_markdown_cell(markdown_cell)\n        # add the markdown cell to the notebook\n        nb[\"cells\"].append(markdown_cell)",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def main():\n    # read the readme text\n    readme_text = read_readme()\n    # get the table of contents\n    table_of_contents = get_table_of_contents(readme_text)\n    # get the markdown cells\n    markdown_cells = programmatic_pandas(readme_text, table_of_contents)\n    # create the notebook\n    create_notebook(markdown_cells)\ndef generate_report_notebook(table_of_contents, readme_text):",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -569,7 +596,7 @@
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def generate_report_notebook(table_of_contents,readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
+        "peekOfCode": "def generate_report_notebook(table_of_contents, readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -578,7 +605,7 @@
         "kind": 5,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "path = 'readme.md' # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
+        "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -812,7 +839,7 @@
         "kind": 5,
         "importPath": "scripts.word_lists",
         "description": "scripts.word_lists",
-        "peekOfCode": "stop = stopwords.words(\"english\")\n# Custom Word Lists\nlistofknown_medications = [\n    'clonidine', 'quetiapine', 'risperidone', 'vyvanse', 'adderall', 'dexedrine', 'wellbutrin', 'focalinxr', 'modafanil', 'fluvoxamine', 'serzone', 'fluvoxamine', 'prozac', 'lexapro', 'paxil', 'celexa', 'effexor', 'zoloft', 'cymbalta', 'luvox', 'pristiq', 'remeron', 'venlafaxine', 'sarafem', 'anafranil', 'nortriptyline', 'tofranil', 'xanax', 'klonopin', 'ativan', 'valium', 'buspirone', 'oxazepam', 'aripiprazole', 'dextroamphetamine', 'ssrisnri', 'clonazepam', 'lorazepam', 'temazepam', 'alprazolam', 'chlordiazepoxide', 'flurazepam', 'oxazepam', 'triazolam', 'divalproexsodium', 'dronabinol', 'nabilone', 'duloxetine',\"Atorvastatin\", \"Levothyroxine\", \"Metformin\", \"Lisinopril\", \"Amlodipine\", \"Metoprolol\", \"Albuterol\", \"Omeprazole\", \"Losartan\", \"Gabapentin\", \"Hydrochlorothiazide\", \"Sertraline\", \"Simvastatin\", \"Montelukast\", \"Escitalopram\", \"Acetaminophen; Hydrocodone\", \"Rosuvastatin\", \"Bupropion\", \"Furosemide\", \"Pantoprazole\", \"Trazodone\", \"Dextroamphetamine; Dextroamphetamine Saccharate; Amphetamine; Amphetamine Aspartate\", \"Fluticasone\", \"Tamsulosin\", \"Fluoxetine\", \"Carvedilol\", \"Duloxetine\", \"Meloxicam\", \"Clopidogrel\", \"Prednisone\", \"Citalopram\", \"Insulin Glargine\", \"Potassium Chloride\", \"Pravastatin\", \"Tramadol\", \"Aspirin\", \"Alprazolam\", \"Ibuprofen\", \"Cyclobenzaprine\", \"Amoxicillin\", \"Methylphenidate\", \"Allopurinol\", \"Venlafaxine\", \"Clonazepam\", \"Ethinyl Estradiol; Norethindrone\", \"Ergocalciferol\", \"Zolpidem\", \"Apixaban\", \"Glipizide\", \"Hydrochlorothiazide; Lisinopril\", \"Spironolactone\", \"Cetirizine\", \"Atenolol\", \"Oxycodone\", \"Buspirone\", \"Fluticasone; Salmeterol\", \"Topiramate\", \"Warfarin\", \"Estradiol\", \"Cholecalciferol\", \"Budesonide; Formoterol\", \"Lamotrigine\", \"Ethinyl Estradiol; Norgestimate\", \"Quetiapine\", \"Lorazepam\", \"Famotidine\", \"Folic Acid\", \"Azithromycin\", \"Acetaminophen; Oxycodone\", \"Hydroxyzine\", \"Insulin Lispro\", \"Diclofenac\", \"Loratadine\", \"Sitagliptin\", \"Clonidine\", \"Diltiazem\", \"Latanoprost\", \"Pregabalin\", \"Doxycycline\", \"Insulin Aspart\", \"Amitriptyline\", \"Paroxetine\", \"Ondansetron\", \"Tizanidine\", \"Lisdexamfetamine\", \"Rivaroxaban\", \"Glimepiride\", \"Propranolol\", \"Aripiprazole\", \"Finasteride\", \"Naproxen\", \"Levetiracetam\", \"Hydrochlorothiazide; Losartan\", \"Alendronate\", \"Fenofibrate\", \"Dulaglutide\", \"Oxybutynin\", \"Celecoxib\", \"Lovastatin\", \"Ezetimibe\", \"Cephalexin\", \"Empagliflozin\", \"Hydralazine\", \"Mirtazapine\", \"Cyanocobalamin\", \"Triamcinolone\", \"Amoxicillin; Clavulanate\", \"Baclofen\", \"Valproate\", \"Tiotropium\", \"Sumatriptan\", \"Donepezil\", \"Methotrexate\", \"Isosorbide\", \"Fluticasone; Vilanterol\", \"Ferrous Sulfate\", \"Thyroid\", \"Acetaminophen\", \"Valacyclovir\", \"Desogestrel; Ethinyl Estradiol\", \"Sulfamethoxazole; Trimethoprim\", \"Esomeprazole\", \"Valsartan\", \"Insulin Detemir\", \"Clindamycin\", \"Hydroxychloroquine\", \"Methocarbamol\", \"Diazepam\", \"Semaglutide\", \"Dexmethylphenidate\", \"Hydrochlorothiazide; Triamterene\", \"Ciprofloxacin\", \"Chlorthalidone\", \"Rizatriptan\", \"Nifedipine\", \"Insulin Degludec\", \"Norethindrone\", \"Risperidone\", \"Olmesartan\", \"Morphine\", \"Benazepril\", \"Meclizine\", \"Timolol\", \"Oxcarbazepine\", \"Drospirenone; Ethinyl Estradiol\", \"Liraglutide\", \"Dicyclomine\", \"Irbesartan\", \"Hydrocortisone\", \"Albuterol; Ipratropium\", \"Verapamil\", \"Memantine\", \"Prednisolone\", \"Metformin; Sitagliptin\", \"Nortriptyline\", \"Ropinirole\", \"Benzonatate\", \"Progesterone\", \"Ethinyl Estradiol; Levonorgestrel\", \"Mirabegron\", \"Methylprednisolone\", \"Acyclovir\", \"Docusate\", \"Olanzapine\", \"Nitroglycerin\", \"Bimatoprost\", \"Nitrofurantoin\", \"Pioglitazone\", \"Amlodipine; Benazepril\", \"Ketoconazole\", \"Clobetasol\", \"Testosterone\", \"Azelastine\", \"Fluconazole\", \"Brimonidine\", \"Desvenlafaxine\", \"Ranitidine\", \"Oseltamivir\", \"Levocetirizine\", \"Anastrozole\", \"Phentermine\", \"Sucralfate\", \"Sildenafil\", \"Mesalamine\", \"Carbamazepine\", \"Buprenorphine\", \"Acetaminophen; Codeine\", \"Flecainide\", \"Gemfibrozil\", \"Prazosin\", \"Lansoprazole\", \"Diphenhydramine\", \"Pramipexole\", \"Ethinyl Estradiol; Etonogestrel\", \"Dorzolamide; Timolol\", \"Ramipril\", \"Lithium\", \"Amiodarone\", \"Omega-3-acid Ethyl Esters\", \"Glyburide\", \"Acetaminophen; Butalbital; Caffeine\", \"Magnesium Salts\", \"Mupirocin\", \"Calcium\", \"Adalimumab\", \"Methimazole\", \"Budesonide\", \"Promethazine\", \"Doxazosin\", \"Labetalol\", \"Terazosin\", \"Cyclosporine\", \"Torsemide\", \"Medroxyprogesterone\", \"Calcium; Vitamin D\", \"Dorzolamide\", \"Dapagliflozin\", \"Liothyronine\", \"Sacubitril; Valsartan\", \"Beclomethasone\", \"Insulin Isophane\", \"Metronidazole\", \"Temazepam\", \"Fluticasone; Umeclidinium; Vilanterol\", \"Erythromycin\", \"Polyethylene Glycol 3350\", \"Nystatin\", \"Cefdinir\", \"Benztropine\", \"Tretinoin\", \"Mometasone\", \"Eszopiclone\", \"Betamethasone\", \"Erenumab\", \"Hydrochlorothiazide; Valsartan\", \"Minocycline\", \"Digoxin\", \"Empagliflozin; Metformin\", \"Nebivolol\", \"Levofloxacin\", \"Colchicine\", \"Ofloxacin\", \"Vortioxetine\", \"Linaclotide\", \"Umeclidinium\", \"Insulin Human; Insulin Isophane Human\", \"Ticagrelor\", \"Telmisartan\", \"Ketorolac\", \"Hydromorphone\", \"Epinephrine\", \"Doxepin\", \"Quinapril\", \"Umeclidinium; Vilanterol\", \"Fexofenadine\", \"Brimonidine; Timolol\", \"Letrozole\", \"Ranolazine\", \"Lurasidone\", \"Phenytoin\", \"Tadalafil\", \"Pancrelipase Amylase; Pancrelipase Lipase; Pancrelipase Protease\", \"Dexlansoprazole\", \"Isotretinoin\", \"Sodium Fluoride\", \"Solifenacin\", \"Bisoprolol\", \"Olopatadine\", \"Primidone\", \"Bumetanide\", \"Tolterodine\", \"Dexamethasone\", \"Chlorhexidine\", \"Sodium Salts\", \"Varenicline\", \"Zonisamide\", \"Calcitriol\", \"Emtricitabine; Tenofovir Disoproxil\", \"Terbinafine\", \"Fluocinonide\", \"Hydrochlorothiazide; Olmesartan\", \"Ziprasidone\", \"Estrogens, Conjugated\", \"Sulfasalazine\", \"Icosapent Ethyl\", \"Dexamethasone; Moxifloxacin\", \"Atomoxetine\", \"Formoterol; Mometasone\", \"Ketotifen\", \"Bisoprolol; Hydrochlorothiazide\", \"Sennosides\", \"Raloxifene\", \"Linagliptin\", \"Canagliflozin\", \"Alogliptin\", \"Sotalol\", \"Potassium Citrate\", \"Melatonin\", \"Isosorbide Dinitrate\", \"Guanfacine\"]\nlistofknown_medications = [x.lower() for x in listofknown_medications] # make all the words lowercase\nconditions = ['autism','ocd'] # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",",
+        "peekOfCode": "stop = stopwords.words(\"english\")\n# Custom Word Lists\nlistofknown_medications = [\n    \"clonidine\",\n    \"quetiapine\",\n    \"risperidone\",\n    \"vyvanse\",\n    \"adderall\",\n    \"dexedrine\",\n    \"wellbutrin\",",
         "detail": "scripts.word_lists",
         "documentation": {}
     },
@@ -821,7 +848,7 @@
         "kind": 5,
         "importPath": "scripts.word_lists",
         "description": "scripts.word_lists",
-        "peekOfCode": "listofknown_medications = [\n    'clonidine', 'quetiapine', 'risperidone', 'vyvanse', 'adderall', 'dexedrine', 'wellbutrin', 'focalinxr', 'modafanil', 'fluvoxamine', 'serzone', 'fluvoxamine', 'prozac', 'lexapro', 'paxil', 'celexa', 'effexor', 'zoloft', 'cymbalta', 'luvox', 'pristiq', 'remeron', 'venlafaxine', 'sarafem', 'anafranil', 'nortriptyline', 'tofranil', 'xanax', 'klonopin', 'ativan', 'valium', 'buspirone', 'oxazepam', 'aripiprazole', 'dextroamphetamine', 'ssrisnri', 'clonazepam', 'lorazepam', 'temazepam', 'alprazolam', 'chlordiazepoxide', 'flurazepam', 'oxazepam', 'triazolam', 'divalproexsodium', 'dronabinol', 'nabilone', 'duloxetine',\"Atorvastatin\", \"Levothyroxine\", \"Metformin\", \"Lisinopril\", \"Amlodipine\", \"Metoprolol\", \"Albuterol\", \"Omeprazole\", \"Losartan\", \"Gabapentin\", \"Hydrochlorothiazide\", \"Sertraline\", \"Simvastatin\", \"Montelukast\", \"Escitalopram\", \"Acetaminophen; Hydrocodone\", \"Rosuvastatin\", \"Bupropion\", \"Furosemide\", \"Pantoprazole\", \"Trazodone\", \"Dextroamphetamine; Dextroamphetamine Saccharate; Amphetamine; Amphetamine Aspartate\", \"Fluticasone\", \"Tamsulosin\", \"Fluoxetine\", \"Carvedilol\", \"Duloxetine\", \"Meloxicam\", \"Clopidogrel\", \"Prednisone\", \"Citalopram\", \"Insulin Glargine\", \"Potassium Chloride\", \"Pravastatin\", \"Tramadol\", \"Aspirin\", \"Alprazolam\", \"Ibuprofen\", \"Cyclobenzaprine\", \"Amoxicillin\", \"Methylphenidate\", \"Allopurinol\", \"Venlafaxine\", \"Clonazepam\", \"Ethinyl Estradiol; Norethindrone\", \"Ergocalciferol\", \"Zolpidem\", \"Apixaban\", \"Glipizide\", \"Hydrochlorothiazide; Lisinopril\", \"Spironolactone\", \"Cetirizine\", \"Atenolol\", \"Oxycodone\", \"Buspirone\", \"Fluticasone; Salmeterol\", \"Topiramate\", \"Warfarin\", \"Estradiol\", \"Cholecalciferol\", \"Budesonide; Formoterol\", \"Lamotrigine\", \"Ethinyl Estradiol; Norgestimate\", \"Quetiapine\", \"Lorazepam\", \"Famotidine\", \"Folic Acid\", \"Azithromycin\", \"Acetaminophen; Oxycodone\", \"Hydroxyzine\", \"Insulin Lispro\", \"Diclofenac\", \"Loratadine\", \"Sitagliptin\", \"Clonidine\", \"Diltiazem\", \"Latanoprost\", \"Pregabalin\", \"Doxycycline\", \"Insulin Aspart\", \"Amitriptyline\", \"Paroxetine\", \"Ondansetron\", \"Tizanidine\", \"Lisdexamfetamine\", \"Rivaroxaban\", \"Glimepiride\", \"Propranolol\", \"Aripiprazole\", \"Finasteride\", \"Naproxen\", \"Levetiracetam\", \"Hydrochlorothiazide; Losartan\", \"Alendronate\", \"Fenofibrate\", \"Dulaglutide\", \"Oxybutynin\", \"Celecoxib\", \"Lovastatin\", \"Ezetimibe\", \"Cephalexin\", \"Empagliflozin\", \"Hydralazine\", \"Mirtazapine\", \"Cyanocobalamin\", \"Triamcinolone\", \"Amoxicillin; Clavulanate\", \"Baclofen\", \"Valproate\", \"Tiotropium\", \"Sumatriptan\", \"Donepezil\", \"Methotrexate\", \"Isosorbide\", \"Fluticasone; Vilanterol\", \"Ferrous Sulfate\", \"Thyroid\", \"Acetaminophen\", \"Valacyclovir\", \"Desogestrel; Ethinyl Estradiol\", \"Sulfamethoxazole; Trimethoprim\", \"Esomeprazole\", \"Valsartan\", \"Insulin Detemir\", \"Clindamycin\", \"Hydroxychloroquine\", \"Methocarbamol\", \"Diazepam\", \"Semaglutide\", \"Dexmethylphenidate\", \"Hydrochlorothiazide; Triamterene\", \"Ciprofloxacin\", \"Chlorthalidone\", \"Rizatriptan\", \"Nifedipine\", \"Insulin Degludec\", \"Norethindrone\", \"Risperidone\", \"Olmesartan\", \"Morphine\", \"Benazepril\", \"Meclizine\", \"Timolol\", \"Oxcarbazepine\", \"Drospirenone; Ethinyl Estradiol\", \"Liraglutide\", \"Dicyclomine\", \"Irbesartan\", \"Hydrocortisone\", \"Albuterol; Ipratropium\", \"Verapamil\", \"Memantine\", \"Prednisolone\", \"Metformin; Sitagliptin\", \"Nortriptyline\", \"Ropinirole\", \"Benzonatate\", \"Progesterone\", \"Ethinyl Estradiol; Levonorgestrel\", \"Mirabegron\", \"Methylprednisolone\", \"Acyclovir\", \"Docusate\", \"Olanzapine\", \"Nitroglycerin\", \"Bimatoprost\", \"Nitrofurantoin\", \"Pioglitazone\", \"Amlodipine; Benazepril\", \"Ketoconazole\", \"Clobetasol\", \"Testosterone\", \"Azelastine\", \"Fluconazole\", \"Brimonidine\", \"Desvenlafaxine\", \"Ranitidine\", \"Oseltamivir\", \"Levocetirizine\", \"Anastrozole\", \"Phentermine\", \"Sucralfate\", \"Sildenafil\", \"Mesalamine\", \"Carbamazepine\", \"Buprenorphine\", \"Acetaminophen; Codeine\", \"Flecainide\", \"Gemfibrozil\", \"Prazosin\", \"Lansoprazole\", \"Diphenhydramine\", \"Pramipexole\", \"Ethinyl Estradiol; Etonogestrel\", \"Dorzolamide; Timolol\", \"Ramipril\", \"Lithium\", \"Amiodarone\", \"Omega-3-acid Ethyl Esters\", \"Glyburide\", \"Acetaminophen; Butalbital; Caffeine\", \"Magnesium Salts\", \"Mupirocin\", \"Calcium\", \"Adalimumab\", \"Methimazole\", \"Budesonide\", \"Promethazine\", \"Doxazosin\", \"Labetalol\", \"Terazosin\", \"Cyclosporine\", \"Torsemide\", \"Medroxyprogesterone\", \"Calcium; Vitamin D\", \"Dorzolamide\", \"Dapagliflozin\", \"Liothyronine\", \"Sacubitril; Valsartan\", \"Beclomethasone\", \"Insulin Isophane\", \"Metronidazole\", \"Temazepam\", \"Fluticasone; Umeclidinium; Vilanterol\", \"Erythromycin\", \"Polyethylene Glycol 3350\", \"Nystatin\", \"Cefdinir\", \"Benztropine\", \"Tretinoin\", \"Mometasone\", \"Eszopiclone\", \"Betamethasone\", \"Erenumab\", \"Hydrochlorothiazide; Valsartan\", \"Minocycline\", \"Digoxin\", \"Empagliflozin; Metformin\", \"Nebivolol\", \"Levofloxacin\", \"Colchicine\", \"Ofloxacin\", \"Vortioxetine\", \"Linaclotide\", \"Umeclidinium\", \"Insulin Human; Insulin Isophane Human\", \"Ticagrelor\", \"Telmisartan\", \"Ketorolac\", \"Hydromorphone\", \"Epinephrine\", \"Doxepin\", \"Quinapril\", \"Umeclidinium; Vilanterol\", \"Fexofenadine\", \"Brimonidine; Timolol\", \"Letrozole\", \"Ranolazine\", \"Lurasidone\", \"Phenytoin\", \"Tadalafil\", \"Pancrelipase Amylase; Pancrelipase Lipase; Pancrelipase Protease\", \"Dexlansoprazole\", \"Isotretinoin\", \"Sodium Fluoride\", \"Solifenacin\", \"Bisoprolol\", \"Olopatadine\", \"Primidone\", \"Bumetanide\", \"Tolterodine\", \"Dexamethasone\", \"Chlorhexidine\", \"Sodium Salts\", \"Varenicline\", \"Zonisamide\", \"Calcitriol\", \"Emtricitabine; Tenofovir Disoproxil\", \"Terbinafine\", \"Fluocinonide\", \"Hydrochlorothiazide; Olmesartan\", \"Ziprasidone\", \"Estrogens, Conjugated\", \"Sulfasalazine\", \"Icosapent Ethyl\", \"Dexamethasone; Moxifloxacin\", \"Atomoxetine\", \"Formoterol; Mometasone\", \"Ketotifen\", \"Bisoprolol; Hydrochlorothiazide\", \"Sennosides\", \"Raloxifene\", \"Linagliptin\", \"Canagliflozin\", \"Alogliptin\", \"Sotalol\", \"Potassium Citrate\", \"Melatonin\", \"Isosorbide Dinitrate\", \"Guanfacine\"]\nlistofknown_medications = [x.lower() for x in listofknown_medications] # make all the words lowercase\nconditions = ['autism','ocd'] # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",",
+        "peekOfCode": "listofknown_medications = [\n    \"clonidine\",\n    \"quetiapine\",\n    \"risperidone\",\n    \"vyvanse\",\n    \"adderall\",\n    \"dexedrine\",\n    \"wellbutrin\",\n    \"focalinxr\",\n    \"modafanil\",",
         "detail": "scripts.word_lists",
         "documentation": {}
     },
@@ -830,7 +857,7 @@
         "kind": 5,
         "importPath": "scripts.word_lists",
         "description": "scripts.word_lists",
-        "peekOfCode": "listofknown_medications = [x.lower() for x in listofknown_medications] # make all the words lowercase\nconditions = ['autism','ocd'] # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",\n    \" yr \": \" your \",\n    \" yrs \": \" years \",",
+        "peekOfCode": "listofknown_medications = [\n    x.lower() for x in listofknown_medications\n]  # make all the words lowercase\nconditions = [\"autism\", \"ocd\"]  # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",",
         "detail": "scripts.word_lists",
         "documentation": {}
     },
@@ -839,7 +866,7 @@
         "kind": 5,
         "importPath": "scripts.word_lists",
         "description": "scripts.word_lists",
-        "peekOfCode": "conditions = ['autism','ocd'] # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",\n    \" yr \": \" your \",\n    \" yrs \": \" years \",\n    \" b \": \" be \",",
+        "peekOfCode": "conditions = [\"autism\", \"ocd\"]  # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",\n    \" yr \": \" your \",\n    \" yrs \": \" years \",\n    \" b \": \" be \",",
         "detail": "scripts.word_lists",
         "documentation": {}
     },
