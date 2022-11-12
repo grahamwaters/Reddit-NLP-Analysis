@@ -522,6 +522,96 @@
     {
         "label": "parse_table_of_contents",
         "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "startup",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "process_flow_controller",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents, readme_text)\n    return\n# What are the expected sections in a data science report notebook?",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "create_data_section",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def create_data_section(report_notebook):\n    global readme_text\n    # generate the data section of the report notebook\n    # the data section is a markdown cell with the text from the readme.md file for the Data Section.\n    # This section is about explaining what kinds of data are in the dataset and how the data was collected.\n    # find the line that starts with \"Data\" and\n    return\n# A markdown cell for the Data Cleaning Section (with the text from the readme.md file for the Data Cleaning Section).\n# This section is about explaining how the data was cleaned.\n# what kinds of dirtiness was found in the data and how it was cleaned?",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_text",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def get_text(section_name, markdown_text):\n    \"\"\"\n    get_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "programmatic_pandas",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    # clear the destination df to make it clean and new (no artifacts from previous runs).\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "create_notebook",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def create_notebook(markdown_cells):\n    # create a notebook with the markdown cells\n    # create a notebook object\n    nb = nbf.v4.new_notebook()\n    # loop through the markdown cells\n    for markdown_cell in markdown_cells:\n        # create a markdown cell\n        markdown_cell = nbf.v4.new_markdown_cell(markdown_cell)\n        # add the markdown cell to the notebook\n        nb[\"cells\"].append(markdown_cell)",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def main():\n    # read the readme text\n    readme_text = read_readme()\n    # get the table of contents\n    table_of_contents = get_table_of_contents(readme_text)\n    # get the markdown cells\n    markdown_cells = programmatic_pandas(readme_text, table_of_contents)\n    # create the notebook\n    create_notebook(markdown_cells)\ndef generate_report_notebook(table_of_contents, readme_text):",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "generate_report_notebook",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "def generate_report_notebook(table_of_contents, readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "scripts.report_generator_from_readme copy",
+        "description": "scripts.report_generator_from_readme copy",
+        "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
+        "detail": "scripts.report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "parse_table_of_contents",
+        "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
         "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
@@ -569,7 +659,7 @@
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.\n    # if there are level 3 sections, then I want a markdown cell for the level 3 section preceeded with a level 3 header in a markdown cell. etc.",
+        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    # clear the destination df to make it clean and new (no artifacts from previous runs).\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
