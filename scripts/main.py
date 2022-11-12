@@ -17,30 +17,33 @@ import seaborn as sns
 # Import functions from the scripts
 from feature_engineering import run_feature_engineering
 from preprocessing import run_preprocess_data
-from modeling import run_modeling # This is the function that runs the models
+from modeling import run_modeling  # This is the function that runs the models
 
 # Logging Setup
 import logging
+
 # set the logfile to be 'logs/main.log'
-logging.basicConfig(filename='logs/main.log')
+logging.basicConfig(filename="logs/main.log")
 
 
-#& Step One. Import the data
+# & Step One. Import the data
 # Read in the data
-df = pd.read_csv("data/reddit_threads.csv") # The combined data
-print(f'Completed Step One. The shape of the data is {df.shape}')
+df = pd.read_csv("data/reddit_threads.csv")  # The combined data
+print(f"Completed Step One. The shape of the data is {df.shape}")
 
-#& Step Two. Preprocess the data
+# & Step Two. Preprocess the data
 df_preprocessed = run_preprocess_data(df)
-print(f'Completed Step Two. The shape of the data is {df_preprocessed.shape}')
+print(f"Completed Step Two. The shape of the data is {df_preprocessed.shape}")
 
-#& Step Three. Run the feature engineering functions on the data
+# & Step Three. Run the feature engineering functions on the data
 # Run the feature engineering script
 # selftext is converted to string now.
 df = run_feature_engineering(df_preprocessed)
-print(f'Completed Step Three. The shape of the data is {df.shape}')
+print(f"Completed Step Three. The shape of the data is {df.shape}")
 
-#& Step Four. Run the modeling script to test the models
+# & Step Four. Run the modeling script to test the models
 # Run the modeling script
 run_modeling(df)
-print(f'Completed Step Four. The shape of the data is {df.shape}, and we generated our model results.')
+print(
+    f"Completed Step Four. The shape of the data is {df.shape}, and we generated our model results."
+)

@@ -9,14 +9,15 @@ import seaborn as sns
 
 # Logging Setup
 import logging
+
 # set the logfile to be 'logs/data_exploration.log'
-logging.basicConfig(filename='logs/data_exploration.log')
+logging.basicConfig(filename="logs/data_exploration.log")
 
 # Import functions from feature_engineering.py
 from feature_engineering import feature_engineer, remove_ocd_meds
 
 # Read in the data
-df = pd.read_csv("data/reddit_threads.csv") # The combined data
+df = pd.read_csv("data/reddit_threads.csv")  # The combined data
 
 # # Explore the data
 # 1. Top Bigrams in the post selftext for r/Autism
@@ -50,10 +51,8 @@ df = pd.read_csv("data/reddit_threads.csv") # The combined data
 # 9. The number of characters per user in r/OCD
 
 
-
-
 # Visualization Functions
 # List of visualizations to create:
-#* 1. Bar plot of the number of posts per subreddit, subplotted by autism and ocd.
+# * 1. Bar plot of the number of posts per subreddit, subplotted by autism and ocd.
 
-#* 2. Top Twenty Five words in each subreddit, subplotted by autism and ocd.
+# * 2. Top Twenty Five words in each subreddit, subplotted by autism and ocd.
