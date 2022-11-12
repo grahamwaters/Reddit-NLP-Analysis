@@ -332,6 +332,15 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -623,7 +632,7 @@
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (",
+        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\nimport datetime as dt\nauthor = 'Graham Waters'\ndate = dt.datetime.now().strftime(\"%Y-%m-%d\")",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -632,7 +641,7 @@
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents, readme_text)\n    return\n# What are the expected sections in a data science report notebook?",
+        "peekOfCode": "def process_flow_controller():\n    global author, date, license_type\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(author,date,table_of_contents, readme_text, license_type)\n    return",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -664,29 +673,11 @@
         "documentation": {}
     },
     {
-        "label": "create_notebook",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def create_notebook(markdown_cells):\n    # create a notebook with the markdown cells\n    # create a notebook object\n    nb = nbf.v4.new_notebook()\n    # loop through the markdown cells\n    for markdown_cell in markdown_cells:\n        # create a markdown cell\n        markdown_cell = nbf.v4.new_markdown_cell(markdown_cell)\n        # add the markdown cell to the notebook\n        nb[\"cells\"].append(markdown_cell)",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def main():\n    # read the readme text\n    readme_text = read_readme()\n    # get the table of contents\n    table_of_contents = get_table_of_contents(readme_text)\n    # get the markdown cells\n    markdown_cells = programmatic_pandas(readme_text, table_of_contents)\n    # create the notebook\n    create_notebook(markdown_cells)\ndef generate_report_notebook(table_of_contents, readme_text):",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
         "label": "generate_report_notebook",
         "kind": 2,
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def generate_report_notebook(table_of_contents, readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
+        "peekOfCode": "def generate_report_notebook(project_name,author,date,table_of_contents, readme_text, tagline=None,License=None,description=None,keywords=None,requirements=None,installation=None,usage=None,contributing=None,tests=None,credits=None,markdown_cells=None):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
@@ -696,6 +687,33 @@
         "importPath": "scripts.report_generator_from_readme",
         "description": "scripts.report_generator_from_readme",
         "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "author",
+        "kind": 5,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "author = 'Graham Waters'\ndate = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_type = \"MIT License\"\ndef process_flow_controller():\n    global author, date, license_type\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "kind": 5,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "date = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_type = \"MIT License\"\ndef process_flow_controller():\n    global author, date, license_type\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "license_type",
+        "kind": 5,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "license_type = \"MIT License\"\ndef process_flow_controller():\n    global author, date, license_type\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(author,date,table_of_contents, readme_text, license_type)",
         "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },

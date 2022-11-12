@@ -75,8 +75,15 @@ def startup():
     table_of_contents = parse_table_of_contents(readme_text)
     return table_of_contents, readme_text
 
+import datetime as dt
+
+author = 'Graham Waters'
+date = dt.datetime.now().strftime("%Y-%m-%d")
+license_type = "MIT License"
+
 
 def process_flow_controller():
+    global author, date, license_type
     # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.
 
     (
@@ -85,7 +92,7 @@ def process_flow_controller():
     ) = startup()  # read the readme.md file and parse the table of contents
 
     # using the table of contents, create the sections of the report notebook
-    generate_report_notebook(table_of_contents, readme_text)
+    generate_report_notebook(author,date,table_of_contents, readme_text, license_type)
 
     return
 
@@ -139,63 +146,7 @@ def create_data_section(report_notebook):
 #   add a code cell below this markdown cell for the user to add any code they want to the section.
 import re
 
-# Helper Functions for ReadMe
-# def get_section_text(section_name, markdown_text,table_of_contents):
-#     """
-#     get_section_text takes a section name and a string of markdown text and returns a string of text
 
-#     Parameters
-
-#     :param section_name: a string of text
-#     :type section_name: str
-#     :param markdown_text: a string of text
-#     :type markdown_text: str
-#     :return: a string of text
-#     :rtype: str
-#     """
-#     # get the text for a section from the readme.md file
-#     # how? find the line that starts with the section name, then find the next line that starts with a "#" symbol. The text between those two lines is the text for the section.
-#     # table_of_contents
-#     # step 1: find the line that starts with the section name
-#     section_line = [line for line in markdown_text.split('\n') if line.lower().find(section_name.lower())>-1][1] # the first line is the table of contents line so we skip it.
-
-#     # step 2: find the line number of that line
-#     # search the markdown text for the section line
-#     markdown_text = markdown_text[markdown_text.find(section_line):]
-#     # what is the next section name?
-#     # Section names match the section_name pattern \n\n# Data Cleaning\n\n for example so we can use that to find the next section name.
-#     regex_section_pattern = r"\n\n# [A-Za-z ]+\n\n"
-#     next_section_name = re.findall(regex_section_pattern, markdown_text)[0]
-#     # find the line number of the next section name
-#     next_section_line_number = markdown_text.find(next_section_name)
-#     markdown_text = markdown_text[:next_section_line_number] # remove the next section name from the markdown text. Now the markdown text only contains the text for the section.
-#     # remove the section name from the markdown text
-#     markdown_text = markdown_text.replace(section_line, "")
-#     # remove the newlines
-#     markdown_text = markdown_text.replace("\n", " ")
-#     # add  to the beginning of the text
-#     markdown_text = "\n" + markdown_text
-#     # add  to the end of the text
-#     markdown_text = markdown_text + "\n"
-#     return markdown_text
-
-# def pandify_readme(readme_text, table_of_contents):
-#     # split the readme into sections by their headernames and put those into a pandas dataframe
-#     # the dataframe has two columns: section_name, section_text
-#     # section_name is a string
-#     # section_text is a string
-
-#     readme_df = pd.DataFrame(columns=["section_name", "section_text"])
-#     # take the table of contents and make a list of section names
-#     section_names = [section[0] for section in table_of_contents]
-
-
-#     # populate the dataframe with the section names
-#     readme_df["section_name"] = section_names
-#     # populate the dataframe with the section text
-#     readme_df["section_text"] = readme_df["section_name"].apply(lambda x: get_section_text(x, readme_text))
-
-#     return readme_df
 
 
 def get_text(section_name, markdown_text):
@@ -255,7 +206,6 @@ def get_text(section_name, markdown_text):
     except:
         markdown_text = "\nSection Text Not Found\n"
     return markdown_text
-
 
 def programmatic_pandas(readme_text, table_of_contents):
 
@@ -322,33 +272,7 @@ def programmatic_pandas(readme_text, table_of_contents):
 
     return markdown_cells
 
-
-def create_notebook(markdown_cells):
-    # create a notebook with the markdown cells
-    # create a notebook object
-    nb = nbf.v4.new_notebook()
-    # loop through the markdown cells
-    for markdown_cell in markdown_cells:
-        # create a markdown cell
-        markdown_cell = nbf.v4.new_markdown_cell(markdown_cell)
-        # add the markdown cell to the notebook
-        nb["cells"].append(markdown_cell)
-    # write the notebook to disk
-    nbf.write(nb, "notebook.ipynb")
-
-
-def main():
-    # read the readme text
-    readme_text = read_readme()
-    # get the table of contents
-    table_of_contents = get_table_of_contents(readme_text)
-    # get the markdown cells
-    markdown_cells = programmatic_pandas(readme_text, table_of_contents)
-    # create the notebook
-    create_notebook(markdown_cells)
-
-
-def generate_report_notebook(table_of_contents, readme_text):
+def generate_report_notebook(project_name,author,date,table_of_contents, readme_text, tagline=None,License=None,description=None,keywords=None,requirements=None,installation=None,usage=None,contributing=None,tests=None,credits=None,markdown_cells=None):
     # global readme_text
     # generate a jupyter notebook based on the table of contents in the readme.md file.
     # the pattern it uses is:
