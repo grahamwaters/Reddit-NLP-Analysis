@@ -314,6 +314,15 @@
         "documentation": {}
     },
     {
+        "label": "nbformat",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nbformat",
+        "description": "nbformat",
+        "detail": "nbformat",
+        "documentation": {}
+    },
+    {
         "label": "stopwords",
         "importPath": "nltk.corpus",
         "description": "nltk.corpus",
@@ -499,6 +508,78 @@
         "description": "scripts.preprocessing",
         "peekOfCode": "def run_preprocess_data(df):\n    # ^ File I/O\n    # If the df_cleaned.csv file has not been generated yet, then we want to generate it with the preprocessing_function.\n    # If the df_cleaned.csv file has been generated, then we want to read it in and use it for the model.\n    if not os.path.isfile(\"data/df_cleaned.csv\"):\n        logging.info(\"The df_cleaned.csv file has not been generated yet, so we are generating it now.\")\n        # Create df by concatenating the dataframes from the two subreddits\n        #& Reading in both Reddit threads as csv files.\n        df1 = pd.read_csv(\"./data/ocd_thread.csv\")  # read in the ocd threads\n        df2 = pd.read_csv(\"./data/autism_thread.csv\")  # read in the autism threads",
         "detail": "scripts.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "parse_table_of_contents",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "startup",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    table_of_contents, readme_text = startup() # read the readme.md file and parse the table of contents",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "process_flow_controller",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    table_of_contents, readme_text = startup() # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents,readme_text)\n    return\n# What are the expected sections in a data science report notebook?\n# The answer is:\n# 1. Introduction\n# 2. Table of Contents",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "create_data_section",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def create_data_section(report_notebook):\n    global readme_text\n    # generate the data section of the report notebook\n    # the data section is a markdown cell with the text from the readme.md file for the Data Section.\n    # This section is about explaining what kinds of data are in the dataset and how the data was collected.\n    # find the line that starts with \"Data\" and\n    return\n# A markdown cell for the Data Cleaning Section (with the text from the readme.md file for the Data Cleaning Section).\n# This section is about explaining how the data was cleaned.\n# what kinds of dirtiness was found in the data and how it was cleaned?",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "get_section_text",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def get_section_text(section_name, markdown_text):\n    \"\"\"\n    get_section_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "pandify_readme",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def pandify_readme(readme_text, table_of_contents):\n    # split the readme into sections by their headernames and put those into a pandas dataframe\n    # the dataframe has two columns: section_name, section_text\n    # section_name is a string\n    # section_text is a string\n    readme_df = pd.DataFrame(columns=[\"section_name\", \"section_text\"])\n    # take the table of contents and make a list of section names\n    section_names = [section[0] for section in table_of_contents]\n    # populate the dataframe with the section names\n    readme_df[\"section_name\"] = section_names",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "generate_report_notebook",
+        "kind": 2,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "def generate_report_notebook(table_of_contents,readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
+        "detail": "scripts.report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "scripts.report_generator_from_readme",
+        "description": "scripts.report_generator_from_readme",
+        "peekOfCode": "path = 'readme.md' # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
+        "detail": "scripts.report_generator_from_readme",
         "documentation": {}
     },
     {
@@ -778,33 +859,6 @@
         "description": "scripts.word_lists",
         "peekOfCode": "biasing_terms = [\"ocd\", \"autism\"]\n# sources\n# https://clincalc.com/DrugStats/Top300Drugs.aspx - list of top 300 drugs",
         "detail": "scripts.word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "parse_table_of_contents",
-        "kind": 2,
-        "importPath": "report_generator_from_readme",
-        "description": "report_generator_from_readme",
-        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
-        "detail": "report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "kind": 5,
-        "importPath": "report_generator_from_readme",
-        "description": "report_generator_from_readme",
-        "peekOfCode": "path = 'readme.md' # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
-        "detail": "report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "table_of_contents",
-        "kind": 5,
-        "importPath": "report_generator_from_readme",
-        "description": "report_generator_from_readme",
-        "peekOfCode": "table_of_contents = parse_table_of_contents(readme_text)\n# print the table of contents\nfor section in table_of_contents:\n    # get the section name and section level\n    section_name = section[0]\n    section_level = section[1]\n    # print the section name and section level\n    print(section_name, section_level)",
-        "detail": "report_generator_from_readme",
         "documentation": {}
     }
 ]
