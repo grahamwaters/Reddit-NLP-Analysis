@@ -77,22 +77,17 @@ def startup():
 
 import datetime as dt
 
-author = 'Graham Waters'
-date = dt.datetime.now().strftime("%Y-%m-%d")
-license_type = "MIT License"
-
 
 def process_flow_controller():
-    global author, date, license_type
     # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.
-
+    global project_name
     (
         table_of_contents,
         readme_text,
     ) = startup()  # read the readme.md file and parse the table of contents
 
     # using the table of contents, create the sections of the report notebook
-    generate_report_notebook(author,date,table_of_contents, readme_text, license_type)
+    generate_report_notebook(project_name, table_of_contents, readme_text)
 
     return
 
@@ -272,8 +267,14 @@ def programmatic_pandas(readme_text, table_of_contents):
 
     return markdown_cells
 
-def generate_report_notebook(project_name,author,date,table_of_contents, readme_text, tagline=None,License=None,description=None,keywords=None,requirements=None,installation=None,usage=None,contributing=None,tests=None,credits=None,markdown_cells=None):
+project_name = 'Reddit NLP Project'
+author = 'Graham Waters'
+date = dt.datetime.now().strftime("%Y-%m-%d")
+license_text = "MIT License"
+
+def generate_report_notebook(project_name,table_of_contents, readme_text):
     # global readme_text
+    global author, date, license_type
     # generate a jupyter notebook based on the table of contents in the readme.md file.
     # the pattern it uses is:
     # A header markdown cell with the project name
@@ -304,12 +305,12 @@ def generate_report_notebook(project_name,author,date,table_of_contents, readme_
 
     # create a markdown cell with the project name
     project_name = 'Reddit NLP Project'
-    project_name = "# {ProjectName}".format(
-        ProjectName= str(project_name).capitalize()
-    )
+    project_name = "# {ProjectName}\n**A project by {author}, prepared {date}**".format(ProjectName=project_name, author=author, date=date)
     project_name_cell = nbformat.v4.new_markdown_cell(project_name)
     # add the markdown cell to the report notebook
     report_notebook.cells.append(project_name_cell)
+
+
 
     # create a markdown cell with the table of contents
     # table_of_contents_cell = nbformat.v4.new_markdown_cell("# Table of Contents")
