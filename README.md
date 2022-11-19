@@ -1,5 +1,5 @@
 # OCD vs. Autism (A Reddit Thread NLP Analysis)
-A project by Graham Waters, 2022
+*A project by Graham Waters, 2022*
 
 ![banner](./images/1.png)
 
@@ -39,9 +39,12 @@ The end goal for our client is likely a more clinical application of classificat
 - [Conclusions and Recommendations](#conclusions-and-recommendations)
 - [Future Work](#future-work)
 - [Works Cited](#works-cited)
-![](./images/3.jpg)
+
 
 ---
+
+![](./images/3.jpg)
+
 
 # Methods
 
