@@ -1,7 +1,7 @@
 # OCD vs. Autism (A Reddit Thread NLP Analysis)
 A project by Graham Waters, 2022
 
----
+![banner](./images/1.png)
 
 # Executive Summary
 
