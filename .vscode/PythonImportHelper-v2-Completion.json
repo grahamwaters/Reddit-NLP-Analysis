@@ -201,6 +201,22 @@
         "documentation": {}
     },
     {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
         "label": "DecisionTreeClassifier",
         "importPath": "sklearn.tree",
         "description": "sklearn.tree",
@@ -226,6 +242,14 @@
     },
     {
         "label": "GradientBoostingClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "AdaBoostClassifier",
         "importPath": "sklearn.ensemble",
         "description": "sklearn.ensemble",
         "isExtraImport": true,
@@ -290,7 +314,23 @@
         "documentation": {}
     },
     {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
         "label": "plot_roc_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -314,12 +354,44 @@
         "documentation": {}
     },
     {
-        "label": "nbformat",
+        "label": "requests",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "nbformat",
-        "description": "nbformat",
-        "detail": "nbformat",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "linkage",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
         "documentation": {}
     },
     {
@@ -332,20 +404,29 @@
         "documentation": {}
     },
     {
+        "label": "pyplot",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "nbformat",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "nbformat",
+        "description": "nbformat",
+        "detail": "nbformat",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "datetime",
         "description": "datetime",
         "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
@@ -472,6 +553,339 @@
         "description": "scripts.modeling",
         "peekOfCode": "def run_modeling():\n    \"\"\"\n    Problem Statement:\n    A wealthy donor with a track record of philanthropic contributions to both Autism and OCD research organizations contacted our organization, asking for a model that they can utilize to identify post characteristics on Reddit.\n    The purposes of this study (towards those ends) are to:\n    1) Use Pushshift API to scrape Reddit posts from the Autism and OCD subreddits.\n    2) To build a predictive model that can accurately predict whether a post is from the Autism or OCD subreddit\n    To accomplish these goals, we hypothesize that count vectorization, and Logistic Regression, Adaboost, or Decision Trees can be used to build a model that accurately can predict whether a post is from the Autism or OCD subreddit. Success in this study would mean that our model has a misclassification rate of less than 10 percent and an accuracy score of greater than 90 percent on the test data set.\n    \"\"\"\n    # Control Flow:",
         "detail": "scripts.modeling",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords",
+        "kind": 2,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "def get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)\n    return keywords",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "remove_punctuation",
+        "kind": 2,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "def remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "lowercase",
+        "kind": 2,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "def lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "url = 'https://www.reddit.com/r/Autism/'\nheaders = dict()\nheaders.update(dict(Accept='application/json', Authorization='Bearer <token>'))\nresponse = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "headers = dict()\nheaders.update(dict(Accept='application/json', Authorization='Bearer <token>'))\nresponse = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "response = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "soup",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "soup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "posts",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "posts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\n# Remove Punctuation\ndef remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "df_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "df_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "lr",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "lr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "accuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "adaboost",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "adaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "accuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "dt",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "dt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "accuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "vectorizer",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "vectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "X = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))\n        for x in X_k:",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "tf_vocab",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "tf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))\n        for x in X_k:\n            X_j += 1 * x",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "ax = plt.subplot(111)\nx = df_ocd.target.values\ny = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "x = df_ocd.target.values\ny = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "y = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "bar_width",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "bar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "color_map",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "color_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "colors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "labels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "rects",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "rects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "fig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "confusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "cm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "num_classes",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "num_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "class_names",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "class_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "row_positions",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "row_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)\n    ax.set_xticks(np.arange(0, num_classes, 1))",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "col_indices",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "col_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)\n    ax.set_xticks(np.arange(0, num_classes, 1))\n    ax.grid()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "linkage_obj",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "linkage_obj = linkage(distance_func=euclidean)\ndendro = linkage_obj.apply(X)\nplt.figure()\nplt.show()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "dendro",
+        "kind": 5,
+        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "dendro = linkage_obj.apply(X)\nplt.figure()\nplt.show()",
+        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
         "documentation": {}
     },
     {
