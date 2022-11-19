@@ -26,20 +26,19 @@ The end goal for our client is likely a more clinical application of classificat
   - [Keyword Data Leakage](#keyword-data-leakage)
   - [Steps for Data Cleaning in this Study](#steps-for-data-cleaning-in-this-study)
 - [Feature Engineering](#feature-engineering)
-    - [Visualizing the Data](#visualizing-the-data)
+- [Visualizing the Data](#visualizing-the-data)
 - [Data Exploration](#data-exploration)
+  - [Top 25 Users by Post Count in the `r/OCD` Thread](#top-25-users-by-post-count-in-the-rocd-thread)
+  - [Top 25 Users by Post Count in the `r/Autism` Thread](#top-25-users-by-post-count-in-the-rautism-thread)
+  - [Bigrams and Trigrams are great ways to examine text data as well.](#bigrams-and-trigrams-are-great-ways-to-examine-text-data-as-well)
     - [Model 1.1. Logistic Regression](#model-11-logistic-regression)
     - [Model 1.2. Adaboost](#model-12-adaboost)
     - [Model 1.3 Decision Tree](#model-13-decision-tree)
   - [Models using lemmatization](#models-using-lemmatization)
-- [What posts were misclassified?](#what-posts-were-misclassified)
-  - [Misclassified posts](#misclassified-posts)
+- [Comments on Misclassification](#comments-on-misclassification)
 - [Conclusions and Recommendations](#conclusions-and-recommendations)
 - [Future Work](#future-work)
 - [Works Cited](#works-cited)
-- [Appendix A. - Hyperparameters used for Model 1. Alpha Model.](#appendix-a---hyperparameters-used-for-model-1-alpha-model)
-- [Appendix B. - Hyperparameters used for Beta Models.](#appendix-b---hyperparameters-used-for-beta-models)
-- [Appendix C. Exemplary posts](#appendix-c-exemplary-posts)
 ![](./images/3.jpg)
 
 ---
@@ -136,7 +135,7 @@ During feature engineering, we created a new data frame, `df_clean` that contain
 5. `title_word_count` - the number of words in the title
 6. `title_unique_word_count` - the number of unique words in the title
 
-### Visualizing the Data
+# Visualizing the Data
 
 I used a combination of `matplotlib` and `seaborn` to visualize the study's results. We wanted to see how the features were distributed and related to each other. What We was looking for was the presence of outliers and any other anomalies that would need to be addressed before modeling.
 
@@ -147,13 +146,13 @@ Title Length Distribution (entire dataset)
 
 
 
-Top 25 Users by Post Count in the `r/OCD` Thread
+## Top 25 Users by Post Count in the `r/OCD` Thread
 
 ![](./images/top_25_users_ocd_by_posts_with_word.png)
 
 This reveals that there are a large number of posts that have the author deleted, which could mean a deactivated account. This is not a problem for the model as it will not use the author's name as a feature. It would be helpful to remove the posts with the author deleted, though, as they are not valid for the model.
 
-Top 25 Users by Post Count in the `r/Autism` Thread
+## Top 25 Users by Post Count in the `r/Autism` Thread
 
 
 ![](./images/top_25_users_aut_by_posts_with_word.png)
@@ -173,16 +172,28 @@ Antidepressants – Selective serotonin reuptake inhibitors (SSRIs), such as flu
 Benzodiazepines – Diazepam, clonazepam, lorazepam, temazepam, alprazolam, chlordiazepoxide, flurazepam, oxazepam, triazolam, divalproex sodium, dronabinol, nabilone, and duloxetine.
 ** source for data: (Negrini, 2021) **
 
-Bigrams and Trigrams are great ways to examine text data as well.
+## Bigrams and Trigrams are great ways to examine text data as well.
+Bigrams are two words that are frequently used together. Trigrams are three words that are frequently used together. We can use these to examine the text and see if there are any patterns that we can use to improve the model.
+
 ![](./images/top_25_bigrams_ocd.png)
+
+
 ![](./images/top_25_trigrams_ocd.png)
 
 ![](./images/top_25_bigrams_aut.png)
+
 ![](./images/top_25_trigrams_aut.png)
 
 ### Model 1.1. Logistic Regression
 
-Training score: 0.991991643454039 Testing score: 0.9139972144846796 Best score: 0.8992571959145775 Best params: {'cvec__max_df': 0.9, 'cvec__max_features': 3000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1), 'logreg__C': 1, 'logreg__penalty': 'l2'} Best estimator: Pipeline(steps=[('cvec', CountVectorizer(max_df=0.9, max_features=3000, min_df=2)), ('logreg', LogisticRegression(C=1, solver='liblinear'))])
+```output
+Training score: 0.991991643454039
+Testing score: 0.9139972144846796
+Best score: 0.8992571959145775
+Best params: {'cvec__max_df': 0.9, 'cvec__max_features': 3000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1), 'logreg__C': 1, 'logreg__penalty': 'l2'}
+Best estimator: Pipeline(steps=[('cvec', CountVectorizer(max_df=0.9, max_features=3000, min_df=2)), ('logreg', LogisticRegression(C=1, solver='liblinear'))])
+```
+
 The training score was 99.1%, while the score on the testing data was 91.3%. This meant that the model was good. But. It may be a little bit too good. The first model uses a count vectorizer in conjunction with simple logistic regression, and We utilized a grid search to optimize the model over a set of parameters. The parameters are shown below.
 
 ```output
@@ -223,9 +234,7 @@ The results for the lemmatized models are as follows:
 
 Ultimately the logistic regression model was best at classifying posts for these threads, as it could offer insight into inference, while the others tend to be more opaque. Overall, lemmatization did not seem to improve the scores on the testing set though it might have improved the quality of the analysis.
 
-# What posts were misclassified?
-
-## Misclassified posts
+# Comments on Misclassification
 
 Suppose we are applying this model to a clinical application. In that case, we want to make sure that we would optimize for something like recall because recall is focused on reducing the false negatives.
 
@@ -257,132 +266,3 @@ https://stackoverflow.com/a/39308809/12801757
 https://stackoverflow.com/a/39308809/12801757
 
 https://stackoverflow.com/questions/24121018/sklearn-gridsearch-how-to-print-out-progress-during-the-execution
-
-
-# Appendix A. - Hyperparameters used for Model 1. Alpha Model.
-```python
-pipe_params_sent_len = {
-'cvec__max_features': [1000, 2000, 3000],
-'cvec__min_df': [2, 3],
-'cvec__max_df': [.9, .95],
-'cvec__ngram_range': [(1,1), (1,2)],
-'logreg__penalty': ['l1','l2'],
-'logreg__C': [1, 2, 3]
-}
-
-```
-# Appendix B. - Hyperparameters used for Beta Models.
-```output
-AdaBoost Model Fitted
-Results for: GridSearchCV(cv=3,
-estimator=Pipeline(steps=[('cvec', CountVectorizer()),
-('logreg',
-LogisticRegression(solver='liblinear'))]),
-n_jobs=-1,
-param_grid={'cvec__max_df': [0.9], 'cvec__max_features': [3000],
-'cvec__min_df': [2], 'cvec__ngram_range': [(1, 1)],
-'logreg__C': [1, 2, 3], 'logreg__penalty': ['l2']})
-Training score: 0.9890799256505576
-Testing score: 0.891637630662021
-Best score: 0.8842929080089985
-Best params: {'cvec__max_df': 0.9, 'cvec__max_features': 3000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1), 'logreg__C': 1, 'logreg__penalty': 'l2'}
-Best estimator: Pipeline(steps=[('cvec',
-CountVectorizer(max_df=0.9, max_features=3000, min_df=2)),
-('logreg', LogisticRegression(C=1, solver='liblinear'))])
-Results for: GridSearchCV(cv=3,
-estimator=Pipeline(steps=[('cvec', CountVectorizer()),
-('dt', DecisionTreeClassifier())]),
-n_jobs=-1,
-param_grid={'cvec__max_df': [0.9, 0.95],
-'cvec__max_features': [1000, 2000, 3000],
-'cvec__min_df': [2, 3],
-'cvec__ngram_range': [(1, 1), (1, 2)],
-'dt__max_depth': [None, 2, 3, 4],
-'dt__min_samples_leaf': [1, 2, 3],
-'dt__min_samples_split': [2, 3, 4]})
-Training score: 0.9944237918215614
-Testing score: 0.8010452961672474
-Best score: 0.7943773988354832
-Best params: {'cvec__max_df': 0.9, 'cvec__max_features': 2000, 'cvec__min_df': 3, 'cvec__ngram_range': (1, 1), 'dt__max_depth': None, 'dt__min_samples_leaf': 1, 'dt__min_samples_split': 4}
-Best estimator: Pipeline(steps=[('cvec',
-CountVectorizer(max_df=0.9, max_features=2000, min_df=3)),
-('dt', DecisionTreeClassifier(min_samples_split=4))])
-Results for: GridSearchCV(cv=3,
-estimator=Pipeline(steps=[('cvec', CountVectorizer()),
-('ada', AdaBoostClassifier())]),
-n_jobs=-1,
-param_grid={'ada__learning_rate': [0.1, 0.5, 1],
-'ada__n_estimators': [50, 100, 150],
-'cvec__max_df': [0.9, 0.95],
-'cvec__max_features': [1000, 2000, 3000],
-'cvec__min_df': [2, 3],
-'cvec__ngram_range': [(1, 1), (1, 2)]})
-Training score: 0.9027648698884758
-Testing score: 0.8898954703832752
-Best score: 0.8881271989536108
-Best params: {'ada__learning_rate': 0.5, 'ada__n_estimators': 150, 'cvec__max_df': 0.9, 'cvec__max_features': 3000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1)}
-Best estimator: Pipeline(steps=[('cvec',
-CountVectorizer(max_df=0.9, max_features=3000, min_df=2)),
-('ada',
-AdaBoostClassifier(learning_rate=0.5, n_estimators=150))])
-Results for: GridSearchCV(cv=3,
-estimator=Pipeline(steps=[('cvec', CountVectorizer()),
-('logreg',
-LogisticRegression(solver='liblinear'))]),
-n_jobs=-1,
-param_grid={'cvec__max_df': [0.9], 'cvec__max_features': [3000],
-'cvec__min_df': [2], 'cvec__ngram_range': [(1, 1)],
-'logreg__C': [1, 2, 3], 'logreg__penalty': ['l2']})
-Training score: 0.9890799256505576
-Testing score: 0.891637630662021
-Best score: 0.8842929080089985
-Best params: {'cvec__max_df': 0.9, 'cvec__max_features': 3000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1), 'logreg__C': 1, 'logreg__penalty': 'l2'}
-Best estimator: Pipeline(steps=[('cvec',
-CountVectorizer(max_df=0.9, max_features=3000, min_df=2)),
-('logreg', LogisticRegression(C=1, solver='liblinear'))])
-Results for: GridSearchCV(cv=3,
-estimator=Pipeline(steps=[('cvec', CountVectorizer()),
-('dt', DecisionTreeClassifier())]),
-n_jobs=-1,
-param_grid={'cvec__max_df': [0.9, 0.95],
-'cvec__max_features': [1000, 2000, 3000],
-'cvec__min_df': [2, 3],
-'cvec__ngram_range': [(1, 1), (1, 2)],
-'dt__max_depth': [None, 2, 3, 4],
-'dt__min_samples_leaf': [1, 2, 3],
-'dt__min_samples_split': [2, 3, 4]})
-Training score: 0.9939591078066915
-Testing score: 0.802439024390244
-Best score: 0.7946097678374583
-Best params: {'cvec__max_df': 0.9, 'cvec__max_features': 2000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1), 'dt__max_depth': None, 'dt__min_samples_leaf': 1, 'dt__min_samples_split': 4}
-Best estimator: Pipeline(steps=[('cvec',
-CountVectorizer(max_df=0.9, max_features=2000, min_df=2)),
-('dt', DecisionTreeClassifier(min_samples_split=4))])
-Results for: GridSearchCV(cv=3,
-estimator=Pipeline(steps=[('cvec', CountVectorizer()),
-('ada', AdaBoostClassifier())]),
-n_jobs=-1,
-param_grid={'ada__learning_rate': [0.1, 0.5, 1],
-'ada__n_estimators': [50, 100, 150],
-'cvec__max_df': [0.9, 0.95],
-'cvec__max_features': [1000, 2000, 3000],
-'cvec__min_df': [2, 3],
-'cvec__ngram_range': [(1, 1), (1, 2)]})
-Training score: 0.9027648698884758
-Testing score: 0.8898954703832752
-Best score: 0.8881271989536108
-Best params: {'ada__learning_rate': 0.5, 'ada__n_estimators': 150, 'cvec__max_df': 0.9, 'cvec__max_features': 3000, 'cvec__min_df': 2, 'cvec__ngram_range': (1, 1)}
-Best estimator: Pipeline(steps=[('cvec',
-CountVectorizer(max_df=0.9, max_features=3000, min_df=2)),
-('ada',
-AdaBoostClassifier(learning_rate=0.5, n_estimators=150))])
-
-```
-
-# Appendix C. Exemplary posts
-
-```output
-
-Does Anyone Else Have This? hello. We have a problem, or a question, and We want to know if this is something else, or if anyone else happens to experience this. We have some sort of obsession with dividing sentences, We guess you could say. We will take a phrase and demonstrate. "i love you" now, what Our brain does is choose either 3, 4, 5, 7, or 11 and start counting. if We dont want to include the spaces, We use 4. i-l-o-v; e-y-o-u. if We want the spaces, 5. i- -l-o-v; e- -y-o-u. and it's evenly divided now. this will happen with almost every sentence, phrase, word, etc. that We come across. please tell me if this has a name. thank you
-
-```
