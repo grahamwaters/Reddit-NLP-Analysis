@@ -28,6 +28,8 @@ The end goal for our client is likely a more clinical application of classificat
       - [Keyword Vectorizer](#keyword-vectorizer)
     - [Visualization](#visualization)
   - [Results](#results)
+    - [ROC Curve Comparison](#roc-curve-comparison)
+  - [Conclusion](#conclusion)
   - [References](#references)
 
 
@@ -191,7 +193,17 @@ plt.show()
 ```
 ## Results
 The final results are presented below.
-<img src="/docs/assets/results.png" alt="Results">
+
+
+### ROC Curve Comparison
+![models roc curves](../images/multiplot.png)
+
+The models were evaluated using the ROC curve. The ROC curve is a plot of the true positive rate versus the false positive rate. The area under the curve (AUC) is a measure of the model's performance. The higher the AUC, the better the model. Each model is shown in the figure above.
+
+## Conclusion
+
+
+
 
 
 ## References
