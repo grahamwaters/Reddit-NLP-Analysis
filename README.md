@@ -132,11 +132,12 @@ Do the same for the `r/OCD` thread.
 # Feature Engineering
 During feature engineering, we created a new data frame, `df_clean` that contains the following columns:
 1. `word_count` - the number of words in each post
-2. `unique_word_count` - the number of unique words in each post
-3. `post_length` - the length of the post in characters
-4. `title_length` - the length of the title in characters
-5. `title_word_count` - the number of words in the title
-6. `title_unique_word_count` - the number of unique words in the title
+2. `unique_word_count` - the number of unique words in each post.
+3. `unique_vocab_count` - the number of unique words in each post relative to the vocabulary of the subreddit.
+4. `post_length` - the length of the post in characters
+5. `title_length` - the length of the title in characters
+6. `title_word_count` - the number of words in the title
+7. `title_unique_word_count` - the number of unique words in the title
 
 # Visualizing the Data
 
