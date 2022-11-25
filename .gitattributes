@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Auto detect files larger than 100 MB and compress them into a zip archive
+* -100M.zip
