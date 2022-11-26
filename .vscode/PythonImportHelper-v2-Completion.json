@@ -9,12 +9,77 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
+        "label": "os",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "biasing_terms",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "stop",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "listofknown_medications",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "stop",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "biasing_terms",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "listofknown_medications",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "conditions",
+        "importPath": "word_lists",
+        "description": "word_lists",
+        "isExtraImport": true,
+        "detail": "word_lists",
         "documentation": {}
     },
     {
@@ -36,119 +101,6 @@
         "documentation": {}
     },
     {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "feature_engineer",
-        "importPath": "feature_engineering",
-        "description": "feature_engineering",
-        "isExtraImport": true,
-        "detail": "feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "remove_ocd_meds",
-        "importPath": "feature_engineering",
-        "description": "feature_engineering",
-        "isExtraImport": true,
-        "detail": "feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "run_feature_engineering",
-        "importPath": "feature_engineering",
-        "description": "feature_engineering",
-        "isExtraImport": true,
-        "detail": "feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "listofknown_medications",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "conditions",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "stop",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "biasing_terms",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "biasing_terms",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "stop",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "listofknown_medications",
-        "importPath": "word_lists",
-        "description": "word_lists",
-        "isExtraImport": true,
-        "detail": "word_lists",
-        "documentation": {}
-    },
-    {
-        "label": "run_preprocess_data",
-        "importPath": "preprocessing",
-        "description": "preprocessing",
-        "isExtraImport": true,
-        "detail": "preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "run_modeling",
-        "importPath": "modeling",
-        "description": "modeling",
-        "isExtraImport": true,
-        "detail": "modeling",
-        "documentation": {}
-    },
-    {
-        "label": "stop",
-        "importPath": "modeling",
-        "description": "modeling",
-        "isExtraImport": true,
-        "detail": "modeling",
-        "documentation": {}
-    },
-    {
         "label": "tqdm",
         "kind": 6,
         "isExtraImport": true,
@@ -163,15 +115,6 @@
         "description": "tqdm",
         "isExtraImport": true,
         "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -354,6 +297,47 @@
         "documentation": {}
     },
     {
+        "label": "stop",
+        "importPath": "modeling",
+        "description": "modeling",
+        "isExtraImport": true,
+        "detail": "modeling",
+        "documentation": {}
+    },
+    {
+        "label": "run_modeling",
+        "importPath": "modeling",
+        "description": "modeling",
+        "isExtraImport": true,
+        "detail": "modeling",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -368,22 +352,6 @@
         "description": "bs4",
         "isExtraImport": true,
         "detail": "bs4",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
-        "documentation": {}
-    },
-    {
-        "label": "stopwords",
-        "importPath": "nltk.corpus",
-        "description": "nltk.corpus",
-        "isExtraImport": true,
-        "detail": "nltk.corpus",
         "documentation": {}
     },
     {
@@ -412,6 +380,38 @@
         "documentation": {}
     },
     {
+        "label": "feature_engineer",
+        "importPath": "feature_engineering",
+        "description": "feature_engineering",
+        "isExtraImport": true,
+        "detail": "feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "remove_ocd_meds",
+        "importPath": "feature_engineering",
+        "description": "feature_engineering",
+        "isExtraImport": true,
+        "detail": "feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "run_feature_engineering",
+        "importPath": "feature_engineering",
+        "description": "feature_engineering",
+        "isExtraImport": true,
+        "detail": "feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "run_preprocess_data",
+        "importPath": "preprocessing",
+        "description": "preprocessing",
+        "isExtraImport": true,
+        "detail": "preprocessing",
+        "documentation": {}
+    },
+    {
         "label": "nbformat",
         "kind": 6,
         "isExtraImport": true,
@@ -430,993 +430,993 @@
         "documentation": {}
     },
     {
-        "label": "df",
-        "kind": 5,
-        "importPath": "scripts.data_exploration",
-        "description": "scripts.data_exploration",
-        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\n# # Explore the data\n# 1. Top Bigrams in the post selftext for r/Autism\n# 2. Top Bigrams in the post selftext for r/OCD\n# 3. Top Trigrams in the post selftext for r/Autism\n# 4. Top Trigrams in the post selftext for r/OCD\n# 5. Top Words in the post selftext for r/Autism\n# 6. Top Words in the post selftext for r/OCD\n# 7. Top Users posting on r/Autism in the data\n# 8. Top Users posting on r/OCD in the data",
-        "detail": "scripts.data_exploration",
-        "documentation": {}
-    },
-    {
-        "label": "remove_ocd_meds",
-        "kind": 2,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "def remove_ocd_meds(text, listofknown_medications):\n    global meds\n    if len(meds) > 0:\n        log_string = f\"The latest medication mentioned is: {meds[-1]}\"\n        logging.info(log_string)\n    wordsintext = text.split(\" \")\n    for word in wordsintext:\n        if word in listofknown_medications:\n            meds.append(word)\n            text = text.replace(word, \" \")",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "feature_engineer",
-        "kind": 2,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "def feature_engineer(df, listofknown_medications):\n    \"\"\"\n    summary: This function takes in a dataframe and a list of known medications and returns a dataframe with new features.\n    List of Features that will be created:\n    1. Number of words in the post (word_count)\n    2. Number of unique words in the post (unique_words)\n    2. Length of the post (number of characters)\n    4. unique words in the post (unique_word_count)\n    5. If the selftext of the post contains a known medication (medication_mentioned) (list of the meds mentioned)\n    Args:",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "binarize_target_feature",
-        "kind": 2,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "def binarize_target_feature(df):\n    df[\"is_autism\"] = df[\"subreddit\"].apply(lambda x: 1 if x == \"autism\" else 0)\n    # ? Drop the 'subreddit' column\n    # note: not sure if the subreddit column is needed anymore but I will keep it for now.\n    return df\ndef run_feature_engineering(df):\n    # & Importing the Data and Engineering Features\n    df = pd.read_csv(\"./data/reddit_threads.csv\")\n    logging.info(f\"Beginning feature engineering...\")\n    # Run the functions in this script to create new features for the model.",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "run_feature_engineering",
-        "kind": 2,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "def run_feature_engineering(df):\n    # & Importing the Data and Engineering Features\n    df = pd.read_csv(\"./data/reddit_threads.csv\")\n    logging.info(f\"Beginning feature engineering...\")\n    # Run the functions in this script to create new features for the model.\n    # & binarize the target feature\n    df = binarize_target_feature(df)  # binarize the target feature (i.e. 'subreddit')\n    # & create new features\n    df = feature_engineer(df, listofknown_medications)\n    # save the dataframe with the new features to a csv file 'df_after_feature_engineering.csv' in the data folder.",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "OCD_Posts_With_Meds",
-        "kind": 5,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "OCD_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the OCD subreddit to zero.\n)\nAutism_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the Autism subreddit to zero.\n)\nTotal_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "Autism_Posts_With_Meds",
-        "kind": 5,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "Autism_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the Autism subreddit to zero.\n)\nTotal_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "Total_Posts_With_Meds",
-        "kind": 5,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "Total_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "medications_mentioned",
-        "kind": 5,
-        "importPath": "scripts.feature_engineering",
-        "description": "scripts.feature_engineering",
-        "peekOfCode": "medications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging\n# set the logfile to be 'logs/feature_engineering.log'",
-        "detail": "scripts.feature_engineering",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "scripts.main",
-        "description": "scripts.main",
-        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\nprint(f\"Completed Step One. The shape of the data is {df.shape}\")\n# & Step Two. Preprocess the data\ndf_preprocessed = run_preprocess_data(df)\nprint(f\"Completed Step Two. The shape of the data is {df_preprocessed.shape}\")\n# & Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")",
-        "detail": "scripts.main",
-        "documentation": {}
-    },
-    {
-        "label": "df_preprocessed",
-        "kind": 5,
-        "importPath": "scripts.main",
-        "description": "scripts.main",
-        "peekOfCode": "df_preprocessed = run_preprocess_data(df)\nprint(f\"Completed Step Two. The shape of the data is {df_preprocessed.shape}\")\n# & Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")\n# & Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)",
-        "detail": "scripts.main",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "scripts.main",
-        "description": "scripts.main",
-        "peekOfCode": "df = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")\n# & Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)\nprint(\n    f\"Completed Step Four. The shape of the data is {df.shape}, and we generated our model results.\"\n)",
-        "detail": "scripts.main",
-        "documentation": {}
-    },
-    {
-        "label": "my_models",
-        "kind": 6,
-        "importPath": "scripts.modeling",
-        "description": "scripts.modeling",
-        "peekOfCode": "class my_models:\n    def __init__(self, df):\n        # params grid for logistic regression.\n        self.params_logreg = {\n            \"cvec__max_features\": [3000, 4000, 5000],\n            \"cvec__min_df\": [2, 3, 4],\n            \"cvec__max_df\": [0.9, 1, 0.1],\n            \"cvec__ngram_range\": [(1, 1)],\n            \"logreg__penalty\": [\"l1\", \"l2\"],\n            \"logreg__C\": [1, 2, 3],",
-        "detail": "scripts.modeling",
-        "documentation": {}
-    },
-    {
-        "label": "run_modeling",
-        "kind": 2,
-        "importPath": "scripts.modeling",
-        "description": "scripts.modeling",
-        "peekOfCode": "def run_modeling():\n    \"\"\"\n    Problem Statement:\n    A wealthy donor with a track record of philanthropic contributions to both Autism and OCD research organizations contacted our organization, asking for a model that they can utilize to identify post characteristics on Reddit.\n    The purposes of this study (towards those ends) are to:\n    1) Use Pushshift API to scrape Reddit posts from the Autism and OCD subreddits.\n    2) To build a predictive model that can accurately predict whether a post is from the Autism or OCD subreddit\n    To accomplish these goals, we hypothesize that count vectorization, and Logistic Regression, Adaboost, or Decision Trees can be used to build a model that accurately can predict whether a post is from the Autism or OCD subreddit. Success in this study would mean that our model has a misclassification rate of less than 10 percent and an accuracy score of greater than 90 percent on the test data set.\n    \"\"\"\n    # Control Flow:",
-        "detail": "scripts.modeling",
-        "documentation": {}
-    },
-    {
-        "label": "get_keywords",
-        "kind": 2,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "def get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)\n    return keywords",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "remove_punctuation",
-        "kind": 2,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "def remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "lowercase",
-        "kind": 2,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "def lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "url",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "url = 'https://www.reddit.com/r/Autism/'\nheaders = dict()\nheaders.update(dict(Accept='application/json', Authorization='Bearer <token>'))\nresponse = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "headers",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "headers = dict()\nheaders.update(dict(Accept='application/json', Authorization='Bearer <token>'))\nresponse = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "response = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "soup",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "soup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "posts",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "posts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "stop_words",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\n# Remove Punctuation\ndef remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "df_ocd",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "df_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "df_autism",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "df_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "lr",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "lr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "accuracy",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "accuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "adaboost",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "adaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "accuracy",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "accuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "dt",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "dt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "accuracy",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "accuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "vectorizer",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "vectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "X",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "X = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))\n        for x in X_k:",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "tf_vocab",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "tf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))\n        for x in X_k:\n            X_j += 1 * x",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "ax",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "ax = plt.subplot(111)\nx = df_ocd.target.values\ny = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "x = df_ocd.target.values\ny = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "y = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "bar_width",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "bar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "color_map",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "color_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "colors",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "colors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "labels",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "labels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "rects",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "rects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "fig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "confusion_matrix",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "confusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "cm",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "cm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "num_classes",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "num_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "class_names",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "class_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "row_positions",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "row_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)\n    ax.set_xticks(np.arange(0, num_classes, 1))",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "col_indices",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "col_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)\n    ax.set_xticks(np.arange(0, num_classes, 1))\n    ax.grid()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "linkage_obj",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "linkage_obj = linkage(distance_func=euclidean)\ndendro = linkage_obj.apply(X)\nplt.figure()\nplt.show()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
-        "label": "dendro",
-        "kind": 5,
-        "importPath": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "description": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "peekOfCode": "dendro = linkage_obj.apply(X)\nplt.figure()\nplt.show()",
-        "detail": "scripts.ocdvsautismaredditthreadnlpanalysis_python_code",
-        "documentation": {}
-    },
-    {
         "label": "process_dataframe",
         "kind": 2,
-        "importPath": "scripts.preprocessing",
-        "description": "scripts.preprocessing",
+        "importPath": "scripts.011_preprocessing",
+        "description": "scripts.011_preprocessing",
         "peekOfCode": "def process_dataframe(df):\n    # Quick Eliminations\n    if \"selftext\" in df.columns:\n        df = df[\n            [\"title\", \"selftext\", \"subreddit\", \"author\", \"created_utc\"]\n        ]  # Eliminate the Unused Columns\n    else:  # selftext has already been renamed to selftext\n        df = df[[\"title\", \"selftext\", \"subreddit\", \"author\", \"created_utc\"]]\n    # Rename 'selftext' to 'selftext'\n    df = df.rename(columns={\"selftext\": \"selftext\"})",
-        "detail": "scripts.preprocessing",
+        "detail": "scripts.011_preprocessing",
         "documentation": {}
     },
     {
         "label": "remove_overly_biasing_terms",
         "kind": 2,
-        "importPath": "scripts.preprocessing",
-        "description": "scripts.preprocessing",
+        "importPath": "scripts.011_preprocessing",
+        "description": "scripts.011_preprocessing",
         "peekOfCode": "def remove_overly_biasing_terms(df):\n    # adapted from source: https://www.analyticsvidhya.com/blog/2018/02/the-different-methods-deal-text-data-predictive-python/\n    # remove the overly biasing terms from the selftext in the dataframe\n    df[\"selftext\"] = df[\"selftext\"].apply(\n        lambda x: \" \".join(x for x in x.split() if x not in biasing_terms)\n    )\n    return df\ndef merge_text(df):\n    \"\"\"\n    Merges text in the title and selftext columns into the selftext column. This is done to increase the amount of text in the selftext column and eliminate the issues that could come up with title-heavy posts.",
-        "detail": "scripts.preprocessing",
+        "detail": "scripts.011_preprocessing",
         "documentation": {}
     },
     {
         "label": "merge_text",
         "kind": 2,
-        "importPath": "scripts.preprocessing",
-        "description": "scripts.preprocessing",
+        "importPath": "scripts.011_preprocessing",
+        "description": "scripts.011_preprocessing",
         "peekOfCode": "def merge_text(df):\n    \"\"\"\n    Merges text in the title and selftext columns into the selftext column. This is done to increase the amount of text in the selftext column and eliminate the issues that could come up with title-heavy posts.\n    Args:\n        df (dataframe): The dataframe to be processed.\n    Raises:\n        Exception: If the dataframe does not have a title and selftext column.\n    Returns:\n        df: The processed dataframe.\n    \"\"\"",
-        "detail": "scripts.preprocessing",
+        "detail": "scripts.011_preprocessing",
         "documentation": {}
     },
     {
         "label": "preprocessing_function",
         "kind": 2,
-        "importPath": "scripts.preprocessing",
-        "description": "scripts.preprocessing",
+        "importPath": "scripts.011_preprocessing",
+        "description": "scripts.011_preprocessing",
         "peekOfCode": "def preprocessing_function(df):\n    \"\"\"\n    Run the process_dataframe and merge_text functions on the dataframe.\n    Args:\n        df (dataframe): The dataframe to be processed.\n    Returns:\n        dataframe: The processed dataframe.\n    \"\"\"\n    df = merge_text(df)  # introduce new features\n    df = process_dataframe(df)  # process the dataframe",
-        "detail": "scripts.preprocessing",
+        "detail": "scripts.011_preprocessing",
         "documentation": {}
     },
     {
         "label": "data_exploration",
         "kind": 2,
-        "importPath": "scripts.preprocessing",
-        "description": "scripts.preprocessing",
+        "importPath": "scripts.011_preprocessing",
+        "description": "scripts.011_preprocessing",
         "peekOfCode": "def data_exploration(df):\n    \"\"\"\n    Perform data exploration on the dataframe.\n    Args:\n        df (dataframe): The dataframe to be explored.\n    \"\"\"\n    # We want to explore the data to see if there is anything we can do to improve the model.\n    # We want to see if there is any correlation between the length of the title and the length of the selftext\n    # and the subreddit that the post is from.\n    sns.scatterplot(x=\"title_length\", y=\"selftext_length\", hue=\"is_autism\", data=df)",
-        "detail": "scripts.preprocessing",
+        "detail": "scripts.011_preprocessing",
         "documentation": {}
     },
     {
         "label": "run_preprocess_data",
         "kind": 2,
-        "importPath": "scripts.preprocessing",
-        "description": "scripts.preprocessing",
+        "importPath": "scripts.011_preprocessing",
+        "description": "scripts.011_preprocessing",
         "peekOfCode": "def run_preprocess_data(df):\n    # ^ File I/O\n    # If the df_cleaned.csv file has not been generated yet, then we want to generate it with the preprocessing_function.\n    # If the df_cleaned.csv file has been generated, then we want to read it in and use it for the model.\n    if not os.path.isfile(\"data/df_cleaned.csv\"):\n        logging.info(\n            \"The df_cleaned.csv file has not been generated yet, so we are generating it now.\"\n        )\n        # Create df by concatenating the dataframes from the two subreddits\n        # & Reading in both Reddit threads as csv files.",
-        "detail": "scripts.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "parse_table_of_contents",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "startup",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "process_flow_controller",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents, readme_text)\n    return\n# What are the expected sections in a data science report notebook?",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "create_data_section",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def create_data_section(report_notebook):\n    global readme_text\n    # generate the data section of the report notebook\n    # the data section is a markdown cell with the text from the readme.md file for the Data Section.\n    # This section is about explaining what kinds of data are in the dataset and how the data was collected.\n    # find the line that starts with \"Data\" and\n    return\n# A markdown cell for the Data Cleaning Section (with the text from the readme.md file for the Data Cleaning Section).\n# This section is about explaining how the data was cleaned.\n# what kinds of dirtiness was found in the data and how it was cleaned?",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "get_text",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def get_text(section_name, markdown_text):\n    \"\"\"\n    get_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "programmatic_pandas",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    # clear the destination df to make it clean and new (no artifacts from previous runs).\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "create_notebook",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def create_notebook(markdown_cells):\n    # create a notebook with the markdown cells\n    # create a notebook object\n    nb = nbf.v4.new_notebook()\n    # loop through the markdown cells\n    for markdown_cell in markdown_cells:\n        # create a markdown cell\n        markdown_cell = nbf.v4.new_markdown_cell(markdown_cell)\n        # add the markdown cell to the notebook\n        nb[\"cells\"].append(markdown_cell)",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def main():\n    # read the readme text\n    readme_text = read_readme()\n    # get the table of contents\n    table_of_contents = get_table_of_contents(readme_text)\n    # get the markdown cells\n    markdown_cells = programmatic_pandas(readme_text, table_of_contents)\n    # create the notebook\n    create_notebook(markdown_cells)\ndef generate_report_notebook(table_of_contents, readme_text):",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "generate_report_notebook",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "def generate_report_notebook(table_of_contents, readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "kind": 5,
-        "importPath": "scripts.report_generator_from_readme copy",
-        "description": "scripts.report_generator_from_readme copy",
-        "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
-        "detail": "scripts.report_generator_from_readme copy",
-        "documentation": {}
-    },
-    {
-        "label": "parse_table_of_contents",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "startup",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\nimport datetime as dt\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "process_flow_controller",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    global project_name\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(project_name, table_of_contents, readme_text)\n    return",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "create_data_section",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def create_data_section(report_notebook):\n    global readme_text\n    # generate the data section of the report notebook\n    # the data section is a markdown cell with the text from the readme.md file for the Data Section.\n    # This section is about explaining what kinds of data are in the dataset and how the data was collected.\n    # find the line that starts with \"Data\" and\n    return\n# A markdown cell for the Data Cleaning Section (with the text from the readme.md file for the Data Cleaning Section).\n# This section is about explaining how the data was cleaned.\n# what kinds of dirtiness was found in the data and how it was cleaned?",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "get_text",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def get_text(section_name, markdown_text):\n    \"\"\"\n    get_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "programmatic_pandas",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    # clear the destination df to make it clean and new (no artifacts from previous runs).\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "generate_report_notebook",
-        "kind": 2,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "def generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "kind": 5,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "project_name",
-        "kind": 5,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "project_name = 'Reddit NLP Project'\nauthor = 'Graham Waters'\ndate = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "author",
-        "kind": 5,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "author = 'Graham Waters'\ndate = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "date",
-        "kind": 5,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "date = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name",
-        "detail": "scripts.report_generator_from_readme",
-        "documentation": {}
-    },
-    {
-        "label": "license_text",
-        "kind": 5,
-        "importPath": "scripts.report_generator_from_readme",
-        "description": "scripts.report_generator_from_readme",
-        "peekOfCode": "license_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section",
-        "detail": "scripts.report_generator_from_readme",
+        "detail": "scripts.011_preprocessing",
         "documentation": {}
     },
     {
         "label": "model_iterator",
         "kind": 2,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "def model_iterator(model, pipe_params, model_names, lemmatized_bool):\n    \"\"\"\n    Run a model with a set of parameters\n    Args:\n        model (str): alias and name of the model\n        pipe_params (dict): _description_\n        lemmatized_bool (bool): whether the model is lemmatized or not\n    Returns:\n        model: _description_\n    \"\"\"",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "model_names",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "model_names = {\n    \"logreg\": LogisticRegression(),\n    \"dt\": DecisionTreeClassifier(),\n    \"adaboost\": AdaBoostClassifier(),\n    \"rf\": RandomForestClassifier()\n}\n### Count Vectorizer\n# Instantiate the CountVectorizer\nvectorizer = CountVectorizer()\nprint(df[\"selftext\"].isnull().sum())",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "vectorizer",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "vectorizer = CountVectorizer()\nprint(df[\"selftext\"].isnull().sum())\ncorpus = df[\"selftext\"]\n# source: https://stackoverflow.com/a/39308809/12801757 for below\ncvec = vectorizer.fit(corpus)  # fit and transform the data to the self-text column\n##! section one. Nonlemmatized fields\nX = df[\"selftext\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "corpus",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "corpus = df[\"selftext\"]\n# source: https://stackoverflow.com/a/39308809/12801757 for below\ncvec = vectorizer.fit(corpus)  # fit and transform the data to the self-text column\n##! section one. Nonlemmatized fields\nX = df[\"selftext\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\ndef model_iterator(model, pipe_params, model_names, lemmatized_bool):",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "cvec",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "cvec = vectorizer.fit(corpus)  # fit and transform the data to the self-text column\n##! section one. Nonlemmatized fields\nX = df[\"selftext\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\ndef model_iterator(model, pipe_params, model_names, lemmatized_bool):\n    \"\"\"\n    Run a model with a set of parameters",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "X",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "X = df[\"selftext\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\ndef model_iterator(model, pipe_params, model_names, lemmatized_bool):\n    \"\"\"\n    Run a model with a set of parameters\n    Args:\n        model (str): alias and name of the model",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "y",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "y = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\ndef model_iterator(model, pipe_params, model_names, lemmatized_bool):\n    \"\"\"\n    Run a model with a set of parameters\n    Args:\n        model (str): alias and name of the model\n        pipe_params (dict): _description_",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "lemmatizedBoolean",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "lemmatizedBoolean = False\n# 1. Logistic Regression\n# * Original Params\n# pipe_params_sent_len = {\n#     'cvec__max_features': [1000, 2000, 3000],\n#     'cvec__min_df': [2, 3],\n#     'cvec__max_df': [.9, .95],\n#     'cvec__ngram_range': [(1,1), (1,2)],\n#     'logreg__penalty': ['l1','l2'],\n#     'logreg__C': [1, 2, 3]",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "pipe_params",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "pipe_params = {\n    \"cvec__max_features\": [3000],\n    \"cvec__min_df\": [2],\n    \"cvec__max_df\": [0.9],\n    \"cvec__ngram_range\": [(1, 1)],\n    \"logreg__penalty\": [\"l2\"],\n    \"logreg__C\": [1, 2, 3],\n}\nlogregmodel = model_iterator(\"logreg\", pipe_params, model_names, lemmatizedBoolean)\n# 2. Decision Tree",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "logregmodel",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "logregmodel = model_iterator(\"logreg\", pipe_params, model_names, lemmatizedBoolean)\n# 2. Decision Tree\npipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"dt__max_depth\": [None, 2, 3, 4],\n    \"dt__min_samples_split\": [2, 3, 4],\n    \"dt__min_samples_leaf\": [1, 2, 3],",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "pipe_params_sent_len",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "pipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"dt__max_depth\": [None, 2, 3, 4],\n    \"dt__min_samples_split\": [2, 3, 4],\n    \"dt__min_samples_leaf\": [1, 2, 3],\n}\n# Running the model",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "dt_model",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "dt_model = model_iterator(\"dt\", pipe_params_sent_len, model_names, lemmatizedBoolean)\n# 3. AdaBoost Model\npipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"ada__n_estimators\": [50, 100, 150],\n    \"ada__learning_rate\": [0.1, 0.5, 1],\n}",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "pipe_params_sent_len",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "pipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"ada__n_estimators\": [50, 100, 150],\n    \"ada__learning_rate\": [0.1, 0.5, 1],\n}\n# Running the model\nada_model = model_iterator(\"ada\", pipe_params_sent_len, model_names, lemmatizedBoolean)",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "ada_model",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "ada_model = model_iterator(\"ada\", pipe_params_sent_len, model_names, lemmatizedBoolean)\n#! section two. Lemmatized fields\nlemmatizedBoolean = True\nX = df[\"selftext_lemmatized\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\n# 1. Logistic Regression\n# params",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "lemmatizedBoolean",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "lemmatizedBoolean = True\nX = df[\"selftext_lemmatized\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\n# 1. Logistic Regression\n# params\nipe_params = {\n    \"cvec__max_features\": [3000],",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "X",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "X = df[\"selftext_lemmatized\"]  # post\ny = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\n# 1. Logistic Regression\n# params\nipe_params = {\n    \"cvec__max_features\": [3000],\n    \"cvec__min_df\": [2],",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "y",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "y = df[\"is_autism\"]  # predicting if the post is on the autism subreddit\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\n# 1. Logistic Regression\n# params\nipe_params = {\n    \"cvec__max_features\": [3000],\n    \"cvec__min_df\": [2],\n    \"cvec__max_df\": [0.9],",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "ipe_params",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "ipe_params = {\n    \"cvec__max_features\": [3000],\n    \"cvec__min_df\": [2],\n    \"cvec__max_df\": [0.9],\n    \"cvec__ngram_range\": [(1, 1)],\n    \"logreg__penalty\": [\"l2\"],\n    \"logreg__C\": [1, 2, 3],\n}\nlogregmodel_lemmatized = model_iterator(\n    \"logreg\", pipe_params, model_names, lemmatizedBoolean",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "logregmodel_lemmatized",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "logregmodel_lemmatized = model_iterator(\n    \"logreg\", pipe_params, model_names, lemmatizedBoolean\n)\n# 2. Decision Tree\npipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"dt__max_depth\": [None, 2, 3, 4],",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "pipe_params_sent_len",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "pipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"dt__max_depth\": [None, 2, 3, 4],\n    \"dt__min_samples_split\": [2, 3, 4],\n    \"dt__min_samples_leaf\": [1, 2, 3],\n}\n# Running the model",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "dt_model_lemmatized",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "dt_model_lemmatized = model_iterator(\n    \"dt\", pipe_params_sent_len, model_names, lemmatizedBoolean\n)\n# 3. AdaBoost Model\npipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"ada__n_estimators\": [50, 100, 150],",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "pipe_params_sent_len",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "pipe_params_sent_len = {\n    \"cvec__max_features\": [1000, 2000, 3000],\n    \"cvec__min_df\": [2, 3],\n    \"cvec__max_df\": [0.9, 0.95],\n    \"cvec__ngram_range\": [(1, 1), (1, 2)],\n    \"ada__n_estimators\": [50, 100, 150],\n    \"ada__learning_rate\": [0.1, 0.5, 1],\n}\n# Running the model\nada_model_lemmatized = model_iterator(",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "ada_model_lemmatized",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "ada_model_lemmatized = model_iterator(\n    \"ada\", pipe_params_sent_len, model_names, lemmatizedBoolean\n)\n#! Fitting Models (Takes Time)\n# fit all the models on the training data\nprint(f\"Fitting Models on unlemmatized data\")\nlogregmodel.fit(X_train, y_train)\nprint(\"Logistic Regression Model Fitted\")\ndt_model.fit(X_train, y_train)\nprint(\"Decision Tree Model Fitted\")",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "allmodels",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "allmodels = [\n    logregmodel,\n    dt_model,\n    ada_model,\n    logregmodel_lemmatized,\n    dt_model_lemmatized,\n    ada_model_lemmatized,\n]  # list of all models\n#! Results Display\nfor every_model in allmodels:",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
         "documentation": {}
     },
     {
         "label": "self.X",
         "kind": 5,
-        "importPath": "scripts.suppl",
-        "description": "scripts.suppl",
+        "importPath": "scripts.012_suppl",
+        "description": "scripts.012_suppl",
         "peekOfCode": "self.X = (df[\"selftext\"],)\n        self.y = df[\"is_autism\"]  #\n        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(\n            self.X, self.y, random_state=self.random_state\n        )\n    def model_operation(self, df):\n        # note: be sure that the selftext col has no null values before passing it to the model function.\n        # Instantiate the CountVectorizer\n        vectorizer = CountVectorizer()\n        df[\"selftext\"] = df[\"selftext\"].fillna(",
-        "detail": "scripts.suppl",
+        "detail": "scripts.012_suppl",
+        "documentation": {}
+    },
+    {
+        "label": "my_models",
+        "kind": 6,
+        "importPath": "scripts.014_modeling",
+        "description": "scripts.014_modeling",
+        "peekOfCode": "class my_models:\n    def __init__(self, df):\n        # params grid for logistic regression.\n        self.params_logreg = {\n            \"cvec__max_features\": [3000, 4000, 5000],\n            \"cvec__min_df\": [2, 3, 4],\n            \"cvec__max_df\": [0.9, 1, 0.1],\n            \"cvec__ngram_range\": [(1, 1)],\n            \"logreg__penalty\": [\"l1\", \"l2\"],\n            \"logreg__C\": [1, 2, 3],",
+        "detail": "scripts.014_modeling",
+        "documentation": {}
+    },
+    {
+        "label": "run_modeling",
+        "kind": 2,
+        "importPath": "scripts.014_modeling",
+        "description": "scripts.014_modeling",
+        "peekOfCode": "def run_modeling():\n    \"\"\"\n    Problem Statement:\n    A wealthy donor with a track record of philanthropic contributions to both Autism and OCD research organizations contacted our organization, asking for a model that they can utilize to identify post characteristics on Reddit.\n    The purposes of this study (towards those ends) are to:\n    1) Use Pushshift API to scrape Reddit posts from the Autism and OCD subreddits.\n    2) To build a predictive model that can accurately predict whether a post is from the Autism or OCD subreddit\n    To accomplish these goals, we hypothesize that count vectorization, and Logistic Regression, Adaboost, or Decision Trees can be used to build a model that accurately can predict whether a post is from the Autism or OCD subreddit. Success in this study would mean that our model has a misclassification rate of less than 10 percent and an accuracy score of greater than 90 percent on the test data set.\n    \"\"\"\n    # Control Flow:",
+        "detail": "scripts.014_modeling",
         "documentation": {}
     },
     {
         "label": "stop",
         "kind": 5,
-        "importPath": "scripts.word_lists",
-        "description": "scripts.word_lists",
+        "importPath": "scripts.01_word_lists",
+        "description": "scripts.01_word_lists",
         "peekOfCode": "stop = stopwords.words(\"english\")\n# Custom Word Lists\nlistofknown_medications = [\n    \"clonidine\",\n    \"quetiapine\",\n    \"risperidone\",\n    \"vyvanse\",\n    \"adderall\",\n    \"dexedrine\",\n    \"wellbutrin\",",
-        "detail": "scripts.word_lists",
+        "detail": "scripts.01_word_lists",
         "documentation": {}
     },
     {
         "label": "listofknown_medications",
         "kind": 5,
-        "importPath": "scripts.word_lists",
-        "description": "scripts.word_lists",
+        "importPath": "scripts.01_word_lists",
+        "description": "scripts.01_word_lists",
         "peekOfCode": "listofknown_medications = [\n    \"clonidine\",\n    \"quetiapine\",\n    \"risperidone\",\n    \"vyvanse\",\n    \"adderall\",\n    \"dexedrine\",\n    \"wellbutrin\",\n    \"focalinxr\",\n    \"modafanil\",",
-        "detail": "scripts.word_lists",
+        "detail": "scripts.01_word_lists",
         "documentation": {}
     },
     {
         "label": "listofknown_medications",
         "kind": 5,
-        "importPath": "scripts.word_lists",
-        "description": "scripts.word_lists",
+        "importPath": "scripts.01_word_lists",
+        "description": "scripts.01_word_lists",
         "peekOfCode": "listofknown_medications = [\n    x.lower() for x in listofknown_medications\n]  # make all the words lowercase\nconditions = [\"autism\", \"ocd\"]  # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",",
-        "detail": "scripts.word_lists",
+        "detail": "scripts.01_word_lists",
         "documentation": {}
     },
     {
         "label": "conditions",
         "kind": 5,
-        "importPath": "scripts.word_lists",
-        "description": "scripts.word_lists",
+        "importPath": "scripts.01_word_lists",
+        "description": "scripts.01_word_lists",
         "peekOfCode": "conditions = [\"autism\", \"ocd\"]  # list of conditions to search for\nslang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",\n    \" yr \": \" your \",\n    \" yrs \": \" years \",\n    \" b \": \" be \",",
-        "detail": "scripts.word_lists",
+        "detail": "scripts.01_word_lists",
         "documentation": {}
     },
     {
         "label": "slang_dict",
         "kind": 5,
-        "importPath": "scripts.word_lists",
-        "description": "scripts.word_lists",
+        "importPath": "scripts.01_word_lists",
+        "description": "scripts.01_word_lists",
         "peekOfCode": "slang_dict = {\n    \" tho \": \" though \",\n    \"thru\": \" through \",\n    \"thx\": \" thanks \",\n    \" u \": \" you \",\n    \" ur \": \" your \",\n    \" yr \": \" your \",\n    \" yrs \": \" years \",\n    \" b \": \" be \",\n    \" r \": \" are \",",
-        "detail": "scripts.word_lists",
+        "detail": "scripts.01_word_lists",
         "documentation": {}
     },
     {
         "label": "biasing_terms",
         "kind": 5,
-        "importPath": "scripts.word_lists",
-        "description": "scripts.word_lists",
+        "importPath": "scripts.01_word_lists",
+        "description": "scripts.01_word_lists",
         "peekOfCode": "biasing_terms = [\"ocd\", \"autism\"]\n# sources\n# https://clincalc.com/DrugStats/Top300Drugs.aspx - list of top 300 drugs",
-        "detail": "scripts.word_lists",
+        "detail": "scripts.01_word_lists",
+        "documentation": {}
+    },
+    {
+        "label": "remove_ocd_meds",
+        "kind": 2,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "def remove_ocd_meds(text, listofknown_medications):\n    global meds\n    if len(meds) > 0:\n        log_string = f\"The latest medication mentioned is: {meds[-1]}\"\n        logging.info(log_string)\n    wordsintext = text.split(\" \")\n    for word in wordsintext:\n        if word in listofknown_medications:\n            meds.append(word)\n            text = text.replace(word, \" \")",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "feature_engineer",
+        "kind": 2,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "def feature_engineer(df, listofknown_medications):\n    \"\"\"\n    summary: This function takes in a dataframe and a list of known medications and returns a dataframe with new features.\n    List of Features that will be created:\n    1. Number of words in the post (word_count)\n    2. Number of unique words in the post (unique_words)\n    2. Length of the post (number of characters)\n    4. unique words in the post (unique_word_count)\n    5. If the selftext of the post contains a known medication (medication_mentioned) (list of the meds mentioned)\n    Args:",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "binarize_target_feature",
+        "kind": 2,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "def binarize_target_feature(df):\n    df[\"is_autism\"] = df[\"subreddit\"].apply(lambda x: 1 if x == \"autism\" else 0)\n    # ? Drop the 'subreddit' column\n    # note: not sure if the subreddit column is needed anymore but I will keep it for now.\n    return df\ndef run_feature_engineering(df):\n    # & Importing the Data and Engineering Features\n    df = pd.read_csv(\"./data/reddit_threads.csv\")\n    logging.info(f\"Beginning feature engineering...\")\n    # Run the functions in this script to create new features for the model.",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "run_feature_engineering",
+        "kind": 2,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "def run_feature_engineering(df):\n    # & Importing the Data and Engineering Features\n    df = pd.read_csv(\"./data/reddit_threads.csv\")\n    logging.info(f\"Beginning feature engineering...\")\n    # Run the functions in this script to create new features for the model.\n    # & binarize the target feature\n    df = binarize_target_feature(df)  # binarize the target feature (i.e. 'subreddit')\n    # & create new features\n    df = feature_engineer(df, listofknown_medications)\n    # save the dataframe with the new features to a csv file 'df_after_feature_engineering.csv' in the data folder.",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "OCD_Posts_With_Meds",
+        "kind": 5,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "OCD_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the OCD subreddit to zero.\n)\nAutism_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the Autism subreddit to zero.\n)\nTotal_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "Autism_Posts_With_Meds",
+        "kind": 5,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "Autism_Posts_With_Meds = (\n    0  # initialized count of posts mentioning meds from the Autism subreddit to zero.\n)\nTotal_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "Total_Posts_With_Meds",
+        "kind": 5,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "Total_Posts_With_Meds = 0  # the total number of posts that mention medications.\nmedications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "medications_mentioned",
+        "kind": 5,
+        "importPath": "scripts.02_feature_engineering",
+        "description": "scripts.02_feature_engineering",
+        "peekOfCode": "medications_mentioned = (\n    []\n)  # the list of all medications that are mentioned in the posts.\n# import the lists of medications and conditions from word_lists.py\nfrom word_lists import listofknown_medications, conditions\nimport pandas as pd\nimport numpy as np\n# Logging Setup\nimport logging\n# set the logfile to be 'logs/feature_engineering.log'",
+        "detail": "scripts.02_feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords",
+        "kind": 2,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "def get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)\n    return keywords",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "remove_punctuation",
+        "kind": 2,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "def remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "lowercase",
+        "kind": 2,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "def lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "url = 'https://www.reddit.com/r/Autism/'\nheaders = dict()\nheaders.update(dict(Accept='application/json', Authorization='Bearer <token>'))\nresponse = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "headers = dict()\nheaders.update(dict(Accept='application/json', Authorization='Bearer <token>'))\nresponse = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "response = requests.get(url, headers=headers)\nsoup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "soup",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "soup = BeautifulSoup(response.content, \"html.parser\")\nposts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "posts",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "posts = soup.findAll('div', class_=\"listing-item-container\")\ndef get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\n# Remove Punctuation\ndef remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\ndf_ocd = pd.read_csv('./data/ocd_thread.csv')",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "df_ocd = pd.read_csv('./data/ocd_thread.csv')\ndf_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "df_autism = pd.read_csv('./data/autism_thread.csv')\nlr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "lr",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "lr = LogisticRegression(C=1e6)\nlr.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "accuracy = accuracy_score(lr.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nadaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "adaboost",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "adaboost = AdaBoostClassifier(n_estimators=100, random_state=0)\nadaboost.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "accuracy = accuracy_score(adaboost.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\ndt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "dt",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "dt = DecisionTreeClassifier(random_state=0)\ndt.fit(df_ocd.drop(columns=('self_text', 'author'), axis=1), df_ocd.target)\naccuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "accuracy = accuracy_score(dt.predict(df_ocd.drop(columns=('self_text', 'author'), axis=1)), df_ocd.target)\nprint(f'Accuracy: {accuracy}')\nvectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "vectorizer",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "vectorizer = TfidfVectorizer()\nX = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "X = vectorizer.fit_transform(df_ocd.drop(columns=('self_text', 'author'), axis=1).astype(str))\ntf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))\n        for x in X_k:",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "tf_vocab",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "tf_vocab = Counter().most_common(len(stop_words)+5)\nfor i in range(10):\n    print(i, len(set(tokens)))\n    for j, k in enumerate(tf_vocab):\n        if k >= 5:\n            break\n        X_k = np.array(np.where(X == k))\n        X_j = np.zeros((0, 0))\n        for x in X_k:\n            X_j += 1 * x",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "ax = plt.subplot(111)\nx = df_ocd.target.values\ny = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "x = df_ocd.target.values\ny = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "y = lr.predict(x)\nbar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "bar_width",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "bar_width = .35\ncolor_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "color_map",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "color_map = sns.light_palette(\"Greens\", 10)\ncolors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "colors = color_map.as_hex()\nlabels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "labels = list(range(len(df_ocd.target.index)))\nrects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "rects",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "rects = ax.bar(labels, y, width=bar_width, label='Predicted Probability', edgecolor=None, align=\"center\")\nax.legend(loc=\"best\")\nax.set_yticks(np.arange(0, 1.05, .25))\nax.set_xticklabels(list(df_ocd.target.index))\nax.invert_yaxis()\nax.set_title(\"Logistic Regression Predictions\")\nfig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "fig = plt.gcf()\nfig.tight_layout()\nconfusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "confusion_matrix = pd.crosstab(df_ocd.target, df_ocd.prediction)\ncm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "cm = confusion_matrix(df_ocd.target, df_ocd.prediction)\nnum_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "num_classes",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "num_classes = cm.sum(1).max()+1\nclass_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "class_names",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "class_names = list(range(num_classes))\nrow_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "row_positions",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "row_positions = np.argsort(-df_ocd.target)\ncol_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)\n    ax.set_xticks(np.arange(0, num_classes, 1))",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "col_indices",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "col_indices = np.argpartition(df_ocd.target, -df_ocd.target.size-1)\nfor row_number, col_name in zip(row_positions, class_names):\n    fig = plt.figure()\n    ax = plt.subplot(2, num_classes, row_number)\n    cnt = conf_matrix.iloc.get_value(row_position=row_number, column_label=col_name)\n    ax.barh(class_names, cnt)\n    ax.set_ylabel(col_name)\n    ax.set_xlim(0, num_classes)\n    ax.set_xticks(np.arange(0, num_classes, 1))\n    ax.grid()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "linkage_obj",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "linkage_obj = linkage(distance_func=euclidean)\ndendro = linkage_obj.apply(X)\nplt.figure()\nplt.show()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "dendro",
+        "kind": 5,
+        "importPath": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "description": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "peekOfCode": "dendro = linkage_obj.apply(X)\nplt.figure()\nplt.show()",
+        "detail": "scripts.06_ocdvsautismaredditthreadnlpanalysis_python_code",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "scripts.08_data_exploration",
+        "description": "scripts.08_data_exploration",
+        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\n# # Explore the data\n# 1. Top Bigrams in the post selftext for r/Autism\n# 2. Top Bigrams in the post selftext for r/OCD\n# 3. Top Trigrams in the post selftext for r/Autism\n# 4. Top Trigrams in the post selftext for r/OCD\n# 5. Top Words in the post selftext for r/Autism\n# 6. Top Words in the post selftext for r/OCD\n# 7. Top Users posting on r/Autism in the data\n# 8. Top Users posting on r/OCD in the data",
+        "detail": "scripts.08_data_exploration",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\nprint(f\"Completed Step One. The shape of the data is {df.shape}\")\n# & Step Two. Preprocess the data\ndf_preprocessed = run_preprocess_data(df)\nprint(f\"Completed Step Two. The shape of the data is {df_preprocessed.shape}\")\n# & Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "df_preprocessed",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "df_preprocessed = run_preprocess_data(df)\nprint(f\"Completed Step Two. The shape of the data is {df_preprocessed.shape}\")\n# & Step Three. Run the feature engineering functions on the data\n# Run the feature engineering script\n# selftext is converted to string now.\ndf = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")\n# & Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "df = run_feature_engineering(df_preprocessed)\nprint(f\"Completed Step Three. The shape of the data is {df.shape}\")\n# & Step Four. Run the modeling script to test the models\n# Run the modeling script\nrun_modeling(df)\nprint(\n    f\"Completed Step Four. The shape of the data is {df.shape}, and we generated our model results.\"\n)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "parse_table_of_contents",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "startup",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "process_flow_controller",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(table_of_contents, readme_text)\n    return\n# What are the expected sections in a data science report notebook?",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "create_data_section",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def create_data_section(report_notebook):\n    global readme_text\n    # generate the data section of the report notebook\n    # the data section is a markdown cell with the text from the readme.md file for the Data Section.\n    # This section is about explaining what kinds of data are in the dataset and how the data was collected.\n    # find the line that starts with \"Data\" and\n    return\n# A markdown cell for the Data Cleaning Section (with the text from the readme.md file for the Data Cleaning Section).\n# This section is about explaining how the data was cleaned.\n# what kinds of dirtiness was found in the data and how it was cleaned?",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_text",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def get_text(section_name, markdown_text):\n    \"\"\"\n    get_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "programmatic_pandas",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    # clear the destination df to make it clean and new (no artifacts from previous runs).\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "create_notebook",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def create_notebook(markdown_cells):\n    # create a notebook with the markdown cells\n    # create a notebook object\n    nb = nbf.v4.new_notebook()\n    # loop through the markdown cells\n    for markdown_cell in markdown_cells:\n        # create a markdown cell\n        markdown_cell = nbf.v4.new_markdown_cell(markdown_cell)\n        # add the markdown cell to the notebook\n        nb[\"cells\"].append(markdown_cell)",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def main():\n    # read the readme text\n    readme_text = read_readme()\n    # get the table of contents\n    table_of_contents = get_table_of_contents(readme_text)\n    # get the markdown cells\n    markdown_cells = programmatic_pandas(readme_text, table_of_contents)\n    # create the notebook\n    create_notebook(markdown_cells)\ndef generate_report_notebook(table_of_contents, readme_text):",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "generate_report_notebook",
+        "kind": 2,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "def generate_report_notebook(table_of_contents, readme_text):\n    # global readme_text\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.\n    # create a jupyter notebook object",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "report_generator_from_readme copy",
+        "description": "report_generator_from_readme copy",
+        "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
+        "detail": "report_generator_from_readme copy",
+        "documentation": {}
+    },
+    {
+        "label": "parse_table_of_contents",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list\n    \"\"\"\n    # parse the table of contents from the readme.md file",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "startup",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def startup():\n    # read the readme.md file\n    with open(path, \"r\") as f:\n        readme_text = f.read()\n    # parse the table of contents\n    table_of_contents = parse_table_of_contents(readme_text)\n    return table_of_contents, readme_text\nimport datetime as dt\ndef process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "process_flow_controller",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def process_flow_controller():\n    # from start to finish, examine the readme and end with a populated, fully functional report jupyter notebook that can be tweaked and then presented to the end-user as the final report.\n    global project_name\n    (\n        table_of_contents,\n        readme_text,\n    ) = startup()  # read the readme.md file and parse the table of contents\n    # using the table of contents, create the sections of the report notebook\n    generate_report_notebook(project_name, table_of_contents, readme_text)\n    return",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "create_data_section",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def create_data_section(report_notebook):\n    global readme_text\n    # generate the data section of the report notebook\n    # the data section is a markdown cell with the text from the readme.md file for the Data Section.\n    # This section is about explaining what kinds of data are in the dataset and how the data was collected.\n    # find the line that starts with \"Data\" and\n    return\n# A markdown cell for the Data Cleaning Section (with the text from the readme.md file for the Data Cleaning Section).\n# This section is about explaining how the data was cleaned.\n# what kinds of dirtiness was found in the data and how it was cleaned?",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "get_text",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def get_text(section_name, markdown_text):\n    \"\"\"\n    get_text takes a section name and a string of markdown text and returns a string of text\n    Parameters\n    :param section_name: a string of text\n    :type section_name: str\n    :param markdown_text: a string of text\n    :type markdown_text: str\n    :return: a string of text\n    :rtype: str",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "programmatic_pandas",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def programmatic_pandas(readme_text, table_of_contents):\n    # clear the destination df to make it clean and new (no artifacts from previous runs).\n    great_panda_df = pd.DataFrame(\n        columns=[\"section_name\", \"section_text\", \"section_level\"]\n    )\n    # The table of contents contains tuples that have this format: ('Steps for Data Cleaning in this Study', 2) for example. The first item in the tuple is the section name and the second item is the level of the section. The level is used to denote how many \"#\" symbols to put in front of the section name.\n    # if a section is level 2, then it belongs under the section that preceeded it with a level of 1. etc. So we need to keep track of the previous section name and level.\n    # create a variable to keep track of the previous section name\n    # I want markdown cells for all cells in the table of contents that are level 1 preceeded with a level one header in a markdown cell.\n    # if there are level 2 sections, then I want a markdown cell for the level 2 section preceeded with a level 2 header in a markdown cell.",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "generate_report_notebook",
+        "kind": 2,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "def generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section\n    #   add a code cell below this markdown cell for the user to add any code they want to the section.",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "path = \"readme.md\"  # same directory as this script\n# read a readme.md file and make a report jupyter notebook that has the appropriate sections (from the table of contents in the readme.md file)\ndef parse_table_of_contents(readme_text):\n    \"\"\"\n    parse_table_of_contents takes a string of text and returns a list of tuples\n    Parameters\n    :param readme_text: a string of text\n    :type readme_text: str\n    :return: a list of tuples\n    :rtype: list",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "project_name",
+        "kind": 5,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "project_name = 'Reddit NLP Project'\nauthor = 'Graham Waters'\ndate = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "author",
+        "kind": 5,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "author = 'Graham Waters'\ndate = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "kind": 5,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "date = dt.datetime.now().strftime(\"%Y-%m-%d\")\nlicense_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name",
+        "detail": "report_generator_from_readme",
+        "documentation": {}
+    },
+    {
+        "label": "license_text",
+        "kind": 5,
+        "importPath": "report_generator_from_readme",
+        "description": "report_generator_from_readme",
+        "peekOfCode": "license_text = \"MIT License\"\ndef generate_report_notebook(project_name,table_of_contents, readme_text):\n    # global readme_text\n    global author, date, license_type\n    # generate a jupyter notebook based on the table of contents in the readme.md file.\n    # the pattern it uses is:\n    # A header markdown cell with the project name\n    # For each section in the table of contents:\n    #   A markdown cell with the section name\n    #   A markdown cell with the text from the readme.md file for that section",
+        "detail": "report_generator_from_readme",
         "documentation": {}
     }
 ]
