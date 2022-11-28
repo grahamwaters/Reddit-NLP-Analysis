@@ -1,3 +1,5 @@
 *.pkl
 *.pickle
 *.pyc
+.hazellock
+supporting_files
