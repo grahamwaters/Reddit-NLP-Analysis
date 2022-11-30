@@ -118,6 +118,14 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "warnings",
         "kind": 6,
         "isExtraImport": true,
@@ -152,6 +160,30 @@
         "documentation": {}
     },
     {
+        "label": "TfidfVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "CountVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
+        "label": "CountVectorizer",
+        "importPath": "sklearn.feature_extraction.text",
+        "description": "sklearn.feature_extraction.text",
+        "isExtraImport": true,
+        "detail": "sklearn.feature_extraction.text",
+        "documentation": {}
+    },
+    {
         "label": "DecisionTreeClassifier",
         "importPath": "sklearn.tree",
         "description": "sklearn.tree",
@@ -161,6 +193,46 @@
     },
     {
         "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "export_graphviz",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "plot_tree",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "export_text",
         "importPath": "sklearn.tree",
         "description": "sklearn.tree",
         "isExtraImport": true,
@@ -185,6 +257,14 @@
     },
     {
         "label": "GradientBoostingClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "AdaBoostClassifier",
         "importPath": "sklearn.ensemble",
         "description": "sklearn.ensemble",
         "isExtraImport": true,
@@ -240,12 +320,36 @@
         "documentation": {}
     },
     {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "pickle",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pickle",
         "description": "pickle",
         "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
         "documentation": {}
     },
     {
@@ -274,6 +378,86 @@
     },
     {
         "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "silhouette_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_recall_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "average_precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -356,6 +540,14 @@
         "documentation": {}
     },
     {
+        "label": "stopwords",
+        "importPath": "nltk.corpus",
+        "description": "nltk.corpus",
+        "isExtraImport": true,
+        "detail": "nltk.corpus",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
@@ -382,11 +574,35 @@
         "documentation": {}
     },
     {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
         "label": "linkage",
         "importPath": "scipy.cluster.hierarchy",
         "description": "scipy.cluster.hierarchy",
         "isExtraImport": true,
         "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "linkage",
+        "importPath": "scipy.cluster.hierarchy",
+        "description": "scipy.cluster.hierarchy",
+        "isExtraImport": true,
+        "detail": "scipy.cluster.hierarchy",
+        "documentation": {}
+    },
+    {
+        "label": "pyplot",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
         "documentation": {}
     },
     {
@@ -419,6 +635,176 @@
         "description": "feature_engineering",
         "isExtraImport": true,
         "detail": "feature_engineering",
+        "documentation": {}
+    },
+    {
+        "label": "PorterStemmer",
+        "importPath": "nltk.stem",
+        "description": "nltk.stem",
+        "isExtraImport": true,
+        "detail": "nltk.stem",
+        "documentation": {}
+    },
+    {
+        "label": "word_tokenize",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "pandas_profiling",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas_profiling",
+        "description": "pandas_profiling",
+        "detail": "pandas_profiling",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileReport",
+        "importPath": "pandas_profiling",
+        "description": "pandas_profiling",
+        "isExtraImport": true,
+        "detail": "pandas_profiling",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "AgglomerativeClustering",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "AffinityPropagation",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "MeanShift",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "SpectralClustering",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "OPTICS",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "Birch",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "AgglomerativeClustering",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "MiniBatchKMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "LatentDirichletAllocation",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "NMF",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "tree",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "alive_bar",
+        "importPath": "alive_progress",
+        "description": "alive_progress",
+        "isExtraImport": true,
+        "detail": "alive_progress",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
         "documentation": {}
     },
     {
@@ -1390,6 +1776,1005 @@
         "description": "scripts.08_data_exploration",
         "peekOfCode": "df = pd.read_csv(\"data/reddit_threads.csv\")  # The combined data\n# # Explore the data\n# 1. Top Bigrams in the post selftext for r/Autism\n# 2. Top Bigrams in the post selftext for r/OCD\n# 3. Top Trigrams in the post selftext for r/Autism\n# 4. Top Trigrams in the post selftext for r/OCD\n# 5. Top Words in the post selftext for r/Autism\n# 6. Top Words in the post selftext for r/OCD\n# 7. Top Users posting on r/Autism in the data\n# 8. Top Users posting on r/OCD in the data",
         "detail": "scripts.08_data_exploration",
+        "documentation": {}
+    },
+    {
+        "label": "censor_words",
+        "kind": 2,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "def censor_words(text):\n    # Remove all words that begin with 'aut' from the sentence and return the result\n    # regex pattern\n    pattern = r'aut(.*?)[^a-zA-Z]' # aut followed by any number of characters then ending in any character that is not a letter\n    # replace those pattern matches with '' (nothing)\n    text =  re.sub(pattern, '', text) # replace the pattern matches with '' (nothing)\n    # pattern 2 - remove all words that begin with 'ocd' from the sentence and return the result\n    pattern = r'ocd(.*?)[^a-zA-Z]' # ocd followed by any number of characters then ending in any character that is not a letter\n    # replace those pattern matches with '' (nothing)\n    text =  re.sub(pattern, '', text) # replace the pattern matches with '' (nothing)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "get_keywords",
+        "kind": 2,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "def get_keywords(post):\n    \"\"\"Get the keywords from a post\"\"\"\n    # Get the keywords from the post\n    keywords = set()\n    for word in re.split(\"\\W+\", post.text):\n        if word in keywords:\n            continue\n        else:\n            keywords.add(word)\n    return keywords",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "remove_punctuation",
+        "kind": 2,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "def remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\n# %% [markdown]\n# # Importing the Data\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "lowercase",
+        "kind": 2,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "def lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\n# %% [markdown]\n# # Importing the Data\n# %%\n# opening the scraped data saved in csv files and creating a dataframe for each\ndf_ocd = pd.read_csv('../data/ocd_thread.csv')\ndf_autism = pd.read_csv('../data/autism_thread.csv')\n# creating a target column for each dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "num_distinct_words",
+        "kind": 2,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "def num_distinct_words(text,df):\n    # for this text, find the words that do not appear in any other text in the dataframe column 'selftext'\n    # split the text into a list of words\n    if type(text) == str:\n        text = text.split(' ')\n        # find the number of words that are not in any other text in the dataframe\n    else:\n        # the text is a list of words\n        words = text\n        pass",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "random_color",
+        "kind": 2,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "def random_color():\n    return '#%06x' % random.randint(0, 0xFFFFFF) # this will generate a random hex color code\ndf['author_color'] = df['author'].map({author: random_color() for author in df['author'].unique()}) # add a column to the df that shows the color for each author\n# sample\ndf.head()\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing\n# for this code block ignore the IndexError\n# use coolwarm for the color map to make the colors more distinct",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "stop_words",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "stop_words = set(stopwords.words(\"english\"))\n# Remove Punctuation\ndef remove_punctuation(text):\n    \"\"\"Remove punctuation from a string\"\"\"\n    return ''.join(ch for ch in text if ch not in stop_words)\n# Lower Case\ndef lowercase(text):\n    \"\"\"Lower case a string\"\"\"\n    return text.lower()\n# %% [markdown]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = pd.read_csv('../data/ocd_thread.csv')\ndf_autism = pd.read_csv('../data/autism_thread.csv')\n# creating a target column for each dataframe\ndf_ocd['target'] = 1\ndf_autism['target'] = 0\n# remove posts before 1546777579 and after 1596525852\nprint(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\npreshape = df_ocd.shape[0]\ndf_ocd = df_ocd[(df_ocd['created_utc'] > 1546777579) & (df_ocd['created_utc'] < 1596525852)]\n# drop rows where `is_video` or `media_only` columns are True",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = pd.read_csv('../data/autism_thread.csv')\n# creating a target column for each dataframe\ndf_ocd['target'] = 1\ndf_autism['target'] = 0\n# remove posts before 1546777579 and after 1596525852\nprint(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\npreshape = df_ocd.shape[0]\ndf_ocd = df_ocd[(df_ocd['created_utc'] > 1546777579) & (df_ocd['created_utc'] < 1596525852)]\n# drop rows where `is_video` or `media_only` columns are True\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['target']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['target'] = 1\ndf_autism['target'] = 0\n# remove posts before 1546777579 and after 1596525852\nprint(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\npreshape = df_ocd.shape[0]\ndf_ocd = df_ocd[(df_ocd['created_utc'] > 1546777579) & (df_ocd['created_utc'] < 1596525852)]\n# drop rows where `is_video` or `media_only` columns are True\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['target']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['target'] = 0\n# remove posts before 1546777579 and after 1596525852\nprint(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\npreshape = df_ocd.shape[0]\ndf_ocd = df_ocd[(df_ocd['created_utc'] > 1546777579) & (df_ocd['created_utc'] < 1596525852)]\n# drop rows where `is_video` or `media_only` columns are True\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop columns with more than 50% missing values from the dataframes",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "preshape",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "preshape = df_ocd.shape[0]\ndf_ocd = df_ocd[(df_ocd['created_utc'] > 1546777579) & (df_ocd['created_utc'] < 1596525852)]\n# drop rows where `is_video` or `media_only` columns are True\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop columns with more than 50% missing values from the dataframes\nprint(f'Dimensions before dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd.dropna(thresh=0.5*len(df_ocd), axis=1)\ndf_autism = df_autism.dropna(thresh=0.5*len(df_autism), axis=1)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd[(df_ocd['created_utc'] > 1546777579) & (df_ocd['created_utc'] < 1596525852)]\n# drop rows where `is_video` or `media_only` columns are True\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop columns with more than 50% missing values from the dataframes\nprint(f'Dimensions before dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd.dropna(thresh=0.5*len(df_ocd), axis=1)\ndf_autism = df_autism.dropna(thresh=0.5*len(df_autism), axis=1)\nprint(f'Dimensions after dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop columns with more than 50% missing values from the dataframes\nprint(f'Dimensions before dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd.dropna(thresh=0.5*len(df_ocd), axis=1)\ndf_autism = df_autism.dropna(thresh=0.5*len(df_autism), axis=1)\nprint(f'Dimensions after dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\nprint(f'columns in df_ocd: {df_ocd.columns}')\n#* Only keep the columns in these two dataframes that are in both dataframes and are in the lists below",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop columns with more than 50% missing values from the dataframes\nprint(f'Dimensions before dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd.dropna(thresh=0.5*len(df_ocd), axis=1)\ndf_autism = df_autism.dropna(thresh=0.5*len(df_autism), axis=1)\nprint(f'Dimensions after dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\nprint(f'columns in df_ocd: {df_ocd.columns}')\n#* Only keep the columns in these two dataframes that are in both dataframes and are in the lists below\nautism_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd.dropna(thresh=0.5*len(df_ocd), axis=1)\ndf_autism = df_autism.dropna(thresh=0.5*len(df_autism), axis=1)\nprint(f'Dimensions after dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\nprint(f'columns in df_ocd: {df_ocd.columns}')\n#* Only keep the columns in these two dataframes that are in both dataframes and are in the lists below\nautism_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\nocd_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\n# drop columns that are not in the lists above\nprint(f'Dimensions before dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[ocd_columns_to_keep]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism.dropna(thresh=0.5*len(df_autism), axis=1)\nprint(f'Dimensions after dropping columns with more than 50% missing values: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\nprint(f'columns in df_ocd: {df_ocd.columns}')\n#* Only keep the columns in these two dataframes that are in both dataframes and are in the lists below\nautism_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\nocd_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\n# drop columns that are not in the lists above\nprint(f'Dimensions before dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[ocd_columns_to_keep]\ndf_autism = df_autism[autism_columns_to_keep]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "autism_columns_to_keep",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "autism_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\nocd_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\n# drop columns that are not in the lists above\nprint(f'Dimensions before dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[ocd_columns_to_keep]\ndf_autism = df_autism[autism_columns_to_keep]\nprint(f'Dimensions after dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# Now remove any posts from these dataframes where the `is_video` or `media_only` columns are True\nprint(f'Dimensions before removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "ocd_columns_to_keep",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "ocd_columns_to_keep = ['author', 'author_flair_richtext', 'author_flair_type','created_utc', 'id', 'is_video', 'selftext', 'title', 'is_original_content','media_only', 'author_fullname','target']\n# drop columns that are not in the lists above\nprint(f'Dimensions before dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[ocd_columns_to_keep]\ndf_autism = df_autism[autism_columns_to_keep]\nprint(f'Dimensions after dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# Now remove any posts from these dataframes where the `is_video` or `media_only` columns are True\nprint(f'Dimensions before removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd[ocd_columns_to_keep]\ndf_autism = df_autism[autism_columns_to_keep]\nprint(f'Dimensions after dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# Now remove any posts from these dataframes where the `is_video` or `media_only` columns are True\nprint(f'Dimensions before removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# and now we can drop the `is_video` and `media_only` columns\ndf_ocd = df_ocd.drop(columns=['is_video', 'media_only'])",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism[autism_columns_to_keep]\nprint(f'Dimensions after dropping columns that are not in the lists above: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# Now remove any posts from these dataframes where the `is_video` or `media_only` columns are True\nprint(f'Dimensions before removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# and now we can drop the `is_video` and `media_only` columns\ndf_ocd = df_ocd.drop(columns=['is_video', 'media_only'])\ndf_autism = df_autism.drop(columns=['is_video', 'media_only'])",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd[(df_ocd['is_video'] == False) & (df_ocd['media_only'] == False)]\ndf_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# and now we can drop the `is_video` and `media_only` columns\ndf_ocd = df_ocd.drop(columns=['is_video', 'media_only'])\ndf_autism = df_autism.drop(columns=['is_video', 'media_only'])\nprint(f'Dropped the `is_video` and `media_only` columns')\n# some posts are in the title column and some are in the selftext column so we need to combine these columns into one column if they are long enough.\n# find the median length of the title and selftext columns combined for each dataframe\nmed_len_title_selftext_ocd = df_ocd.title.str.len().add(df_ocd.selftext.str.len()).median()",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism[(df_autism['is_video'] == False) & (df_autism['media_only'] == False)]\nprint(f'Dimensions after removing posts where `is_video` or `media_only` columns are True: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# and now we can drop the `is_video` and `media_only` columns\ndf_ocd = df_ocd.drop(columns=['is_video', 'media_only'])\ndf_autism = df_autism.drop(columns=['is_video', 'media_only'])\nprint(f'Dropped the `is_video` and `media_only` columns')\n# some posts are in the title column and some are in the selftext column so we need to combine these columns into one column if they are long enough.\n# find the median length of the title and selftext columns combined for each dataframe\nmed_len_title_selftext_ocd = df_ocd.title.str.len().add(df_ocd.selftext.str.len()).median()\nmed_len_title_selftext_autism = df_autism.title.str.len().add(df_autism.selftext.str.len()).median()",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd.drop(columns=['is_video', 'media_only'])\ndf_autism = df_autism.drop(columns=['is_video', 'media_only'])\nprint(f'Dropped the `is_video` and `media_only` columns')\n# some posts are in the title column and some are in the selftext column so we need to combine these columns into one column if they are long enough.\n# find the median length of the title and selftext columns combined for each dataframe\nmed_len_title_selftext_ocd = df_ocd.title.str.len().add(df_ocd.selftext.str.len()).median()\nmed_len_title_selftext_autism = df_autism.title.str.len().add(df_autism.selftext.str.len()).median()\nprint(f'Median length of title and selftext columns combined for OCD: {med_len_title_selftext_ocd}')\nprint(f'Median length of title and selftext columns combined for Autism: {med_len_title_selftext_autism}')\n# how many posts have a title and selftext combined that are longer than the median length of the title and selftext columns combined for each dataframe?",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism.drop(columns=['is_video', 'media_only'])\nprint(f'Dropped the `is_video` and `media_only` columns')\n# some posts are in the title column and some are in the selftext column so we need to combine these columns into one column if they are long enough.\n# find the median length of the title and selftext columns combined for each dataframe\nmed_len_title_selftext_ocd = df_ocd.title.str.len().add(df_ocd.selftext.str.len()).median()\nmed_len_title_selftext_autism = df_autism.title.str.len().add(df_autism.selftext.str.len()).median()\nprint(f'Median length of title and selftext columns combined for OCD: {med_len_title_selftext_ocd}')\nprint(f'Median length of title and selftext columns combined for Autism: {med_len_title_selftext_autism}')\n# how many posts have a title and selftext combined that are longer than the median length of the title and selftext columns combined for each dataframe?\nprint(f'Acceptable number of OCD posts: {len(df_ocd[df_ocd.title.str.len().add(df_ocd.selftext.str.len()) > med_len_title_selftext_ocd])}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "med_len_title_selftext_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "med_len_title_selftext_ocd = df_ocd.title.str.len().add(df_ocd.selftext.str.len()).median()\nmed_len_title_selftext_autism = df_autism.title.str.len().add(df_autism.selftext.str.len()).median()\nprint(f'Median length of title and selftext columns combined for OCD: {med_len_title_selftext_ocd}')\nprint(f'Median length of title and selftext columns combined for Autism: {med_len_title_selftext_autism}')\n# how many posts have a title and selftext combined that are longer than the median length of the title and selftext columns combined for each dataframe?\nprint(f'Acceptable number of OCD posts: {len(df_ocd[df_ocd.title.str.len().add(df_ocd.selftext.str.len()) > med_len_title_selftext_ocd])}')\nprint(f'Acceptable number of Autism posts: {len(df_autism[df_autism.title.str.len().add(df_autism.selftext.str.len()) > med_len_title_selftext_autism])}')\n# remove posts where the title and selftext combined are shorter than the median length of the title and selftext columns combined for each dataframe\nprint(f'Dimensions before: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[df_ocd.title.str.len().add(df_ocd.selftext.str.len()) > med_len_title_selftext_ocd]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "med_len_title_selftext_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "med_len_title_selftext_autism = df_autism.title.str.len().add(df_autism.selftext.str.len()).median()\nprint(f'Median length of title and selftext columns combined for OCD: {med_len_title_selftext_ocd}')\nprint(f'Median length of title and selftext columns combined for Autism: {med_len_title_selftext_autism}')\n# how many posts have a title and selftext combined that are longer than the median length of the title and selftext columns combined for each dataframe?\nprint(f'Acceptable number of OCD posts: {len(df_ocd[df_ocd.title.str.len().add(df_ocd.selftext.str.len()) > med_len_title_selftext_ocd])}')\nprint(f'Acceptable number of Autism posts: {len(df_autism[df_autism.title.str.len().add(df_autism.selftext.str.len()) > med_len_title_selftext_autism])}')\n# remove posts where the title and selftext combined are shorter than the median length of the title and selftext columns combined for each dataframe\nprint(f'Dimensions before: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\ndf_ocd = df_ocd[df_ocd.title.str.len().add(df_ocd.selftext.str.len()) > med_len_title_selftext_ocd]\ndf_autism = df_autism[df_autism.title.str.len().add(df_autism.selftext.str.len()) > med_len_title_selftext_autism]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd[df_ocd.title.str.len().add(df_ocd.selftext.str.len()) > med_len_title_selftext_ocd]\ndf_autism = df_autism[df_autism.title.str.len().add(df_autism.selftext.str.len()) > med_len_title_selftext_autism]\nprint(f'Dimensions before: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop author_flair_richtext\ndf_ocd = df_ocd.drop(columns=['author_flair_richtext'])\ndf_autism = df_autism.drop(columns=['author_flair_richtext'])\n# how many authors are in each dataframe?\nprint(f'Number of authors in df_ocd: {len(df_ocd.author.unique())}')\nprint(f'Number of authors in df_autism: {len(df_autism.author.unique())}')\n# how many posts are there for the top 100 authors in each dataframe?",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism[df_autism.title.str.len().add(df_autism.selftext.str.len()) > med_len_title_selftext_autism]\nprint(f'Dimensions before: {df_ocd.shape} for OCD and {df_autism.shape} for Autism')\n# drop author_flair_richtext\ndf_ocd = df_ocd.drop(columns=['author_flair_richtext'])\ndf_autism = df_autism.drop(columns=['author_flair_richtext'])\n# how many authors are in each dataframe?\nprint(f'Number of authors in df_ocd: {len(df_ocd.author.unique())}')\nprint(f'Number of authors in df_autism: {len(df_autism.author.unique())}')\n# how many posts are there for the top 100 authors in each dataframe?\ntop_authors_ocd = df_ocd.author.value_counts().head(100)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd.drop(columns=['author_flair_richtext'])\ndf_autism = df_autism.drop(columns=['author_flair_richtext'])\n# how many authors are in each dataframe?\nprint(f'Number of authors in df_ocd: {len(df_ocd.author.unique())}')\nprint(f'Number of authors in df_autism: {len(df_autism.author.unique())}')\n# how many posts are there for the top 100 authors in each dataframe?\ntop_authors_ocd = df_ocd.author.value_counts().head(100)\ntop_authors_byfullname_ocd = df_ocd.author_fullname.value_counts().head(100)\ntop_authors_autism = df_autism.author.value_counts().head(100)\ntop_authors_byfullname_autism = df_autism.author_fullname.value_counts().head(100)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism.drop(columns=['author_flair_richtext'])\n# how many authors are in each dataframe?\nprint(f'Number of authors in df_ocd: {len(df_ocd.author.unique())}')\nprint(f'Number of authors in df_autism: {len(df_autism.author.unique())}')\n# how many posts are there for the top 100 authors in each dataframe?\ntop_authors_ocd = df_ocd.author.value_counts().head(100)\ntop_authors_byfullname_ocd = df_ocd.author_fullname.value_counts().head(100)\ntop_authors_autism = df_autism.author.value_counts().head(100)\ntop_authors_byfullname_autism = df_autism.author_fullname.value_counts().head(100)\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "top_authors_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "top_authors_ocd = df_ocd.author.value_counts().head(100)\ntop_authors_byfullname_ocd = df_ocd.author_fullname.value_counts().head(100)\ntop_authors_autism = df_autism.author.value_counts().head(100)\ntop_authors_byfullname_autism = df_autism.author_fullname.value_counts().head(100)\n# %%\ntop_authors_ocd.head(2)\n# %%\ntop_authors_autism.head(2)\n# %%\n# are there any authors that are in both dataframes?",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "top_authors_byfullname_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "top_authors_byfullname_ocd = df_ocd.author_fullname.value_counts().head(100)\ntop_authors_autism = df_autism.author.value_counts().head(100)\ntop_authors_byfullname_autism = df_autism.author_fullname.value_counts().head(100)\n# %%\ntop_authors_ocd.head(2)\n# %%\ntop_authors_autism.head(2)\n# %%\n# are there any authors that are in both dataframes?\nprint(f'Number of authors that are in both dataframes: {len(set(top_authors_ocd.index).intersection(set(top_authors_autism.index)))}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "top_authors_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "top_authors_autism = df_autism.author.value_counts().head(100)\ntop_authors_byfullname_autism = df_autism.author_fullname.value_counts().head(100)\n# %%\ntop_authors_ocd.head(2)\n# %%\ntop_authors_autism.head(2)\n# %%\n# are there any authors that are in both dataframes?\nprint(f'Number of authors that are in both dataframes: {len(set(top_authors_ocd.index).intersection(set(top_authors_autism.index)))}')\nlist_of_cross_posters = list(set(top_authors_ocd.index).intersection(set(top_authors_autism.index)))",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "top_authors_byfullname_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "top_authors_byfullname_autism = df_autism.author_fullname.value_counts().head(100)\n# %%\ntop_authors_ocd.head(2)\n# %%\ntop_authors_autism.head(2)\n# %%\n# are there any authors that are in both dataframes?\nprint(f'Number of authors that are in both dataframes: {len(set(top_authors_ocd.index).intersection(set(top_authors_autism.index)))}')\nlist_of_cross_posters = list(set(top_authors_ocd.index).intersection(set(top_authors_autism.index)))\nprint(f'List of authors that are in both dataframes: {list_of_cross_posters}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "list_of_cross_posters",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "list_of_cross_posters = list(set(top_authors_ocd.index).intersection(set(top_authors_autism.index)))\nprint(f'List of authors that are in both dataframes: {list_of_cross_posters}')\n# %%\n# drop author_flair_type and author_fullname columns from both dataframes\ndf_ocd = df_ocd.drop(columns=['author_flair_type', 'author_fullname'])\ndf_autism = df_autism.drop(columns=['author_flair_type', 'author_fullname'])\n# combine the title and self text columns into one column with the format `title - selftext`\ndf_ocd['title_selftext'] = df_ocd.title + ' - ' + df_ocd.selftext\ndf_autism['title_selftext'] = df_autism.title + ' - ' + df_autism.selftext\n# drop the title and selftext columns",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd.drop(columns=['author_flair_type', 'author_fullname'])\ndf_autism = df_autism.drop(columns=['author_flair_type', 'author_fullname'])\n# combine the title and self text columns into one column with the format `title - selftext`\ndf_ocd['title_selftext'] = df_ocd.title + ' - ' + df_ocd.selftext\ndf_autism['title_selftext'] = df_autism.title + ' - ' + df_autism.selftext\n# drop the title and selftext columns\ndf_ocd = df_ocd.drop(columns=['title', 'selftext'])\ndf_autism = df_autism.drop(columns=['title', 'selftext'])\n# rename the `title_selftext` column to `selftext`\ndf_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism.drop(columns=['author_flair_type', 'author_fullname'])\n# combine the title and self text columns into one column with the format `title - selftext`\ndf_ocd['title_selftext'] = df_ocd.title + ' - ' + df_ocd.selftext\ndf_autism['title_selftext'] = df_autism.title + ' - ' + df_autism.selftext\n# drop the title and selftext columns\ndf_ocd = df_ocd.drop(columns=['title', 'selftext'])\ndf_autism = df_autism.drop(columns=['title', 'selftext'])\n# rename the `title_selftext` column to `selftext`\ndf_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})\ndf_autism = df_autism.rename(columns={'title_selftext': 'selftext'})",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['title_selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['title_selftext'] = df_ocd.title + ' - ' + df_ocd.selftext\ndf_autism['title_selftext'] = df_autism.title + ' - ' + df_autism.selftext\n# drop the title and selftext columns\ndf_ocd = df_ocd.drop(columns=['title', 'selftext'])\ndf_autism = df_autism.drop(columns=['title', 'selftext'])\n# rename the `title_selftext` column to `selftext`\ndf_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})\ndf_autism = df_autism.rename(columns={'title_selftext': 'selftext'})\n# randomly sample one post from each dataframe and print it\nprint(f'Random OCD post: {df_ocd.sample(1).selftext.values[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['title_selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['title_selftext'] = df_autism.title + ' - ' + df_autism.selftext\n# drop the title and selftext columns\ndf_ocd = df_ocd.drop(columns=['title', 'selftext'])\ndf_autism = df_autism.drop(columns=['title', 'selftext'])\n# rename the `title_selftext` column to `selftext`\ndf_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})\ndf_autism = df_autism.rename(columns={'title_selftext': 'selftext'})\n# randomly sample one post from each dataframe and print it\nprint(f'Random OCD post: {df_ocd.sample(1).selftext.values[0]}')\nprint('='*100)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd.drop(columns=['title', 'selftext'])\ndf_autism = df_autism.drop(columns=['title', 'selftext'])\n# rename the `title_selftext` column to `selftext`\ndf_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})\ndf_autism = df_autism.rename(columns={'title_selftext': 'selftext'})\n# randomly sample one post from each dataframe and print it\nprint(f'Random OCD post: {df_ocd.sample(1).selftext.values[0]}')\nprint('='*100)\nprint(f'Random Autism post: {df_autism.sample(1).selftext.values[0]}')\ncancel_words = ['ocd','aut*','autism','obsess*','compuls*','disorder','executive dysfunction','adhd','diagnosis','ive been taking','spectrum','intrusive thoughts','germaphobes','depression']",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism.drop(columns=['title', 'selftext'])\n# rename the `title_selftext` column to `selftext`\ndf_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})\ndf_autism = df_autism.rename(columns={'title_selftext': 'selftext'})\n# randomly sample one post from each dataframe and print it\nprint(f'Random OCD post: {df_ocd.sample(1).selftext.values[0]}')\nprint('='*100)\nprint(f'Random Autism post: {df_autism.sample(1).selftext.values[0]}')\ncancel_words = ['ocd','aut*','autism','obsess*','compuls*','disorder','executive dysfunction','adhd','diagnosis','ive been taking','spectrum','intrusive thoughts','germaphobes','depression']\n# apply the censor_words function to the selftext column of each dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd = df_ocd.rename(columns={'title_selftext': 'selftext'})\ndf_autism = df_autism.rename(columns={'title_selftext': 'selftext'})\n# randomly sample one post from each dataframe and print it\nprint(f'Random OCD post: {df_ocd.sample(1).selftext.values[0]}')\nprint('='*100)\nprint(f'Random Autism post: {df_autism.sample(1).selftext.values[0]}')\ncancel_words = ['ocd','aut*','autism','obsess*','compuls*','disorder','executive dysfunction','adhd','diagnosis','ive been taking','spectrum','intrusive thoughts','germaphobes','depression']\n# apply the censor_words function to the selftext column of each dataframe\ndf_ocd['selftext'] = df_ocd['selftext'].apply(censor_words)\n# remove punctuation",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism = df_autism.rename(columns={'title_selftext': 'selftext'})\n# randomly sample one post from each dataframe and print it\nprint(f'Random OCD post: {df_ocd.sample(1).selftext.values[0]}')\nprint('='*100)\nprint(f'Random Autism post: {df_autism.sample(1).selftext.values[0]}')\ncancel_words = ['ocd','aut*','autism','obsess*','compuls*','disorder','executive dysfunction','adhd','diagnosis','ive been taking','spectrum','intrusive thoughts','germaphobes','depression']\n# apply the censor_words function to the selftext column of each dataframe\ndf_ocd['selftext'] = df_ocd['selftext'].apply(censor_words)\n# remove punctuation\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('[^\\w\\s]','')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "cancel_words",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "cancel_words = ['ocd','aut*','autism','obsess*','compuls*','disorder','executive dysfunction','adhd','diagnosis','ive been taking','spectrum','intrusive thoughts','germaphobes','depression']\n# apply the censor_words function to the selftext column of each dataframe\ndf_ocd['selftext'] = df_ocd['selftext'].apply(censor_words)\n# remove punctuation\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\s+', ' ')\n# do the same for the autism dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['selftext'] = df_ocd['selftext'].apply(censor_words)\n# remove punctuation\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\s+', ' ')\n# do the same for the autism dataframe\ndf_autism['selftext'] = df_autism['selftext'].apply(censor_words)\n# remove punctuation",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['selftext'] = df_ocd['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\s+', ' ')\n# do the same for the autism dataframe\ndf_autism['selftext'] = df_autism['selftext'].apply(censor_words)\n# remove punctuation\ndf_autism['selftext'] = df_autism['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['selftext'] = df_ocd['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('\\s+', ' ')\n# do the same for the autism dataframe\ndf_autism['selftext'] = df_autism['selftext'].apply(censor_words)\n# remove punctuation\ndf_autism['selftext'] = df_autism['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\d+', '')\n# remove whitespace",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['selftext'] = df_ocd['selftext'].str.replace('\\s+', ' ')\n# do the same for the autism dataframe\ndf_autism['selftext'] = df_autism['selftext'].apply(censor_words)\n# remove punctuation\ndf_autism['selftext'] = df_autism['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\s+', ' ')\n# remove words from posts that are in the cancel_words list. There are regex patterns in the cancel_words list so we need to use the `regex=True` parameter",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['selftext'] = df_autism['selftext'].apply(censor_words)\n# remove punctuation\ndf_autism['selftext'] = df_autism['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\s+', ' ')\n# remove words from posts that are in the cancel_words list. There are regex patterns in the cancel_words list so we need to use the `regex=True` parameter\n# then remove double spaces\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('  ', ' ')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['selftext'] = df_autism['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\s+', ' ')\n# remove words from posts that are in the cancel_words list. There are regex patterns in the cancel_words list so we need to use the `regex=True` parameter\n# then remove double spaces\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('  ', ' ')\ndf_autism['selftext'] = df_autism['selftext'].str.replace('  ', ' ')\n# make a new dataframe called df_reddit that combines the two dataframes",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['selftext'] = df_autism['selftext'].str.replace('\\d+', '')\n# remove whitespace\ndf_autism['selftext'] = df_autism['selftext'].str.replace('\\s+', ' ')\n# remove words from posts that are in the cancel_words list. There are regex patterns in the cancel_words list so we need to use the `regex=True` parameter\n# then remove double spaces\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('  ', ' ')\ndf_autism['selftext'] = df_autism['selftext'].str.replace('  ', ' ')\n# make a new dataframe called df_reddit that combines the two dataframes\n# %% [markdown]\n# ## Equilibrium",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['selftext'] = df_autism['selftext'].str.replace('\\s+', ' ')\n# remove words from posts that are in the cancel_words list. There are regex patterns in the cancel_words list so we need to use the `regex=True` parameter\n# then remove double spaces\ndf_ocd['selftext'] = df_ocd['selftext'].str.replace('  ', ' ')\ndf_autism['selftext'] = df_autism['selftext'].str.replace('  ', ' ')\n# make a new dataframe called df_reddit that combines the two dataframes\n# %% [markdown]\n# ## Equilibrium\n# %%\ndf_reddit = pd.DataFrame(columns=df_ocd.columns)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_ocd['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_ocd['selftext'] = df_ocd['selftext'].str.replace('  ', ' ')\ndf_autism['selftext'] = df_autism['selftext'].str.replace('  ', ' ')\n# make a new dataframe called df_reddit that combines the two dataframes\n# %% [markdown]\n# ## Equilibrium\n# %%\ndf_reddit = pd.DataFrame(columns=df_ocd.columns)\n# what is the length of the shorter dataframe?\nif len(df_ocd) < len(df_autism): # if the OCD dataframe is shorter\n    shorter_df = df_ocd # set the shorter dataframe to the OCD dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_autism['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_autism['selftext'] = df_autism['selftext'].str.replace('  ', ' ')\n# make a new dataframe called df_reddit that combines the two dataframes\n# %% [markdown]\n# ## Equilibrium\n# %%\ndf_reddit = pd.DataFrame(columns=df_ocd.columns)\n# what is the length of the shorter dataframe?\nif len(df_ocd) < len(df_autism): # if the OCD dataframe is shorter\n    shorter_df = df_ocd # set the shorter dataframe to the OCD dataframe\n    longer_df = df_autism # set the longer dataframe to the Autism dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = pd.DataFrame(columns=df_ocd.columns)\n# what is the length of the shorter dataframe?\nif len(df_ocd) < len(df_autism): # if the OCD dataframe is shorter\n    shorter_df = df_ocd # set the shorter dataframe to the OCD dataframe\n    longer_df = df_autism # set the longer dataframe to the Autism dataframe\nelse: # if the Autism dataframe is shorter\n    shorter_df = df_autism\n    longer_df = df_ocd\n# add the shorter dataframe to the new dataframe using concat\ndf_reddit = pd.concat([df_reddit, shorter_df], axis=0)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = pd.concat([df_reddit, shorter_df], axis=0)\n# shorten the longer dataframe to the length of the shorter dataframe\nlonger_df = longer_df.head(len(shorter_df))\n# add the shortened longer dataframe to the new dataframe using concat\ndf_reddit = pd.concat([df_reddit, longer_df], axis=0)\n# reset the index\ndf_reddit = df_reddit.reset_index(drop=True)\n# shuffle the dataframe\ndf_reddit = df_reddit.sample(frac=1).reset_index(drop=True)\n# check the dimensions of the new dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "longer_df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "longer_df = longer_df.head(len(shorter_df))\n# add the shortened longer dataframe to the new dataframe using concat\ndf_reddit = pd.concat([df_reddit, longer_df], axis=0)\n# reset the index\ndf_reddit = df_reddit.reset_index(drop=True)\n# shuffle the dataframe\ndf_reddit = df_reddit.sample(frac=1).reset_index(drop=True)\n# check the dimensions of the new dataframe\nprint(f'Dimensions of the new dataframe: {df_reddit.shape}')\ndf_reddit.head(5)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = pd.concat([df_reddit, longer_df], axis=0)\n# reset the index\ndf_reddit = df_reddit.reset_index(drop=True)\n# shuffle the dataframe\ndf_reddit = df_reddit.sample(frac=1).reset_index(drop=True)\n# check the dimensions of the new dataframe\nprint(f'Dimensions of the new dataframe: {df_reddit.shape}')\ndf_reddit.head(5)\n# %%\n# double check that the number of posts for each subreddit is the same",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = df_reddit.reset_index(drop=True)\n# shuffle the dataframe\ndf_reddit = df_reddit.sample(frac=1).reset_index(drop=True)\n# check the dimensions of the new dataframe\nprint(f'Dimensions of the new dataframe: {df_reddit.shape}')\ndf_reddit.head(5)\n# %%\n# double check that the number of posts for each subreddit is the same\nprint(f'Number of posts for OCD: {len(df_reddit[df_reddit.target == 1])}')\nprint(f'Number of posts for Autism: {len(df_reddit[df_reddit.target == 0])}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = df_reddit.sample(frac=1).reset_index(drop=True)\n# check the dimensions of the new dataframe\nprint(f'Dimensions of the new dataframe: {df_reddit.shape}')\ndf_reddit.head(5)\n# %%\n# double check that the number of posts for each subreddit is the same\nprint(f'Number of posts for OCD: {len(df_reddit[df_reddit.target == 1])}')\nprint(f'Number of posts for Autism: {len(df_reddit[df_reddit.target == 0])}')\n# %%\ndf_ocd.head(2)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "drug_info",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "drug_info = pd.read_csv('../data/drug_info.csv')\ndrug_info['Medication Name'] = drug_info['Medication Name'].str.lower()\n# create a list of the medications\nmedications = drug_info['Medication Name'].tolist()\nprint(f'Number of medications: {len(medications)}')\n# how many posts contain a medication?\nprint(f'Number of posts that contain a medication: {len(df_reddit[df_reddit.selftext.str.contains(\"|\".join(medications), regex=True)])}')\n# %%\nmedications[0]\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "medications",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "medications = drug_info['Medication Name'].tolist()\nprint(f'Number of medications: {len(medications)}')\n# how many posts contain a medication?\nprint(f'Number of posts that contain a medication: {len(df_reddit[df_reddit.selftext.str.contains(\"|\".join(medications), regex=True)])}')\n# %%\nmedications[0]\n# %%\nmedications = [med for med in medications if len(med) > 5]\n# create a list of rows and the medications mentioned in each row\nimport os",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "medications",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "medications = [med for med in medications if len(med) > 5]\n# create a list of rows and the medications mentioned in each row\nimport os\nmedications_mentioned = []\nif os.path.exists('../data/cleaned_reddit.csv'):\n    pass\nelse:\n    # with alive_bar (len(df_reddit)) as bar:\n    for index, row in df_reddit.iterrows(): # iterate through each row in the dataframe\n        # use regex to find all of the medications in the selftext column",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "medications_mentioned",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "medications_mentioned = []\nif os.path.exists('../data/cleaned_reddit.csv'):\n    pass\nelse:\n    # with alive_bar (len(df_reddit)) as bar:\n    for index, row in df_reddit.iterrows(): # iterate through each row in the dataframe\n        # use regex to find all of the medications in the selftext column\n        meds = re.findall(r'\\b(?:{})\\b'.format('|'.join(medications)), row['selftext'])\n        if len(meds) > 0: # if there are medications mentioned in the post\n            # replace the medications with ' ' (empty string)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace('[^\\w\\s]','')\n# remove numbers\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace('\\d+', '')\n# remove double spaces\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace('  ', ' ')\n# remove single characters\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\b\\w\\b', '').str.replace(r'\\s+', ' ')\n# remove newlines\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\n', ' ')\n# remove urls",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace('\\d+', '')\n# remove double spaces\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace('  ', ' ')\n# remove single characters\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\b\\w\\b', '').str.replace(r'\\s+', ' ')\n# remove newlines\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\n', ' ')\n# remove urls\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'http\\S+', '')\n# remove html tags",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace('  ', ' ')\n# remove single characters\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\b\\w\\b', '').str.replace(r'\\s+', ' ')\n# remove newlines\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\n', ' ')\n# remove urls\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'http\\S+', '')\n# remove html tags\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'<.*?>', '')\n# remove extra spaces",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\b\\w\\b', '').str.replace(r'\\s+', ' ')\n# remove newlines\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\n', ' ')\n# remove urls\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'http\\S+', '')\n# remove html tags\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'<.*?>', '')\n# remove extra spaces\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+', ' ')\n# remove extra spaces at the beginning of the string",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\n', ' ')\n# remove urls\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'http\\S+', '')\n# remove html tags\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'<.*?>', '')\n# remove extra spaces\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+', ' ')\n# remove extra spaces at the beginning of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'^\\s+', '')\n# remove extra spaces at the end of the string",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'http\\S+', '')\n# remove html tags\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'<.*?>', '')\n# remove extra spaces\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+', ' ')\n# remove extra spaces at the beginning of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'^\\s+', '')\n# remove extra spaces at the end of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+$', '')\n# save progress to a csv file",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'<.*?>', '')\n# remove extra spaces\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+', ' ')\n# remove extra spaces at the beginning of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'^\\s+', '')\n# remove extra spaces at the end of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+$', '')\n# save progress to a csv file\ndf_reddit.to_csv('../data/cleaned_reddit.csv', index=False)\n# read the file into a dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+', ' ')\n# remove extra spaces at the beginning of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'^\\s+', '')\n# remove extra spaces at the end of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+$', '')\n# save progress to a csv file\ndf_reddit.to_csv('../data/cleaned_reddit.csv', index=False)\n# read the file into a dataframe\ndf_reddit = pd.read_csv('../data/cleaned_reddit.csv')\n# remove any rows that have a null value in the selftext column",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'^\\s+', '')\n# remove extra spaces at the end of the string\ndf_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+$', '')\n# save progress to a csv file\ndf_reddit.to_csv('../data/cleaned_reddit.csv', index=False)\n# read the file into a dataframe\ndf_reddit = pd.read_csv('../data/cleaned_reddit.csv')\n# remove any rows that have a null value in the selftext column\ndf_reddit = df_reddit.dropna(subset=['selftext'])\n# reset the index",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit['selftext']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit['selftext'] = df_reddit['selftext'].str.replace(r'\\s+$', '')\n# save progress to a csv file\ndf_reddit.to_csv('../data/cleaned_reddit.csv', index=False)\n# read the file into a dataframe\ndf_reddit = pd.read_csv('../data/cleaned_reddit.csv')\n# remove any rows that have a null value in the selftext column\ndf_reddit = df_reddit.dropna(subset=['selftext'])\n# reset the index\ndf_reddit = df_reddit.reset_index(drop=True)\n# check the dimensions of the dataframe",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = pd.read_csv('../data/cleaned_reddit.csv')\n# remove any rows that have a null value in the selftext column\ndf_reddit = df_reddit.dropna(subset=['selftext'])\n# reset the index\ndf_reddit = df_reddit.reset_index(drop=True)\n# check the dimensions of the dataframe\nprint(f'Dimensions of the dataframe: {df_reddit.shape}')\ndef num_distinct_words(text,df):\n    # for this text, find the words that do not appear in any other text in the dataframe column 'selftext'\n    # split the text into a list of words",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = df_reddit.dropna(subset=['selftext'])\n# reset the index\ndf_reddit = df_reddit.reset_index(drop=True)\n# check the dimensions of the dataframe\nprint(f'Dimensions of the dataframe: {df_reddit.shape}')\ndef num_distinct_words(text,df):\n    # for this text, find the words that do not appear in any other text in the dataframe column 'selftext'\n    # split the text into a list of words\n    if type(text) == str:\n        text = text.split(' ')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df_reddit",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df_reddit = df_reddit.reset_index(drop=True)\n# check the dimensions of the dataframe\nprint(f'Dimensions of the dataframe: {df_reddit.shape}')\ndef num_distinct_words(text,df):\n    # for this text, find the words that do not appear in any other text in the dataframe column 'selftext'\n    # split the text into a list of words\n    if type(text) == str:\n        text = text.split(' ')\n        # find the number of words that are not in any other text in the dataframe\n    else:",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df = df_reddit.copy() # make a copy of the dataframe\n#* flag\nblock_active = False # do not run this section of code unless the flag is set to True.\n# if ../data/distinct_words_and_extras.csv does not exist, then create it with the following code\nif block_active:\n    if os.path.exists('../data/distinct_words_and_extras.csv'):\n        # load the file as df\n        df = pd.read_csv('../data/distinct_words_and_extras.csv')\n        print(f'Loaded the file ../data/distinct_words_and_extras.csv')\n        print(f'   the included features are {df.columns}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "block_active",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "block_active = False # do not run this section of code unless the flag is set to True.\n# if ../data/distinct_words_and_extras.csv does not exist, then create it with the following code\nif block_active:\n    if os.path.exists('../data/distinct_words_and_extras.csv'):\n        # load the file as df\n        df = pd.read_csv('../data/distinct_words_and_extras.csv')\n        print(f'Loaded the file ../data/distinct_words_and_extras.csv')\n        print(f'   the included features are {df.columns}')\n    else:\n        # add selftext_length as a column",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df = pd.read_csv('../data/cleaned_reddit.csv')\ntry:\n    #~ Dropping Constant Value columns from the data ~#\n    df.drop(columns=['is_original_content'], inplace=True)\n    #~ Dropping duplicated selftext rows from the data ~#\n    print(f'Before dropping duplicates, the shape of the data is: {df.shape}')\n    preshape = df.shape[0]\n    df.drop_duplicates(subset=['selftext'], inplace=True)\n    print(f'After dropping duplicates, the shape of the data is: {df.shape}')\n    print(f'The number of rows dropped is: {preshape - df.shape[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['selftext_length']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['selftext_length'] = df['selftext'].str.len()\n# Create a new column that is the number of words in the selftext\ndf['selftext_word_count'] = df['selftext'].str.split().str.len()\n# A column for each letter of the alphabet that is the number of times that letter appears in the selftext\nfor letter in 'abcdefghijklmnopqrstuvwxyz':\n    df[f'{letter}'] = df['selftext'].str.count(letter)\n# save the data to a csv\ndf.to_csv('../data/cleaned_reddit.csv', index=False)\ndf.head()\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['selftext_word_count']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['selftext_word_count'] = df['selftext'].str.split().str.len()\n# A column for each letter of the alphabet that is the number of times that letter appears in the selftext\nfor letter in 'abcdefghijklmnopqrstuvwxyz':\n    df[f'{letter}'] = df['selftext'].str.count(letter)\n# save the data to a csv\ndf.to_csv('../data/cleaned_reddit.csv', index=False)\ndf.head()\n# %%\n# make a figure plotting letters against number of occurances in selftext for each selftext length bin. To avoid the ValueError \"ValueError: num must be 1 <= num <= 16, not 17\" the number of bins is set to 25 instead of 26 (the number of letters in the alphabet).\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df = pd.read_csv('../data/cleaned_reddit_withsentiment.csv')\ndf = df[(df['created_utc'] >= 1547500000) & (df['created_utc'] <= 1598000000)] # filter the dataframe to only include posts that were posted within the UTC range listed above. (1.5475 to 1.598)\ndf.head()\n# %%\n# add 'ocd_selftext_length' and 'autism_selftext_length' columns to the df\ndf['selftext_length'] = df['selftext'].apply(lambda x: len(x))\ndf['ocd_selftext_length'] = df[df['target']==1]['selftext_length']\ndf['autism_selftext_length'] = df[df['target']==0]['selftext_length']\ndf['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df = df[(df['created_utc'] >= 1547500000) & (df['created_utc'] <= 1598000000)] # filter the dataframe to only include posts that were posted within the UTC range listed above. (1.5475 to 1.598)\ndf.head()\n# %%\n# add 'ocd_selftext_length' and 'autism_selftext_length' columns to the df\ndf['selftext_length'] = df['selftext'].apply(lambda x: len(x))\ndf['ocd_selftext_length'] = df[df['target']==1]['selftext_length']\ndf['autism_selftext_length'] = df[df['target']==0]['selftext_length']\ndf['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['selftext_length']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['selftext_length'] = df['selftext'].apply(lambda x: len(x))\ndf['ocd_selftext_length'] = df[df['target']==1]['selftext_length']\ndf['autism_selftext_length'] = df[df['target']==0]['selftext_length']\ndf['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing\n# for this code block ignore the IndexError\n# use coolwarm for the color map to make the colors more distinct\n# add an annotation to each plot that shows the target value for that author (0 or 1) but for 1 show the text 'OCD' and for 0 show the text 'Autism' (this is the target column in the df) and make the text larger and bold.",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['ocd_selftext_length']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['ocd_selftext_length'] = df[df['target']==1]['selftext_length']\ndf['autism_selftext_length'] = df[df['target']==0]['selftext_length']\ndf['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing\n# for this code block ignore the IndexError\n# use coolwarm for the color map to make the colors more distinct\n# add an annotation to each plot that shows the target value for that author (0 or 1) but for 1 show the text 'OCD' and for 0 show the text 'Autism' (this is the target column in the df) and make the text larger and bold.\n# make the background color of each plot correspond to the average sentiment value for that author in the `sentiment` column (this is the average sentiment value for all of the posts by that author) use the following color map: 'coolwarm' (this is the same color map used for the scatterplots)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['autism_selftext_length']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['autism_selftext_length'] = df[df['target']==0]['selftext_length']\ndf['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing\n# for this code block ignore the IndexError\n# use coolwarm for the color map to make the colors more distinct\n# add an annotation to each plot that shows the target value for that author (0 or 1) but for 1 show the text 'OCD' and for 0 show the text 'Autism' (this is the target column in the df) and make the text larger and bold.\n# make the background color of each plot correspond to the average sentiment value for that author in the `sentiment` column (this is the average sentiment value for all of the posts by that author) use the following color map: 'coolwarm' (this is the same color map used for the scatterplots)\n# make the background color of the plot lighter if the average sentiment value is closer to 0 and darker if the average sentiment value is closer to 1",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['posts_by_author']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing\n# for this code block ignore the IndexError\n# use coolwarm for the color map to make the colors more distinct\n# add an annotation to each plot that shows the target value for that author (0 or 1) but for 1 show the text 'OCD' and for 0 show the text 'Autism' (this is the target column in the df) and make the text larger and bold.\n# make the background color of each plot correspond to the average sentiment value for that author in the `sentiment` column (this is the average sentiment value for all of the posts by that author) use the following color map: 'coolwarm' (this is the same color map used for the scatterplots)\n# make the background color of the plot lighter if the average sentiment value is closer to 0 and darker if the average sentiment value is closer to 1\nfig, axes = plt.subplots(10, 10, figsize=(20,20), sharey=True, sharex=True)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['posts_by_author']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['posts_by_author'] = df['author'].map(df['author'].value_counts()) # add a column to the df that shows the number of posts by each author\n# give each author a random unique hex color code i.e. '#aabbcc' for the first author, '#ffe111' for the second author, etc. (this will be used for the color of the points on the scatterplot)\n# use the following color map: 'coolwarm'\nimport random # this is used to generate random hex color codes\ndef random_color():\n    return '#%06x' % random.randint(0, 0xFFFFFF) # this will generate a random hex color code\ndf['author_color'] = df['author'].map({author: random_color() for author in df['author'].unique()}) # add a column to the df that shows the color for each author\n# sample\ndf.head()\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df['author_color']",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df['author_color'] = df['author'].map({author: random_color() for author in df['author'].unique()}) # add a column to the df that shows the color for each author\n# sample\ndf.head()\n# %%\n# plot the sentiment values for the top 100 authors (by number of posts) on their own subplots as scatterplots with the x-axis being the created_utc, y-axis being the selftext_length, and color representing the sentiment value column.\n# add a space between the plots to make them easier to read and to make the plot more aesthetically pleasing\n# for this code block ignore the IndexError\n# use coolwarm for the color map to make the colors more distinct\n# add an annotation to each plot that shows the target value for that author (0 or 1) but for 1 show the text 'OCD' and for 0 show the text 'Autism' (this is the target column in the df) and make the text larger and bold.\nfig, axes = plt.subplots(10, 10, figsize=(20,20), sharey=True, sharex=True)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "IQR",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "IQR = df['selftext_length'].quantile(0.75) - df['selftext_length'].quantile(0.25) # calculate the interquartile range\nlower_bound = df['selftext_length'].quantile(0.25) - (1.5 * IQR) # calculate the lower bound\nupper_bound = df['selftext_length'].quantile(0.75) + (1.5 * IQR) # calculate the upper bound\nprint(f'lower bound: {lower_bound} characters in selftext')\nprint(f'upper bound: {upper_bound} characters in selftext')\n# remove outliers from the df\nprint(f'number of rows in df before removing outliers: {df.shape[0]}')\npreshape = df.shape[0]\ndf = df[(df['selftext_length'] > lower_bound) & (df['selftext_length'] < upper_bound)]\nprint(f'number of rows in df after removing outliers: {df.shape[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "lower_bound",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "lower_bound = df['selftext_length'].quantile(0.25) - (1.5 * IQR) # calculate the lower bound\nupper_bound = df['selftext_length'].quantile(0.75) + (1.5 * IQR) # calculate the upper bound\nprint(f'lower bound: {lower_bound} characters in selftext')\nprint(f'upper bound: {upper_bound} characters in selftext')\n# remove outliers from the df\nprint(f'number of rows in df before removing outliers: {df.shape[0]}')\npreshape = df.shape[0]\ndf = df[(df['selftext_length'] > lower_bound) & (df['selftext_length'] < upper_bound)]\nprint(f'number of rows in df after removing outliers: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "upper_bound",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "upper_bound = df['selftext_length'].quantile(0.75) + (1.5 * IQR) # calculate the upper bound\nprint(f'lower bound: {lower_bound} characters in selftext')\nprint(f'upper bound: {upper_bound} characters in selftext')\n# remove outliers from the df\nprint(f'number of rows in df before removing outliers: {df.shape[0]}')\npreshape = df.shape[0]\ndf = df[(df['selftext_length'] > lower_bound) & (df['selftext_length'] < upper_bound)]\nprint(f'number of rows in df after removing outliers: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')\noutliers_removed = preshape - df.shape[0]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "preshape",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "preshape = df.shape[0]\ndf = df[(df['selftext_length'] > lower_bound) & (df['selftext_length'] < upper_bound)]\nprint(f'number of rows in df after removing outliers: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')\noutliers_removed = preshape - df.shape[0]\n# %%\n# repeat the plot above (using seaborn) but add a density plot to the plot that shows the distribution of selftext length for the OCD and Autism subreddits (together) - orange filled area (use matplotlib) - this will be the background of the plot (i.e. the density plot will be the background of the plot) - make the density plot transparent by 0.5 (i.e. make it 50% transparent) so that the points are more visible - make the density plot have a black outline\nimport seaborn as sns\nsns.set(style=\"whitegrid\")\n# set the area of the plot to focus on the data (i.e. remove the whitespace around the data)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df = df[(df['selftext_length'] > lower_bound) & (df['selftext_length'] < upper_bound)]\nprint(f'number of rows in df after removing outliers: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')\noutliers_removed = preshape - df.shape[0]\n# %%\n# repeat the plot above (using seaborn) but add a density plot to the plot that shows the distribution of selftext length for the OCD and Autism subreddits (together) - orange filled area (use matplotlib) - this will be the background of the plot (i.e. the density plot will be the background of the plot) - make the density plot transparent by 0.5 (i.e. make it 50% transparent) so that the points are more visible - make the density plot have a black outline\nimport seaborn as sns\nsns.set(style=\"whitegrid\")\n# set the area of the plot to focus on the data (i.e. remove the whitespace around the data)\n# set the background color of the plot to white",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "outliers_removed",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "outliers_removed = preshape - df.shape[0]\n# %%\n# repeat the plot above (using seaborn) but add a density plot to the plot that shows the distribution of selftext length for the OCD and Autism subreddits (together) - orange filled area (use matplotlib) - this will be the background of the plot (i.e. the density plot will be the background of the plot) - make the density plot transparent by 0.5 (i.e. make it 50% transparent) so that the points are more visible - make the density plot have a black outline\nimport seaborn as sns\nsns.set(style=\"whitegrid\")\n# set the area of the plot to focus on the data (i.e. remove the whitespace around the data)\n# set the background color of the plot to white\n# set the style of the plot to whitegrid\n# set the size of the plot to 20 inches by 10 inches\nfig = sns.kdeplot(df['ocd_selftext_length'], shade=True, color='red', alpha=0.5)",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "fig = sns.kdeplot(df['ocd_selftext_length'], shade=True, color='red', alpha=0.5)\nfig = sns.kdeplot(df['autism_selftext_length'], shade=True, color='blue', alpha=0.5)\nplt.title('Figure 12. Density Distribution of the Subreddits\\n Outliers Removed', fontsize=15)\n# annotate with outlier removal information in top right corner\nplt.annotate(f'{outliers_removed} outliers removed', xy=(0.95, 0.95), xycoords='axes fraction', horizontalalignment='right', verticalalignment='top', fontsize=10)\nplt.xlabel('Selftext Length', fontsize=15)\nplt.ylabel('Density', fontsize=15)\nplt.grid(False) # or use plt.grid(b=None) to remove the grid from all subplots\n# save the figure\nplt.savefig('../images/figure_12.png')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "fig = sns.kdeplot(df['autism_selftext_length'], shade=True, color='blue', alpha=0.5)\nplt.title('Figure 12. Density Distribution of the Subreddits\\n Outliers Removed', fontsize=15)\n# annotate with outlier removal information in top right corner\nplt.annotate(f'{outliers_removed} outliers removed', xy=(0.95, 0.95), xycoords='axes fraction', horizontalalignment='right', verticalalignment='top', fontsize=10)\nplt.xlabel('Selftext Length', fontsize=15)\nplt.ylabel('Density', fontsize=15)\nplt.grid(False) # or use plt.grid(b=None) to remove the grid from all subplots\n# save the figure\nplt.savefig('../images/figure_12.png')\nplt.show();",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "median_val_preoutlier_removal",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "median_val_preoutlier_removal = df['selftext_length'].median()\nmean_val_preoutlier_removal = df['selftext_length'].mean()\n# How many posts have selftext length greater than the median selftext length for the OCD and Autism subreddits (together)?\nlong_posts_count = df[df['selftext_length'] > median_val_preoutlier_removal].shape[0]\nprint(f'number of posts with selftext length greater than the median selftext length for the OCD and Autism subreddits (together): {long_posts_count}')\n# what is the length of the shortest post created before 1540000000 UTC ?\nshortest_post_length = df[df['created_utc'] < 1540000000]['selftext_length'].min()\nprint(f'length of the shortest post created before 1540000000 UTC: {shortest_post_length} characters')\n# let's removed all posts with length less than 570 characters (i.e. the length of the shortest post created before 1540000000 UTC) and then plot the plot again.\n# remove all posts with length less than 570 characters",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "mean_val_preoutlier_removal",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "mean_val_preoutlier_removal = df['selftext_length'].mean()\n# How many posts have selftext length greater than the median selftext length for the OCD and Autism subreddits (together)?\nlong_posts_count = df[df['selftext_length'] > median_val_preoutlier_removal].shape[0]\nprint(f'number of posts with selftext length greater than the median selftext length for the OCD and Autism subreddits (together): {long_posts_count}')\n# what is the length of the shortest post created before 1540000000 UTC ?\nshortest_post_length = df[df['created_utc'] < 1540000000]['selftext_length'].min()\nprint(f'length of the shortest post created before 1540000000 UTC: {shortest_post_length} characters')\n# let's removed all posts with length less than 570 characters (i.e. the length of the shortest post created before 1540000000 UTC) and then plot the plot again.\n# remove all posts with length less than 570 characters\nprint(f'number of rows in df before removing posts with length less than 570 characters: {df.shape[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "long_posts_count",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "long_posts_count = df[df['selftext_length'] > median_val_preoutlier_removal].shape[0]\nprint(f'number of posts with selftext length greater than the median selftext length for the OCD and Autism subreddits (together): {long_posts_count}')\n# what is the length of the shortest post created before 1540000000 UTC ?\nshortest_post_length = df[df['created_utc'] < 1540000000]['selftext_length'].min()\nprint(f'length of the shortest post created before 1540000000 UTC: {shortest_post_length} characters')\n# let's removed all posts with length less than 570 characters (i.e. the length of the shortest post created before 1540000000 UTC) and then plot the plot again.\n# remove all posts with length less than 570 characters\nprint(f'number of rows in df before removing posts with length less than 570 characters: {df.shape[0]}')\npreshape = df.shape[0]\ndf = df[df['selftext_length'] > 570]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "shortest_post_length",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "shortest_post_length = df[df['created_utc'] < 1540000000]['selftext_length'].min()\nprint(f'length of the shortest post created before 1540000000 UTC: {shortest_post_length} characters')\n# let's removed all posts with length less than 570 characters (i.e. the length of the shortest post created before 1540000000 UTC) and then plot the plot again.\n# remove all posts with length less than 570 characters\nprint(f'number of rows in df before removing posts with length less than 570 characters: {df.shape[0]}')\npreshape = df.shape[0]\ndf = df[df['selftext_length'] > 570]\nprint(f'number of rows in df after removing posts with length less than 570 characters: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')\nshort_posts_removed = preshape - df.shape[0]",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "preshape",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "preshape = df.shape[0]\ndf = df[df['selftext_length'] > 570]\nprint(f'number of rows in df after removing posts with length less than 570 characters: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')\nshort_posts_removed = preshape - df.shape[0]\n# when was the earliest OCD post created?\nearliest_ocd_post = df[df['target'] == 1]['created_utc'].min() # 1530000000\nprint(f'earliest OCD post created: {earliest_ocd_post}')\n# when was the earliest Autism post created?\nearliest_autism_post = df[df['target'] == 0]['created_utc'].min() # 1530000000",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "df = df[df['selftext_length'] > 570]\nprint(f'number of rows in df after removing posts with length less than 570 characters: {df.shape[0]}')\nprint(f'number of rows removed: {preshape - df.shape[0]}')\nshort_posts_removed = preshape - df.shape[0]\n# when was the earliest OCD post created?\nearliest_ocd_post = df[df['target'] == 1]['created_utc'].min() # 1530000000\nprint(f'earliest OCD post created: {earliest_ocd_post}')\n# when was the earliest Autism post created?\nearliest_autism_post = df[df['target'] == 0]['created_utc'].min() # 1530000000\nprint(f'earliest Autism post created: {earliest_autism_post}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "short_posts_removed",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "short_posts_removed = preshape - df.shape[0]\n# when was the earliest OCD post created?\nearliest_ocd_post = df[df['target'] == 1]['created_utc'].min() # 1530000000\nprint(f'earliest OCD post created: {earliest_ocd_post}')\n# when was the earliest Autism post created?\nearliest_autism_post = df[df['target'] == 0]['created_utc'].min() # 1530000000\nprint(f'earliest Autism post created: {earliest_autism_post}')\n# when was the latest OCD post created?\nlatest_ocd_post = df[df['target'] == 1]['created_utc'].max() # 1540000000\nprint(f'latest OCD post created: {latest_ocd_post}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "earliest_ocd_post",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "earliest_ocd_post = df[df['target'] == 1]['created_utc'].min() # 1530000000\nprint(f'earliest OCD post created: {earliest_ocd_post}')\n# when was the earliest Autism post created?\nearliest_autism_post = df[df['target'] == 0]['created_utc'].min() # 1530000000\nprint(f'earliest Autism post created: {earliest_autism_post}')\n# when was the latest OCD post created?\nlatest_ocd_post = df[df['target'] == 1]['created_utc'].max() # 1540000000\nprint(f'latest OCD post created: {latest_ocd_post}')\n# when was the latest Autism post created?\nlatest_autism_post = df[df['target'] == 0]['created_utc'].max() # 1540000000",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "earliest_autism_post",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "earliest_autism_post = df[df['target'] == 0]['created_utc'].min() # 1530000000\nprint(f'earliest Autism post created: {earliest_autism_post}')\n# when was the latest OCD post created?\nlatest_ocd_post = df[df['target'] == 1]['created_utc'].max() # 1540000000\nprint(f'latest OCD post created: {latest_ocd_post}')\n# when was the latest Autism post created?\nlatest_autism_post = df[df['target'] == 0]['created_utc'].max() # 1540000000\nprint(f'latest Autism post created: {latest_autism_post}')\n# # remove posts before 1546777579 and after 1596525852\n# print(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "latest_ocd_post",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "latest_ocd_post = df[df['target'] == 1]['created_utc'].max() # 1540000000\nprint(f'latest OCD post created: {latest_ocd_post}')\n# when was the latest Autism post created?\nlatest_autism_post = df[df['target'] == 0]['created_utc'].max() # 1540000000\nprint(f'latest Autism post created: {latest_autism_post}')\n# # remove posts before 1546777579 and after 1596525852\n# print(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\n# preshape = df.shape[0]\n# df = df[(df['created_utc'] > 1546777579) & (df['created_utc'] < 1596525852)]\n# print(f'number of rows in df after removing posts before 1546777579 and after 1596525852: {df.shape[0]}')",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "latest_autism_post",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "latest_autism_post = df[df['target'] == 0]['created_utc'].max() # 1540000000\nprint(f'latest Autism post created: {latest_autism_post}')\n# # remove posts before 1546777579 and after 1596525852\n# print(f'number of rows in df before removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\n# preshape = df.shape[0]\n# df = df[(df['created_utc'] > 1546777579) & (df['created_utc'] < 1596525852)]\n# print(f'number of rows in df after removing posts before 1546777579 and after 1596525852: {df.shape[0]}')\n# print(f'number of rows removed: {preshape - df.shape[0]}')\n# posts_removed = preshape - df.shape[0]\n# %%",
+        "detail": "full",
+        "documentation": {}
+    },
+    {
+        "label": "figure",
+        "kind": 5,
+        "importPath": "full",
+        "description": "full",
+        "peekOfCode": "figure = plt.figure(figsize=(20,5))\nplt.scatter(df['created_utc'], df['selftext_length'], c=df['author_color'], s=df['posts_by_author'], alpha=0.5)\nplt.title('Figure 13. Distribution of post lengths in both subreddits\\n After removing outliers', fontsize=15)\nplt.xlabel('Created UTC', fontsize=15)\nplt.ylabel('Selftext Length', fontsize=15)\nplt.grid(False) # or use plt.grid(b=None) to remove the grid from all subplots\nplt.annotate('size denotes post volume by author', xy=(0.95, 0.01), xycoords='axes fraction', horizontalalignment='right', verticalalignment='bottom', fontsize=10)\nplt.axhline(mean_val_preoutlier_removal, color='black', label='Average post length') # using the previously calculated mean value of the selftext length\nplt.axhline(median_val_preoutlier_removal, color='red', label='Median post length') # using the previously calculated median value of the selftext length\nplt.legend()",
+        "detail": "full",
         "documentation": {}
     },
     {
