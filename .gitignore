@@ -13,3 +13,4 @@ fi
 *.csv
 data/
 data
+d3viz/
