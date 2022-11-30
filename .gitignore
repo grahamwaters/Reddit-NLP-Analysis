@@ -3,3 +3,10 @@
 *.pyc
 .hazellock
 supporting_files
+# files that are over 100MB
+if [ -f $1 ]; then
+    if [ $(stat -f%z "$1") -gt 100000000 ]; then
+        echo "File $1 is over 100MB"
+        exit 1
+    fi
+fi
