@@ -9,6 +9,14 @@ The end goal for our client is likely a more clinical application of classificat
 
 **Note**: This study is focused solely on linguistic features present in Reddit posts and is not a formal means of diagnosis for identifying autism-spectrum or obsessive-compulsive disorder.
 
+![goal](./images/goal.png)
+
+**Problem Statement:**
+A wealthy donor with a track record of philanthropic contributions to both Autism and OCD research organizations contacted our organization, asking for a model they can utilize to identify post characteristics on Reddit.
+The purposes of this study (towards those ends) are to:
+
+1) Use Pushshift API to scrape Reddit posts from the Autism and OCD subreddits.
+2) To build a predictive model that can accurately predict whether a post is from the Autism or OCD subreddit
 ---
 
 # A Table of Contents
@@ -47,13 +55,6 @@ The end goal for our client is likely a more clinical application of classificat
 
 
 # Methods
-
-**Problem Statement:**
-A wealthy donor with a track record of philanthropic contributions to both Autism and OCD research organizations contacted our organization, asking for a model they can utilize to identify post characteristics on Reddit.
-The purposes of this study (towards those ends) are to:
-
-1) Use Pushshift API to scrape Reddit posts from the Autism and OCD subreddits.
-2) To build a predictive model that can accurately predict whether a post is from the Autism or OCD subreddit
 
 To accomplish these goals, we hypothesize that count vectorization and Logistic Regression, Adaboost, or Decision Trees can be used to build a model that accurately can predict whether a post is from the Autism or OCD subreddit. Success in this study would mean that our model has a misclassification rate of less than 10% and an accuracy score greater than 90% on the test data set.
 
