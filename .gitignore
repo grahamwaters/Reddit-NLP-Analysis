@@ -11,3 +11,5 @@ if [ -f $1 ]; then
     fi
 fi
 *.csv
+data/
+data
