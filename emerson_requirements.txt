@@ -1,5 +1,5 @@
 brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1666764778428/work
-certifi==2022.9.24
+certifi==2022.12.7
 cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1666184005339/work
 charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1661170624537/work
 click==8.1.3
