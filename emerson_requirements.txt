@@ -9,7 +9,7 @@ conda-package-handling @ file:///Users/runner/miniforge3/conda-bld/conda-package
 cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1669593291283/work
 idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
 joblib==1.2.0
-nltk==3.7
+nltk==3.10.4
 pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1666836597919/work
 pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
 pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1665350324128/work
